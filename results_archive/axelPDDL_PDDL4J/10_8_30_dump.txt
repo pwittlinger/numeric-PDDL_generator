@@ -1,0 +1,3832 @@
+
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19454; Explored: 227; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19768; Explored: 238; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19072; Explored: 218; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 23705; Explored: 296; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19248; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21258; Explored: 257; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19697; Explored: 234; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19488; Explored: 232; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19574; Explored: 237; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19151; Explored: 221; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19135; Explored: 219; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22036; Explored: 270; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19357; Explored: 227; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20937; Explored: 248; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19067; Explored: 218; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19713; Explored: 227; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 18996; Explored: 217; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19301; Explored: 223; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 23052; Explored: 281; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19538; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19295; Explored: 223; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20925; Explored: 250; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19541; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19523; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21827; Explored: 263; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19113; Explored: 221; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19483; Explored: 232; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19563; Explored: 237; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20173; Explored: 236; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19352; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21885; Explored: 253; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19346; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21581; Explored: 257; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19376; Explored: 225; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19452; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19603; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 1.0
+* 2 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 35597; Explored: 248; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19183; Explored: 221; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19535; Explored: 227; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20770; Explored: 248; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19218; Explored: 222; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19641; Explored: 235; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19425; Explored: 226; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19392; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19229; Explored: 223; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20973; Explored: 248; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19504; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19167; Explored: 221; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22561; Explored: 277; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19414; Explored: 227; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19298; Explored: 218; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21046; Explored: 251; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19526; Explored: 226; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19327; Explored: 231; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19324; Explored: 222; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22458; Explored: 263; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19581; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21089; Explored: 243; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19916; Explored: 230; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19295; Explored: 225; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21321; Explored: 248; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21542; Explored: 249; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19288; Explored: 222; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19873; Explored: 239; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19341; Explored: 226; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22201; Explored: 277; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19632; Explored: 232; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22753; Explored: 265; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19184; Explored: 222; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19751; Explored: 231; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20396; Explored: 244; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22774; Explored: 291; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19498; Explored: 234; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19238; Explored: 223; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22238; Explored: 263; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20677; Explored: 239; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20440; Explored: 241; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 23608; Explored: 291; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21970; Explored: 257; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 1.0
+* 2 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 30265; Explored: 264; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19149; Explored: 221; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20199; Explored: 239; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19585; Explored: 231; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21037; Explored: 249; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19609; Explored: 239; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19096; Explored: 216; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19247; Explored: 222; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19614; Explored: 231; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19404; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 23283; Explored: 280; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19319; Explored: 225; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19453; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19181; Explored: 222; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22131; Explored: 269; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19853; Explored: 241; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 1.0
+* 2 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 36528; Explored: 307; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 1.0
+* 2 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 36843; Explored: 261; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19317; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20698; Explored: 242; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19486; Explored: 230; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19040; Explored: 214; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19350; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20883; Explored: 252; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19461; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19183; Explored: 222; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21667; Explored: 256; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19494; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19359; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19843; Explored: 232; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19517; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19372; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20555; Explored: 246; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 24302; Explored: 298; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21441; Explored: 267; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 1.0
+* 2 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21322; Explored: 271; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20522; Explored: 246; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19295; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 23586; Explored: 296; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19521; Explored: 227; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22462; Explored: 263; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21780; Explored: 274; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19502; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20540; Explored: 255; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19693; Explored: 231; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20104; Explored: 238; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19705; Explored: 234; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19547; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19331; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22335; Explored: 266; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20486; Explored: 244; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21761; Explored: 253; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21189; Explored: 258; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19524; Explored: 233; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19346; Explored: 223; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21426; Explored: 256; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19334; Explored: 230; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20069; Explored: 236; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19579; Explored: 226; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20248; Explored: 235; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19537; Explored: 236; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19959; Explored: 237; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19733; Explored: 240; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 1.0
+* 2 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 36292; Explored: 253; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19799; Explored: 248; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20014; Explored: 234; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21588; Explored: 250; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19728; Explored: 238; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22016; Explored: 247; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 4.0
+* 2 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 23881; Explored: 275; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20141; Explored: 244; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19236; Explored: 223; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20632; Explored: 255; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19269; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21398; Explored: 256; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19157; Explored: 218; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19095; Explored: 221; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19498; Explored: 232; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19681; Explored: 233; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19145; Explored: 221; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19580; Explored: 234; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20233; Explored: 260; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19536; Explored: 223; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19562; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20011; Explored: 237; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19638; Explored: 235; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19321; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19971; Explored: 252; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19039; Explored: 215; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19583; Explored: 229; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19440; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19171; Explored: 221; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19949; Explored: 239; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20989; Explored: 244; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20253; Explored: 246; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19438; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22593; Explored: 260; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19460; Explored: 230; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19340; Explored: 226; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21251; Explored: 259; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19272; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21704; Explored: 263; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21456; Explored: 253; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20666; Explored: 260; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22418; Explored: 273; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19419; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19588; Explored: 235; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19171; Explored: 220; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19420; Explored: 228; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19265; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19417; Explored: 227; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19318; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19899; Explored: 224; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19757; Explored: 243; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 21656; Explored: 267; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19320; Explored: 226; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19172; Explored: 222; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 20917; Explored: 254; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 22072; Explored: 285; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 19884; Explored: 236; Pending: 0
+Parsing domain and problem completed
+* 1 solution(s) found. Best cost: 0.0
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+java.lang.IllegalStateException: Instrumentation environment not initialised.
+Created: 23052; Explored: 275; Pending: 0
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a24_p1 t2) [1]
+02: (      sync t2 a7_p4 t3) [1]
+03: (      sync t3 a7_p3 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (     sync t5 a15_p6 t6) [1]
+06: (      sync t6 a7_p3 t7) [1]
+07: (     sync t7 a18_p1 t8) [1]
+08: (      sync t8 a9_p7 t9) [1]
+09: (     sync t9 a8_p1 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p6 t1) [1]
+01: (      sync t1 a6_p7 t2) [1]
+02: (      sync t2 a4_p9 t3) [1]
+03: (      sync t3 a2_p1 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a9_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (      sync t2 a8_p1 t3) [1]
+03: (     sync t3 a20_p3 t4) [1]
+04: (     sync t4 a10_p7 t5) [1]
+05: (     sync t5 a15_p1 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a4_p6 t8) [1]
+08: (     sync t8 a30_p1 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p6 t1) [1]
+01: (      sync t1 a6_p1 t2) [1]
+02: (     sync t2 a27_p3 t3) [1]
+03: (     sync t3 a10_p7 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (     sync t5 a12_p7 t6) [1]
+06: (      sync t6 a1_p7 t7) [1]
+07: (     sync t7 a10_p3 t8) [1]
+08: (      sync t8 a2_p4 t9) [1]
+09: (     sync t9 a8_p1 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p7 t1) [1]
+01: (     sync t1 a22_p6 t2) [1]
+02: (     sync t2 a23_p9 t3) [1]
+03: (      sync t3 a1_p6 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (     sync t5 a21_p3 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a18_p6 t8) [1]
+08: (     sync t8 a17_p6 t9) [1]
+09: (     sync t9 a2_p4 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (     sync t1 a21_p9 t2) [1]
+02: (      sync t2 a8_p6 t3) [1]
+03: (     sync t3 a17_p9 t4) [1]
+04: (     sync t4 a11_p3 t5) [1]
+05: (      sync t5 a7_p6 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a8_p3 t8) [1]
+08: (     sync t8 a10_p8 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a25_p9 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (      sync t3 a3_p4 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a5_p9 t7) [1]
+07: (     sync t7 a28_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a20_p3 t2) [1]
+02: (     sync t2 a20_p9 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (      sync t5 a9_p9 t6) [1]
+06: (     sync t6 a15_p9 t7) [1]
+07: (      sync t7 a8_p9 t8) [1]
+08: (     sync t8 a23_p7 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a7_p7 t2) [1]
+02: (      sync t2 a3_p1 t3) [1]
+03: (     sync t3 a25_p3 t4) [1]
+04: (     sync t4 a15_p9 t5) [1]
+05: (     sync t5 a10_p7 t6) [1]
+06: (      sync t6 a7_p3 t7) [1]
+07: (     sync t7 a24_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a10_p9 t2) [1]
+02: (     sync t2 a24_p9 t3) [1]
+03: (     sync t3 a18_p9 t4) [1]
+04: (      sync t4 a3_p1 t5) [1]
+05: (      sync t5 a2_p6 t6) [1]
+06: (      sync t6 a3_p3 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (    sync t9 a16_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a29_p9 t1) [1]
+01: (      sync t1 a8_p3 t2) [1]
+02: (      sync t2 a6_p9 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (     sync t4 a16_p6 t5) [1]
+05: (      sync t5 a6_p4 t6) [1]
+06: (     sync t6 a14_p9 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (      sync t8 a7_p7 t9) [1]
+09: (    sync t9 a10_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a30_p3 t2) [1]
+02: (      sync t2 a5_p3 t3) [1]
+03: (      sync t3 a7_p3 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (     sync t5 a25_p9 t6) [1]
+06: (     sync t6 a26_p3 t7) [1]
+07: (     sync t7 a10_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a8_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p7 t1) [1]
+01: (     sync t1 a23_p9 t2) [1]
+02: (      sync t2 a5_p3 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a6_p7 t5) [1]
+05: (     sync t5 a23_p7 t6) [1]
+06: (     sync t6 a27_p6 t7) [1]
+07: (     sync t7 a10_p7 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (    sync t9 a19_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a6_p9 t1) [1]
+01: (      sync t1 a7_p9 t2) [1]
+02: (      sync t2 a4_p1 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a3_p6 t6) [1]
+06: (     sync t6 a27_p2 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (     sync t8 a23_p1 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a25_p3 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (     sync t3 a24_p9 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (      sync t5 a3_p1 t6) [1]
+06: (      sync t6 a2_p9 t7) [1]
+07: (     sync t7 a24_p3 t8) [1]
+08: (     sync t8 a26_p7 t9) [1]
+09: (     sync t9 a4_p5 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (     sync t1 a24_p5 t2) [1]
+02: (      sync t2 a7_p6 t3) [1]
+03: (     sync t3 a21_p1 t4) [1]
+04: (     sync t4 a10_p8 t5) [1]
+05: (      sync t5 a4_p4 t6) [1]
+06: (      sync t6 a6_p2 t7) [1]
+07: (      sync t7 a8_p3 t8) [1]
+08: (      sync t8 a2_p1 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a27_p7 t2) [1]
+02: (      sync t2 a7_p9 t3) [1]
+03: (     sync t3 a10_p7 t4) [1]
+04: (      sync t4 a9_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a10_p6 t8) [1]
+08: (     sync t8 a23_p6 t9) [1]
+09: (    sync t9 a11_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a20_p9 t2) [1]
+02: (      sync t2 a7_p9 t3) [1]
+03: (     sync t3 a26_p6 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (      sync t6 a6_p7 t7) [1]
+07: (      sync t7 a6_p7 t8) [1]
+08: (      sync t8 a7_p7 t9) [1]
+09: (     sync t9 a9_p1 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (      sync t1 a3_p7 t2) [1]
+02: (     sync t2 a30_p9 t3) [1]
+03: (     sync t3 a28_p7 t4) [1]
+04: (      sync t4 a9_p6 t5) [1]
+05: (     sync t5 a22_p6 t6) [1]
+06: (      sync t6 a9_p7 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (    sync t9 a30_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p3 t1) [1]
+01: (     sync t1 a25_p9 t2) [1]
+02: (      sync t2 a1_p6 t3) [1]
+03: (      sync t3 a2_p4 t4) [1]
+04: (     sync t4 a17_p9 t5) [1]
+05: (      sync t5 a2_p6 t6) [1]
+06: (      sync t6 a5_p9 t7) [1]
+07: (     sync t7 a24_p3 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a29_p3 t2) [1]
+02: (      sync t2 a7_p9 t3) [1]
+03: (      sync t3 a7_p1 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a3_p3 t6) [1]
+06: (      sync t6 a6_p8 t7) [1]
+07: (     sync t7 a25_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p6 t1) [1]
+01: (      sync t1 a8_p6 t2) [1]
+02: (      sync t2 a8_p6 t3) [1]
+03: (     sync t3 a23_p1 t4) [1]
+04: (      sync t4 a3_p3 t5) [1]
+05: (     sync t5 a30_p9 t6) [1]
+06: (     sync t6 a10_p7 t7) [1]
+07: (     sync t7 a19_p6 t8) [1]
+08: (      sync t8 a8_p1 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a20_p3 t2) [1]
+02: (     sync t2 a20_p9 t3) [1]
+03: (      sync t3 a4_p6 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (      sync t5 a8_p3 t6) [1]
+06: (     sync t6 a12_p9 t7) [1]
+07: (      sync t7 a4_p3 t8) [1]
+08: (     sync t8 a10_p6 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a6_p1 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (      sync t3 a7_p6 t4) [1]
+04: (     sync t4 a24_p3 t5) [1]
+05: (     sync t5 a10_p7 t6) [1]
+06: (     sync t6 a16_p3 t7) [1]
+07: (     sync t7 a13_p1 t8) [1]
+08: (      sync t8 a4_p4 t9) [1]
+09: (    sync t9 a14_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (     sync t1 a18_p3 t2) [1]
+02: (      sync t2 a9_p4 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (     sync t4 a22_p6 t5) [1]
+05: (      sync t5 a2_p9 t6) [1]
+06: (      sync t6 a1_p3 t7) [1]
+07: (      sync t7 a8_p2 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a15_p9 t2) [1]
+02: (     sync t2 a30_p7 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (     sync t4 a23_p9 t5) [1]
+05: (     sync t5 a15_p9 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (      sync t7 a9_p6 t8) [1]
+08: (     sync t8 a11_p3 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a22_p9 t2) [1]
+02: (     sync t2 a28_p9 t3) [1]
+03: (      sync t3 a1_p9 t4) [1]
+04: (     sync t4 a25_p9 t5) [1]
+05: (      sync t5 a9_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a15_p7 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p3 t1) [1]
+01: (      sync t1 a8_p3 t2) [1]
+02: (     sync t2 a29_p9 t3) [1]
+03: (      sync t3 a1_p9 t4) [1]
+04: (     sync t4 a24_p6 t5) [1]
+05: (      sync t5 a2_p1 t6) [1]
+06: (     sync t6 a25_p6 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a13_p1 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (     sync t3 a28_p6 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (     sync t5 a18_p9 t6) [1]
+06: (      sync t6 a5_p9 t7) [1]
+07: (      sync t7 a1_p1 t8) [1]
+08: (      sync t8 a7_p4 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a6_p9 t1) [1]
+01: (      sync t1 a7_p9 t2) [1]
+02: (     sync t2 a23_p3 t3) [1]
+03: (      sync t3 a3_p3 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (     sync t5 a23_p9 t6) [1]
+06: (      sync t6 a4_p6 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (     sync t9 a3_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (      sync t1 a7_p6 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (      sync t3 a9_p9 t4) [1]
+04: (     sync t4 a13_p9 t5) [1]
+05: (     sync t5 a14_p6 t6) [1]
+06: (      sync t6 a3_p6 t7) [1]
+07: (     sync t7 a10_p4 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a7_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a23_p9 t2) [1]
+02: (     sync t2 a21_p6 t3) [1]
+03: (      sync t3 a9_p9 t4) [1]
+04: (      sync t4 a9_p9 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a7_p6 t7) [1]
+07: (     sync t7 a16_p7 t8) [1]
+08: (     sync t8 a15_p6 t9) [1]
+09: (    sync t9 a22_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a3_p6 t2) [1]
+02: (     sync t2 a12_p9 t3) [1]
+03: (      sync t3 a9_p9 t4) [1]
+04: (      sync t4 a8_p3 t5) [1]
+05: (     sync t5 a28_p6 t6) [1]
+06: (      sync t6 a4_p6 t7) [1]
+07: (     sync t7 a16_p6 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a14_p3 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (     sync t3 a23_p9 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (     sync t5 a23_p9 t6) [1]
+06: (     sync t6 a10_p4 t7) [1]
+07: (      sync t7 a5_p9 t8) [1]
+08: (     sync t8 a11_p9 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p6 t1) [1]
+01: (     sync t1 a24_p9 t2) [1]
+02: (      sync t2 a5_p7 t3) [1]
+03: (     sync t3 a11_p9 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (     sync t5 a13_p3 t6) [1]
+06: (     sync t6 a30_p6 t7) [1]
+07: (      sync t7 a4_p6 t8) [1]
+08: (     sync t8 a12_p9 t9) [1]
+09: (    sync t9 a10_p8 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p6 t1) [1]
+01: (      sync t1 a4_p1 t2) [1]
+02: (     sync t2 a27_p7 t3) [1]
+03: (     sync t3 a12_p3 t4) [1]
+04: (     sync t4 a21_p6 t5) [1]
+05: (      sync t5 a6_p6 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a2_p1 t9) [1]
+09: (     sync t9 a8_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p6 t1) [1]
+01: (     sync t1 a27_p9 t2) [1]
+02: (     sync t2 a10_p7 t3) [1]
+03: (     sync t3 a17_p7 t4) [1]
+04: (      sync t4 a7_p7 t5) [1]
+05: (      sync t5 a6_p7 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a8_p2 t8) [1]
+08: (     sync t8 a10_p6 t9) [1]
+09: (     sync t9 a8_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a5_p9 t2) [1]
+02: (      sync t2 a7_p9 t3) [1]
+03: (     sync t3 a14_p3 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (      sync t5 a1_p3 t6) [1]
+06: (     sync t6 a18_p3 t7) [1]
+07: (      sync t7 a6_p7 t8) [1]
+08: (     sync t8 a18_p9 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p3 t1) [1]
+01: (     sync t1 a24_p6 t2) [1]
+02: (     sync t2 a12_p3 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a12_p9 t7) [1]
+07: (      sync t7 a4_p9 t8) [1]
+08: (      sync t8 a2_p7 t9) [1]
+09: (     sync t9 a8_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a5_p3 t2) [1]
+02: (     sync t2 a19_p9 t3) [1]
+03: (     sync t3 a19_p7 t4) [1]
+04: (     sync t4 a18_p6 t5) [1]
+05: (      sync t5 a8_p3 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a15_p6 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a10_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (     sync t3 a28_p6 t4) [1]
+04: (      sync t4 a4_p6 t5) [1]
+05: (     sync t5 a16_p9 t6) [1]
+06: (     sync t6 a22_p6 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a17_p3 t9) [1]
+09: (    sync t9 a11_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p6 t1) [1]
+01: (     sync t1 a24_p9 t2) [1]
+02: (     sync t2 a20_p9 t3) [1]
+03: (      sync t3 a8_p3 t4) [1]
+04: (     sync t4 a22_p6 t5) [1]
+05: (      sync t5 a2_p7 t6) [1]
+06: (     sync t6 a19_p7 t7) [1]
+07: (      sync t7 a7_p4 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a28_p9 t2) [1]
+02: (     sync t2 a29_p6 t3) [1]
+03: (     sync t3 a24_p9 t4) [1]
+04: (     sync t4 a20_p6 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a15_p9 t8) [1]
+08: (      sync t8 a5_p9 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a20_p3 t2) [1]
+02: (      sync t2 a7_p3 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a3_p1 t5) [1]
+05: (      sync t5 a7_p6 t6) [1]
+06: (     sync t6 a20_p3 t7) [1]
+07: (     sync t7 a11_p3 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a4_p5 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a7_p9 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (     sync t3 a11_p6 t4) [1]
+04: (     sync t4 a22_p6 t5) [1]
+05: (      sync t5 a4_p6 t6) [1]
+06: (     sync t6 a11_p9 t7) [1]
+07: (     sync t7 a12_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a23_p9 t1) [1]
+01: (     sync t1 a10_p6 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (     sync t3 a22_p3 t4) [1]
+04: (      sync t4 a3_p3 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (      sync t6 a4_p9 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a10_p7 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (     sync t1 a27_p3 t2) [1]
+02: (     sync t2 a17_p9 t3) [1]
+03: (      sync t3 a5_p9 t4) [1]
+04: (     sync t4 a29_p6 t5) [1]
+05: (      sync t5 a1_p9 t6) [1]
+06: (     sync t6 a10_p8 t7) [1]
+07: (     sync t7 a10_p7 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a10_p7 t2) [1]
+02: (     sync t2 a20_p3 t3) [1]
+03: (      sync t3 a3_p3 t4) [1]
+04: (      sync t4 a2_p9 t5) [1]
+05: (     sync t5 a29_p9 t6) [1]
+06: (      sync t6 a4_p4 t7) [1]
+07: (      sync t7 a6_p4 t8) [1]
+08: (      sync t8 a4_p3 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a5_p3 t2) [1]
+02: (      sync t2 a7_p3 t3) [1]
+03: (      sync t3 a2_p6 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (      sync t5 a4_p9 t6) [1]
+06: (     sync t6 a14_p3 t7) [1]
+07: (      sync t7 a4_p4 t8) [1]
+08: (      sync t8 a8_p1 t9) [1]
+09: (    sync t9 a30_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a14_p5 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (     sync t3 a19_p3 t4) [1]
+04: (      sync t4 a5_p6 t5) [1]
+05: (      sync t5 a5_p1 t6) [1]
+06: (      sync t6 a7_p6 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (     sync t8 a12_p1 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (      sync t1 a6_p8 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (      sync t3 a7_p6 t4) [1]
+04: (      sync t4 a3_p3 t5) [1]
+05: (     sync t5 a27_p9 t6) [1]
+06: (     sync t6 a23_p3 t7) [1]
+07: (     sync t7 a15_p9 t8) [1]
+08: (      sync t8 a4_p4 t9) [1]
+09: (    sync t9 a15_p4 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (      sync t1 a9_p8 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (     sync t3 a16_p9 t4) [1]
+04: (      sync t4 a9_p7 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a9_p9 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a7_p3 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a4_p6 t2) [1]
+02: (     sync t2 a21_p3 t3) [1]
+03: (     sync t3 a24_p3 t4) [1]
+04: (      sync t4 a6_p9 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (     sync t7 a25_p4 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (     sync t9 a8_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a11_p6 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (     sync t3 a17_p9 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (      sync t5 a4_p9 t6) [1]
+06: (      sync t6 a7_p4 t7) [1]
+07: (     sync t7 a17_p3 t8) [1]
+08: (     sync t8 a25_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a1_p3 t2) [1]
+02: (     sync t2 a23_p3 t3) [1]
+03: (     sync t3 a27_p9 t4) [1]
+04: (     sync t4 a14_p9 t5) [1]
+05: (     sync t5 a19_p9 t6) [1]
+06: (      sync t6 a8_p3 t7) [1]
+07: (      sync t7 a6_p9 t8) [1]
+08: (      sync t8 a7_p3 t9) [1]
+09: (     sync t9 a2_p4 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a9_p9 t2) [1]
+02: (     sync t2 a29_p3 t3) [1]
+03: (     sync t3 a16_p3 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a6_p1 t7) [1]
+07: (     sync t7 a21_p6 t8) [1]
+08: (     sync t8 a21_p9 t9) [1]
+09: (    sync t9 a20_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a21_p3 t2) [1]
+02: (     sync t2 a30_p6 t3) [1]
+03: (      sync t3 a4_p6 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (      sync t5 a7_p7 t6) [1]
+06: (     sync t6 a10_p7 t7) [1]
+07: (      sync t7 a8_p1 t8) [1]
+08: (      sync t8 a7_p4 t9) [1]
+09: (    sync t9 a11_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a20_p6 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (      sync t3 a6_p3 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (     sync t5 a23_p6 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (     sync t7 a14_p7 t8) [1]
+08: (     sync t8 a20_p3 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p6 t1) [1]
+01: (     sync t1 a10_p7 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (      sync t3 a9_p4 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (      sync t5 a7_p6 t6) [1]
+06: (      sync t6 a1_p9 t7) [1]
+07: (     sync t7 a11_p3 t8) [1]
+08: (      sync t8 a2_p4 t9) [1]
+09: (    sync t9 a16_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a8_p3 t2) [1]
+02: (      sync t2 a9_p6 t3) [1]
+03: (      sync t3 a5_p3 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (     sync t6 a17_p9 t7) [1]
+07: (      sync t7 a3_p3 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a2_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a1_p6 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (      sync t3 a9_p4 t4) [1]
+04: (     sync t4 a16_p9 t5) [1]
+05: (     sync t5 a12_p9 t6) [1]
+06: (     sync t6 a18_p9 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (     sync t8 a12_p6 t9) [1]
+09: (     sync t9 a2_p1 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (      sync t1 a3_p9 t2) [1]
+02: (     sync t2 a23_p9 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a9_p9 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a7_p6 t7) [1]
+07: (      sync t7 a6_p6 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (     sync t9 a5_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a7_p9 t2) [1]
+02: (      sync t2 a7_p9 t3) [1]
+03: (     sync t3 a10_p9 t4) [1]
+04: (     sync t4 a23_p9 t5) [1]
+05: (     sync t5 a27_p3 t6) [1]
+06: (      sync t6 a8_p1 t7) [1]
+07: (     sync t7 a23_p9 t8) [1]
+08: (      sync t8 a4_p4 t9) [1]
+09: (    sync t9 a15_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (     sync t1 a21_p9 t2) [1]
+02: (     sync t2 a17_p6 t3) [1]
+03: (      sync t3 a2_p7 t4) [1]
+04: (      sync t4 a9_p9 t5) [1]
+05: (     sync t5 a15_p9 t6) [1]
+06: (      sync t6 a5_p9 t7) [1]
+07: (     sync t7 a19_p6 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a18_p9 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (      sync t3 a5_p9 t4) [1]
+04: (      sync t4 a4_p6 t5) [1]
+05: (      sync t5 a3_p3 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (      sync t7 a5_p1 t8) [1]
+08: (      sync t8 a4_p4 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (     sync t1 a30_p7 t2) [1]
+02: (      sync t2 a7_p6 t3) [1]
+03: (      sync t3 a1_p2 t4) [1]
+04: (     sync t4 a17_p9 t5) [1]
+05: (     sync t5 a23_p3 t6) [1]
+06: (     sync t6 a10_p7 t7) [1]
+07: (      sync t7 a5_p9 t8) [1]
+08: (     sync t8 a10_p3 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (     sync t1 a30_p3 t2) [1]
+02: (     sync t2 a17_p7 t3) [1]
+03: (     sync t3 a19_p9 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a12_p3 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p3 t1) [1]
+01: (     sync t1 a12_p6 t2) [1]
+02: (      sync t2 a7_p3 t3) [1]
+03: (      sync t3 a7_p3 t4) [1]
+04: (      sync t4 a8_p3 t5) [1]
+05: (     sync t5 a10_p1 t6) [1]
+06: (     sync t6 a10_p6 t7) [1]
+07: (     sync t7 a19_p9 t8) [1]
+08: (      sync t8 a4_p3 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a5_p9 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (      sync t3 a7_p3 t4) [1]
+04: (     sync t4 a23_p9 t5) [1]
+05: (     sync t5 a23_p3 t6) [1]
+06: (      sync t6 a1_p9 t7) [1]
+07: (     sync t7 a20_p3 t8) [1]
+08: (      sync t8 a2_p7 t9) [1]
+09: (    sync t9 a23_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p3 t1) [1]
+01: (      sync t1 a9_p6 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (     sync t3 a22_p9 t4) [1]
+04: (      sync t4 a6_p7 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a8_p1 t7) [1]
+07: (     sync t7 a14_p9 t8) [1]
+08: (      sync t8 a6_p1 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p6 t1) [1]
+01: (      sync t1 a9_p6 t2) [1]
+02: (     sync t2 a13_p3 t3) [1]
+03: (     sync t3 a10_p9 t4) [1]
+04: (      sync t4 a8_p7 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (     sync t6 a16_p9 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (      sync t8 a2_p1 t9) [1]
+09: (    sync t9 a10_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (      sync t1 a1_p1 t2) [1]
+02: (      sync t2 a7_p3 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a7_p5 t5) [1]
+05: (      sync t5 a1_p4 t6) [1]
+06: (     sync t6 a25_p9 t7) [1]
+07: (     sync t7 a29_p9 t8) [1]
+08: (      sync t8 a8_p3 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a7_p7 t2) [1]
+02: (     sync t2 a30_p3 t3) [1]
+03: (      sync t3 a7_p6 t4) [1]
+04: (     sync t4 a23_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a10_p7 t7) [1]
+07: (      sync t7 a7_p6 t8) [1]
+08: (     sync t8 a21_p9 t9) [1]
+09: (    sync t9 a13_p4 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (     sync t1 a10_p9 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (     sync t3 a13_p9 t4) [1]
+04: (      sync t4 a1_p9 t5) [1]
+05: (     sync t5 a18_p7 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a14_p9 t8) [1]
+08: (      sync t8 a8_p9 t9) [1]
+09: (     sync t9 a2_p4 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a6_p4 t2) [1]
+02: (      sync t2 a1_p7 t3) [1]
+03: (      sync t3 a3_p3 t4) [1]
+04: (     sync t4 a20_p6 t5) [1]
+05: (     sync t5 a26_p9 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (    sync t9 a23_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (     sync t2 a17_p3 t3) [1]
+03: (     sync t3 a15_p6 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a1_p4 t6) [1]
+06: (      sync t6 a4_p4 t7) [1]
+07: (     sync t7 a24_p4 t8) [1]
+08: (     sync t8 a25_p9 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (      sync t1 a5_p9 t2) [1]
+02: (     sync t2 a22_p3 t3) [1]
+03: (     sync t3 a10_p9 t4) [1]
+04: (     sync t4 a15_p9 t5) [1]
+05: (      sync t5 a2_p9 t6) [1]
+06: (      sync t6 a6_p7 t7) [1]
+07: (      sync t7 a8_p9 t8) [1]
+08: (     sync t8 a30_p6 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a9_p7 t2) [1]
+02: (     sync t2 a10_p1 t3) [1]
+03: (      sync t3 a9_p7 t4) [1]
+04: (      sync t4 a1_p7 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a4_p6 t8) [1]
+08: (      sync t8 a8_p3 t9) [1]
+09: (    sync t9 a18_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p6 t1) [1]
+01: (      sync t1 a1_p8 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (     sync t3 a30_p6 t4) [1]
+04: (     sync t4 a20_p3 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a11_p9 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a29_p7 t9) [1]
+09: (    sync t9 a10_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a13_p9 t2) [1]
+02: (     sync t2 a20_p9 t3) [1]
+03: (      sync t3 a3_p4 t4) [1]
+04: (      sync t4 a9_p7 t5) [1]
+05: (     sync t5 a20_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a5_p7 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a10_p8 t2) [1]
+02: (     sync t2 a11_p9 t3) [1]
+03: (      sync t3 a1_p6 t4) [1]
+04: (     sync t4 a12_p3 t5) [1]
+05: (     sync t5 a22_p9 t6) [1]
+06: (     sync t6 a10_p7 t7) [1]
+07: (     sync t7 a28_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (      sync t1 a7_p3 t2) [1]
+02: (     sync t2 a14_p3 t3) [1]
+03: (      sync t3 a6_p6 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (     sync t7 a12_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a20_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a30_p9 t1) [1]
+01: (      sync t1 a1_p9 t2) [1]
+02: (     sync t2 a11_p3 t3) [1]
+03: (      sync t3 a5_p9 t4) [1]
+04: (     sync t4 a26_p9 t5) [1]
+05: (      sync t5 a1_p1 t6) [1]
+06: (      sync t6 a4_p4 t7) [1]
+07: (      sync t7 a2_p1 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (    sync t9 a10_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p1 t1) [1]
+01: (     sync t1 a23_p9 t2) [1]
+02: (      sync t2 a4_p6 t3) [1]
+03: (      sync t3 a5_p7 t4) [1]
+04: (      sync t4 a9_p9 t5) [1]
+05: (     sync t5 a10_p3 t6) [1]
+06: (     sync t6 a11_p3 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (     sync t8 a26_p3 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p6 t1) [1]
+01: (      sync t1 a7_p1 t2) [1]
+02: (     sync t2 a10_p7 t3) [1]
+03: (      sync t3 a8_p3 t4) [1]
+04: (     sync t4 a30_p9 t5) [1]
+05: (      sync t5 a7_p6 t6) [1]
+06: (     sync t6 a30_p9 t7) [1]
+07: (      sync t7 a8_p6 t8) [1]
+08: (      sync t8 a2_p7 t9) [1]
+09: (     sync t9 a7_p1 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (      sync t1 a5_p9 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (     sync t3 a21_p3 t4) [1]
+04: (      sync t4 a6_p3 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (      sync t6 a6_p6 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (      sync t8 a2_p9 t9) [1]
+09: (    sync t9 a12_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (     sync t1 a10_p9 t2) [1]
+02: (     sync t2 a28_p9 t3) [1]
+03: (      sync t3 a4_p6 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a8_p9 t6) [1]
+06: (      sync t6 a4_p6 t7) [1]
+07: (     sync t7 a14_p3 t8) [1]
+08: (     sync t8 a27_p6 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a23_p9 t1) [1]
+01: (     sync t1 a28_p6 t2) [1]
+02: (      sync t2 a1_p9 t3) [1]
+03: (     sync t3 a18_p3 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a2_p4 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a5_p9 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a8_p6 t2) [1]
+02: (      sync t2 a7_p9 t3) [1]
+03: (     sync t3 a25_p9 t4) [1]
+04: (     sync t4 a26_p3 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (     sync t6 a28_p9 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (     sync t8 a29_p7 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p4 t1) [1]
+01: (     sync t1 a25_p4 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (     sync t3 a19_p9 t4) [1]
+04: (      sync t4 a6_p9 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (      sync t6 a8_p3 t7) [1]
+07: (     sync t7 a10_p7 t8) [1]
+08: (      sync t8 a8_p3 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a7_p6 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (      sync t3 a2_p9 t4) [1]
+04: (     sync t4 a16_p6 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (     sync t6 a18_p9 t7) [1]
+07: (      sync t7 a8_p6 t8) [1]
+08: (      sync t8 a6_p4 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a5_p7 t2) [1]
+02: (     sync t2 a18_p9 t3) [1]
+03: (     sync t3 a19_p3 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a16_p9 t7) [1]
+07: (      sync t7 a4_p6 t8) [1]
+08: (     sync t8 a10_p7 t9) [1]
+09: (    sync t9 a28_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a11_p7 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (      sync t3 a2_p6 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (      sync t5 a9_p9 t6) [1]
+06: (     sync t6 a26_p6 t7) [1]
+07: (     sync t7 a12_p7 t8) [1]
+08: (     sync t8 a19_p7 t9) [1]
+09: (    sync t9 a10_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a1_p8 t2) [1]
+02: (     sync t2 a25_p9 t3) [1]
+03: (     sync t3 a20_p6 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a24_p3 t7) [1]
+07: (      sync t7 a9_p3 t8) [1]
+08: (     sync t8 a24_p4 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a7_p7 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (      sync t3 a4_p6 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a26_p9 t7) [1]
+07: (      sync t7 a7_p7 t8) [1]
+08: (     sync t8 a26_p4 t9) [1]
+09: (     sync t9 a8_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (      sync t1 a5_p3 t2) [1]
+02: (      sync t2 a7_p7 t3) [1]
+03: (     sync t3 a11_p7 t4) [1]
+04: (     sync t4 a19_p3 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a7_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a8_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a1_p7 t2) [1]
+02: (      sync t2 a5_p7 t3) [1]
+03: (     sync t3 a19_p3 t4) [1]
+04: (     sync t4 a10_p1 t5) [1]
+05: (      sync t5 a9_p6 t6) [1]
+06: (      sync t6 a4_p6 t7) [1]
+07: (      sync t7 a3_p7 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p3 t1) [1]
+01: (     sync t1 a27_p3 t2) [1]
+02: (      sync t2 a1_p9 t3) [1]
+03: (      sync t3 a1_p1 t4) [1]
+04: (      sync t4 a8_p3 t5) [1]
+05: (      sync t5 a5_p3 t6) [1]
+06: (     sync t6 a16_p3 t7) [1]
+07: (      sync t7 a2_p7 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (    sync t9 a23_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p7 t1) [1]
+01: (      sync t1 a7_p6 t2) [1]
+02: (      sync t2 a3_p9 t3) [1]
+03: (     sync t3 a16_p9 t4) [1]
+04: (     sync t4 a28_p6 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (     sync t6 a30_p4 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a7_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a6_p7 t2) [1]
+02: (     sync t2 a19_p9 t3) [1]
+03: (      sync t3 a3_p3 t4) [1]
+04: (      sync t4 a8_p6 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (     sync t6 a22_p9 t7) [1]
+07: (      sync t7 a9_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a5_p9 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (     sync t3 a16_p9 t4) [1]
+04: (     sync t4 a13_p3 t5) [1]
+05: (      sync t5 a6_p9 t6) [1]
+06: (      sync t6 a7_p3 t7) [1]
+07: (      sync t7 a6_p3 t8) [1]
+08: (      sync t8 a7_p3 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a16_p3 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (     sync t3 a16_p3 t4) [1]
+04: (     sync t4 a14_p9 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a4_p6 t7) [1]
+07: (      sync t7 a6_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a18_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p6 t1) [1]
+01: (     sync t1 a26_p9 t2) [1]
+02: (     sync t2 a10_p7 t3) [1]
+03: (     sync t3 a25_p9 t4) [1]
+04: (     sync t4 a10_p3 t5) [1]
+05: (     sync t5 a22_p9 t6) [1]
+06: (     sync t6 a17_p6 t7) [1]
+07: (     sync t7 a14_p9 t8) [1]
+08: (      sync t8 a8_p3 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p6 t1) [1]
+01: (     sync t1 a21_p7 t2) [1]
+02: (     sync t2 a16_p9 t3) [1]
+03: (      sync t3 a2_p4 t4) [1]
+04: (     sync t4 a27_p3 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (     sync t6 a13_p6 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a25_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a29_p9 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (      sync t3 a5_p9 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a29_p6 t7) [1]
+07: (      sync t7 a8_p9 t8) [1]
+08: (     sync t8 a15_p9 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a7_p6 t2) [1]
+02: (     sync t2 a25_p1 t3) [1]
+03: (      sync t3 a1_p4 t4) [1]
+04: (     sync t4 a10_p7 t5) [1]
+05: (     sync t5 a30_p9 t6) [1]
+06: (      sync t6 a4_p9 t7) [1]
+07: (      sync t7 a4_p6 t8) [1]
+08: (      sync t8 a8_p3 t9) [1]
+09: (     sync t9 a9_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a12_p9 t2) [1]
+02: (     sync t2 a10_p9 t3) [1]
+03: (     sync t3 a11_p1 t4) [1]
+04: (      sync t4 a5_p7 t5) [1]
+05: (     sync t5 a16_p6 t6) [1]
+06: (      sync t6 a4_p6 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (      sync t8 a5_p1 t9) [1]
+09: (    sync t9 a25_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a22_p3 t2) [1]
+02: (      sync t2 a7_p6 t3) [1]
+03: (      sync t3 a5_p9 t4) [1]
+04: (     sync t4 a11_p6 t5) [1]
+05: (     sync t5 a10_p7 t6) [1]
+06: (      sync t6 a7_p7 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a24_p3 t9) [1]
+09: (    sync t9 a25_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (      sync t1 a9_p3 t2) [1]
+02: (     sync t2 a22_p9 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (     sync t6 a21_p6 t7) [1]
+07: (      sync t7 a1_p9 t8) [1]
+08: (     sync t8 a19_p3 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p1 t1) [1]
+01: (     sync t1 a22_p9 t2) [1]
+02: (     sync t2 a29_p6 t3) [1]
+03: (     sync t3 a26_p9 t4) [1]
+04: (      sync t4 a8_p3 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a28_p9 t7) [1]
+07: (      sync t7 a1_p7 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p7 t1) [1]
+01: (      sync t1 a9_p9 t2) [1]
+02: (     sync t2 a13_p9 t3) [1]
+03: (     sync t3 a24_p3 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (     sync t6 a26_p7 t7) [1]
+07: (     sync t7 a25_p6 t8) [1]
+08: (      sync t8 a8_p3 t9) [1]
+09: (    sync t9 a10_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p7 t1) [1]
+01: (      sync t1 a9_p3 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (     sync t3 a22_p3 t4) [1]
+04: (     sync t4 a21_p3 t5) [1]
+05: (     sync t5 a10_p3 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a4_p4 t9) [1]
+09: (    sync t9 a14_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (      sync t1 a5_p3 t2) [1]
+02: (      sync t2 a5_p3 t3) [1]
+03: (     sync t3 a10_p4 t4) [1]
+04: (     sync t4 a10_p7 t5) [1]
+05: (     sync t5 a30_p9 t6) [1]
+06: (      sync t6 a1_p4 t7) [1]
+07: (      sync t7 a5_p6 t8) [1]
+08: (      sync t8 a8_p3 t9) [1]
+09: (     sync t9 a1_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a5_p6 t2) [1]
+02: (      sync t2 a9_p6 t3) [1]
+03: (      sync t3 a2_p6 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a6_p1 t6) [1]
+06: (      sync t6 a5_p3 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (      sync t1 a7_p8 t2) [1]
+02: (     sync t2 a14_p4 t3) [1]
+03: (     sync t3 a11_p9 t4) [1]
+04: (      sync t4 a8_p3 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a7_p7 t7) [1]
+07: (      sync t7 a6_p5 t8) [1]
+08: (      sync t8 a7_p3 t9) [1]
+09: (    sync t9 a27_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a22_p9 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (     sync t2 a23_p6 t3) [1]
+03: (     sync t3 a23_p1 t4) [1]
+04: (     sync t4 a10_p6 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a27_p6 t7) [1]
+07: (      sync t7 a8_p3 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (     sync t1 a15_p9 t2) [1]
+02: (     sync t2 a23_p1 t3) [1]
+03: (     sync t3 a18_p6 t4) [1]
+04: (      sync t4 a8_p3 t5) [1]
+05: (     sync t5 a21_p9 t6) [1]
+06: (      sync t6 a1_p6 t7) [1]
+07: (      sync t7 a4_p9 t8) [1]
+08: (     sync t8 a10_p7 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p3 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (     sync t2 a23_p6 t3) [1]
+03: (      sync t3 a2_p2 t4) [1]
+04: (     sync t4 a10_p6 t5) [1]
+05: (      sync t5 a4_p6 t6) [1]
+06: (      sync t6 a5_p6 t7) [1]
+07: (     sync t7 a10_p7 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a8_p1 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a23_p3 t2) [1]
+02: (     sync t2 a18_p3 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a1_p3 t5) [1]
+05: (     sync t5 a15_p9 t6) [1]
+06: (      sync t6 a9_p7 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a19_p6 t2) [1]
+02: (      sync t2 a5_p3 t3) [1]
+03: (      sync t3 a9_p9 t4) [1]
+04: (     sync t4 a10_p7 t5) [1]
+05: (      sync t5 a8_p3 t6) [1]
+06: (      sync t6 a6_p9 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a28_p9 t9) [1]
+09: (    sync t9 a10_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (      sync t1 a8_p9 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (     sync t3 a28_p9 t4) [1]
+04: (     sync t4 a23_p5 t5) [1]
+05: (      sync t5 a8_p3 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a5_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a2_p1 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a21_p3 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (      sync t3 a8_p9 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (     sync t5 a23_p9 t6) [1]
+06: (      sync t6 a7_p6 t7) [1]
+07: (     sync t7 a10_p7 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (    sync t9 a10_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a7_p6 t2) [1]
+02: (      sync t2 a7_p6 t3) [1]
+03: (      sync t3 a5_p3 t4) [1]
+04: (      sync t4 a9_p9 t5) [1]
+05: (      sync t5 a8_p6 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a23_p3 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (    sync t9 a30_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (      sync t1 a3_p6 t2) [1]
+02: (      sync t2 a4_p6 t3) [1]
+03: (      sync t3 a8_p3 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (     sync t5 a27_p4 t6) [1]
+06: (      sync t6 a7_p7 t7) [1]
+07: (      sync t7 a9_p3 t8) [1]
+08: (     sync t8 a16_p6 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (     sync t3 a17_p9 t4) [1]
+04: (     sync t4 a23_p6 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (     sync t6 a11_p3 t7) [1]
+07: (      sync t7 a4_p4 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a8_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p3 t1) [1]
+01: (     sync t1 a25_p9 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (      sync t3 a6_p1 t4) [1]
+04: (     sync t4 a17_p9 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (      sync t6 a7_p3 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a2_p4 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a20_p6 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (      sync t3 a8_p4 t4) [1]
+04: (      sync t4 a8_p3 t5) [1]
+05: (      sync t5 a6_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a14_p3 t8) [1]
+08: (     sync t8 a10_p3 t9) [1]
+09: (     sync t9 a5_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a16_p9 t2) [1]
+02: (      sync t2 a2_p9 t3) [1]
+03: (      sync t3 a7_p6 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (      sync t6 a6_p4 t7) [1]
+07: (     sync t7 a29_p7 t8) [1]
+08: (     sync t8 a19_p6 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a10_p9 t2) [1]
+02: (      sync t2 a9_p7 t3) [1]
+03: (     sync t3 a16_p9 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a3_p6 t6) [1]
+06: (      sync t6 a3_p3 t7) [1]
+07: (      sync t7 a7_p6 t8) [1]
+08: (     sync t8 a29_p1 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a1_p9 t2) [1]
+02: (      sync t2 a9_p3 t3) [1]
+03: (      sync t3 a1_p1 t4) [1]
+04: (     sync t4 a23_p7 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (     sync t6 a29_p9 t7) [1]
+07: (     sync t7 a27_p3 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a16_p6 t2) [1]
+02: (     sync t2 a13_p7 t3) [1]
+03: (      sync t3 a3_p9 t4) [1]
+04: (      sync t4 a5_p7 t5) [1]
+05: (      sync t5 a1_p1 t6) [1]
+06: (     sync t6 a24_p9 t7) [1]
+07: (      sync t7 a5_p6 t8) [1]
+08: (     sync t8 a13_p7 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (     sync t1 a11_p6 t2) [1]
+02: (      sync t2 a7_p9 t3) [1]
+03: (      sync t3 a3_p6 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (     sync t5 a14_p6 t6) [1]
+06: (      sync t6 a5_p9 t7) [1]
+07: (     sync t7 a17_p9 t8) [1]
+08: (      sync t8 a7_p7 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a27_p6 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (     sync t3 a25_p9 t4) [1]
+04: (      sync t4 a9_p9 t5) [1]
+05: (      sync t5 a3_p6 t6) [1]
+06: (      sync t6 a6_p4 t7) [1]
+07: (      sync t7 a7_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p3 t1) [1]
+01: (     sync t1 a13_p3 t2) [1]
+02: (     sync t2 a16_p3 t3) [1]
+03: (     sync t3 a10_p9 t4) [1]
+04: (     sync t4 a21_p3 t5) [1]
+05: (     sync t5 a11_p9 t6) [1]
+06: (     sync t6 a15_p9 t7) [1]
+07: (     sync t7 a30_p1 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a8_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p9 t1) [1]
+01: (      sync t1 a5_p9 t2) [1]
+02: (      sync t2 a8_p6 t3) [1]
+03: (      sync t3 a1_p9 t4) [1]
+04: (     sync t4 a21_p3 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (      sync t6 a9_p4 t7) [1]
+07: (      sync t7 a2_p4 t8) [1]
+08: (      sync t8 a1_p1 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (      sync t1 a9_p9 t2) [1]
+02: (      sync t2 a8_p1 t3) [1]
+03: (     sync t3 a17_p3 t4) [1]
+04: (     sync t4 a22_p9 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (      sync t6 a1_p6 t7) [1]
+07: (     sync t7 a22_p9 t8) [1]
+08: (      sync t8 a2_p7 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a23_p6 t1) [1]
+01: (      sync t1 a8_p3 t2) [1]
+02: (      sync t2 a5_p6 t3) [1]
+03: (     sync t3 a20_p7 t4) [1]
+04: (      sync t4 a1_p2 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a2_p7 t7) [1]
+07: (     sync t7 a19_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a16_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (     sync t1 a23_p3 t2) [1]
+02: (      sync t2 a9_p4 t3) [1]
+03: (     sync t3 a10_p7 t4) [1]
+04: (      sync t4 a8_p1 t5) [1]
+05: (      sync t5 a7_p4 t6) [1]
+06: (     sync t6 a26_p1 t7) [1]
+07: (     sync t7 a13_p3 t8) [1]
+08: (      sync t8 a4_p5 t9) [1]
+09: (    sync t9 a12_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a24_p6 t2) [1]
+02: (     sync t2 a26_p6 t3) [1]
+03: (      sync t3 a5_p1 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (      sync t5 a8_p2 t6) [1]
+06: (      sync t6 a8_p6 t7) [1]
+07: (      sync t7 a3_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a3_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a9_p3 t2) [1]
+02: (     sync t2 a20_p3 t3) [1]
+03: (     sync t3 a23_p9 t4) [1]
+04: (     sync t4 a22_p6 t5) [1]
+05: (     sync t5 a15_p9 t6) [1]
+06: (     sync t6 a11_p6 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a29_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p6 t1) [1]
+01: (     sync t1 a23_p6 t2) [1]
+02: (     sync t2 a18_p3 t3) [1]
+03: (      sync t3 a9_p3 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (     sync t5 a25_p9 t6) [1]
+06: (     sync t6 a27_p9 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (     sync t8 a15_p9 t9) [1]
+09: (     sync t9 a8_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a23_p3 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (      sync t3 a2_p9 t4) [1]
+04: (      sync t4 a7_p7 t5) [1]
+05: (      sync t5 a4_p6 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (     sync t7 a14_p6 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p7 t1) [1]
+01: (      sync t1 a5_p6 t2) [1]
+02: (      sync t2 a8_p1 t3) [1]
+03: (      sync t3 a9_p9 t4) [1]
+04: (     sync t4 a29_p6 t5) [1]
+05: (     sync t5 a28_p9 t6) [1]
+06: (      sync t6 a8_p6 t7) [1]
+07: (      sync t7 a6_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a9_p9 t2) [1]
+02: (      sync t2 a7_p1 t3) [1]
+03: (     sync t3 a24_p8 t4) [1]
+04: (     sync t4 a29_p3 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a7_p3 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (     sync t8 a10_p7 t9) [1]
+09: (    sync t9 a23_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a10_p1 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (     sync t3 a23_p6 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (      sync t5 a8_p9 t6) [1]
+06: (     sync t6 a30_p9 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a5_p9 t2) [1]
+02: (     sync t2 a21_p9 t3) [1]
+03: (      sync t3 a1_p4 t4) [1]
+04: (     sync t4 a24_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a26_p9 t7) [1]
+07: (      sync t7 a3_p3 t8) [1]
+08: (     sync t8 a19_p3 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p6 t1) [1]
+01: (     sync t1 a14_p6 t2) [1]
+02: (      sync t2 a7_p6 t3) [1]
+03: (     sync t3 a18_p7 t4) [1]
+04: (     sync t4 a22_p9 t5) [1]
+05: (      sync t5 a7_p1 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a8_p3 t8) [1]
+08: (      sync t8 a6_p8 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a20_p9 t2) [1]
+02: (     sync t2 a26_p6 t3) [1]
+03: (      sync t3 a7_p9 t4) [1]
+04: (      sync t4 a9_p6 t5) [1]
+05: (      sync t5 a2_p2 t6) [1]
+06: (     sync t6 a10_p4 t7) [1]
+07: (      sync t7 a6_p7 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (    sync t9 a29_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (      sync t2 a9_p7 t3) [1]
+03: (     sync t3 a20_p9 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (      sync t5 a6_p4 t6) [1]
+06: (      sync t6 a8_p3 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a9_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p6 t1) [1]
+01: (      sync t1 a7_p1 t2) [1]
+02: (      sync t2 a5_p6 t3) [1]
+03: (      sync t3 a8_p3 t4) [1]
+04: (     sync t4 a18_p9 t5) [1]
+05: (      sync t5 a2_p7 t6) [1]
+06: (     sync t6 a16_p6 t7) [1]
+07: (     sync t7 a12_p9 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (    sync t9 a10_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (      sync t1 a8_p3 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (     sync t3 a29_p6 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (     sync t5 a29_p6 t6) [1]
+06: (      sync t6 a7_p3 t7) [1]
+07: (     sync t7 a16_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a2_p1 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p1 t1) [1]
+01: (      sync t1 a8_p4 t2) [1]
+02: (      sync t2 a3_p6 t3) [1]
+03: (      sync t3 a5_p9 t4) [1]
+04: (      sync t4 a8_p6 t5) [1]
+05: (      sync t5 a7_p4 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (      sync t7 a4_p6 t8) [1]
+08: (      sync t8 a5_p4 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a6_p7 t2) [1]
+02: (     sync t2 a22_p6 t3) [1]
+03: (     sync t3 a23_p9 t4) [1]
+04: (     sync t4 a10_p8 t5) [1]
+05: (     sync t5 a26_p9 t6) [1]
+06: (      sync t6 a3_p2 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a4_p4 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (     sync t1 a21_p9 t2) [1]
+02: (     sync t2 a10_p7 t3) [1]
+03: (     sync t3 a26_p6 t4) [1]
+04: (      sync t4 a3_p9 t5) [1]
+05: (     sync t5 a26_p6 t6) [1]
+06: (      sync t6 a8_p3 t7) [1]
+07: (     sync t7 a25_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a2_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a15_p9 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (     sync t3 a10_p9 t4) [1]
+04: (      sync t4 a6_p3 t5) [1]
+05: (      sync t5 a7_p6 t6) [1]
+06: (      sync t6 a4_p6 t7) [1]
+07: (     sync t7 a29_p1 t8) [1]
+08: (      sync t8 a3_p1 t9) [1]
+09: (     sync t9 a4_p5 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (      sync t1 a7_p9 t2) [1]
+02: (     sync t2 a11_p3 t3) [1]
+03: (     sync t3 a13_p6 t4) [1]
+04: (     sync t4 a13_p9 t5) [1]
+05: (      sync t5 a7_p6 t6) [1]
+06: (     sync t6 a24_p6 t7) [1]
+07: (     sync t7 a24_p9 t8) [1]
+08: (      sync t8 a7_p6 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a22_p6 t1) [1]
+01: (      sync t1 a7_p6 t2) [1]
+02: (      sync t2 a7_p7 t3) [1]
+03: (      sync t3 a9_p9 t4) [1]
+04: (     sync t4 a29_p1 t5) [1]
+05: (      sync t5 a8_p3 t6) [1]
+06: (     sync t6 a20_p3 t7) [1]
+07: (     sync t7 a12_p3 t8) [1]
+08: (     sync t8 a16_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a15_p9 t2) [1]
+02: (     sync t2 a10_p7 t3) [1]
+03: (     sync t3 a10_p3 t4) [1]
+04: (     sync t4 a17_p3 t5) [1]
+05: (     sync t5 a15_p6 t6) [1]
+06: (     sync t6 a15_p7 t7) [1]
+07: (      sync t7 a7_p7 t8) [1]
+08: (      sync t8 a1_p1 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p9 t1) [1]
+01: (      sync t1 a8_p3 t2) [1]
+02: (      sync t2 a8_p6 t3) [1]
+03: (     sync t3 a26_p6 t4) [1]
+04: (      sync t4 a3_p3 t5) [1]
+05: (     sync t5 a20_p9 t6) [1]
+06: (      sync t6 a1_p9 t7) [1]
+07: (      sync t7 a4_p6 t8) [1]
+08: (     sync t8 a10_p9 t9) [1]
+09: (     sync t9 a2_p4 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (     sync t1 a25_p1 t2) [1]
+02: (      sync t2 a2_p1 t3) [1]
+03: (      sync t3 a5_p8 t4) [1]
+04: (     sync t4 a11_p9 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (     sync t7 a12_p9 t8) [1]
+08: (     sync t8 a21_p4 t9) [1]
+09: (    sync t9 a20_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p7 t1) [1]
+01: (      sync t1 a1_p9 t2) [1]
+02: (     sync t2 a15_p3 t3) [1]
+03: (      sync t3 a2_p7 t4) [1]
+04: (      sync t4 a8_p3 t5) [1]
+05: (     sync t5 a23_p9 t6) [1]
+06: (     sync t6 a21_p6 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (     sync t8 a30_p6 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (      sync t3 a1_p9 t4) [1]
+04: (      sync t4 a6_p7 t5) [1]
+05: (      sync t5 a4_p6 t6) [1]
+06: (     sync t6 a10_p7 t7) [1]
+07: (      sync t7 a2_p4 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a10_p9 t2) [1]
+02: (     sync t2 a27_p3 t3) [1]
+03: (      sync t3 a4_p6 t4) [1]
+04: (     sync t4 a16_p6 t5) [1]
+05: (     sync t5 a14_p9 t6) [1]
+06: (     sync t6 a17_p9 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (      sync t8 a5_p9 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (     sync t1 a28_p6 t2) [1]
+02: (     sync t2 a24_p9 t3) [1]
+03: (     sync t3 a29_p6 t4) [1]
+04: (      sync t4 a5_p7 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (      sync t6 a9_p7 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (     sync t8 a27_p3 t9) [1]
+09: (     sync t9 a2_p1 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (     sync t1 a22_p9 t2) [1]
+02: (     sync t2 a30_p9 t3) [1]
+03: (      sync t3 a5_p9 t4) [1]
+04: (      sync t4 a6_p6 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (     sync t6 a11_p3 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (     sync t8 a22_p6 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a2_p6 t2) [1]
+02: (      sync t2 a3_p3 t3) [1]
+03: (     sync t3 a15_p9 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (     sync t6 a13_p7 t7) [1]
+07: (     sync t7 a26_p3 t8) [1]
+08: (     sync t8 a22_p6 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a6_p8 t2) [1]
+02: (     sync t2 a22_p9 t3) [1]
+03: (      sync t3 a7_p7 t4) [1]
+04: (      sync t4 a9_p3 t5) [1]
+05: (      sync t5 a6_p4 t6) [1]
+06: (     sync t6 a28_p6 t7) [1]
+07: (     sync t7 a16_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a10_p1 t2) [1]
+02: (      sync t2 a8_p1 t3) [1]
+03: (      sync t3 a4_p6 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (      sync t5 a5_p6 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a6_p9 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (     sync t9 a3_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (      sync t2 a6_p4 t3) [1]
+03: (      sync t3 a9_p3 t4) [1]
+04: (      sync t4 a7_p9 t5) [1]
+05: (     sync t5 a21_p3 t6) [1]
+06: (     sync t6 a18_p3 t7) [1]
+07: (     sync t7 a10_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a2_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a16_p9 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (     sync t3 a22_p6 t4) [1]
+04: (     sync t4 a18_p6 t5) [1]
+05: (     sync t5 a28_p2 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (     sync t8 a20_p7 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a14_p9 t1) [1]
+01: (     sync t1 a10_p9 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (     sync t3 a26_p9 t4) [1]
+04: (     sync t4 a20_p3 t5) [1]
+05: (      sync t5 a1_p9 t6) [1]
+06: (      sync t6 a7_p9 t7) [1]
+07: (      sync t7 a2_p4 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (      sync t1 a4_p6 t2) [1]
+02: (      sync t2 a5_p7 t3) [1]
+03: (      sync t3 a1_p6 t4) [1]
+04: (     sync t4 a15_p4 t5) [1]
+05: (      sync t5 a7_p3 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (      sync t7 a2_p1 t8) [1]
+08: (      sync t8 a1_p7 t9) [1]
+09: (    sync t9 a12_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a20_p6 t2) [1]
+02: (      sync t2 a5_p7 t3) [1]
+03: (      sync t3 a9_p4 t4) [1]
+04: (     sync t4 a13_p3 t5) [1]
+05: (     sync t5 a10_p3 t6) [1]
+06: (      sync t6 a3_p6 t7) [1]
+07: (      sync t7 a7_p3 t8) [1]
+08: (      sync t8 a2_p7 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a30_p6 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (      sync t3 a8_p6 t4) [1]
+04: (      sync t4 a1_p1 t5) [1]
+05: (     sync t5 a29_p3 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (      sync t7 a9_p9 t8) [1]
+08: (      sync t8 a7_p3 t9) [1]
+09: (    sync t9 a10_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a4_p4 t2) [1]
+02: (     sync t2 a25_p3 t3) [1]
+03: (      sync t3 a6_p1 t4) [1]
+04: (     sync t4 a29_p1 t5) [1]
+05: (     sync t5 a10_p7 t6) [1]
+06: (      sync t6 a5_p9 t7) [1]
+07: (     sync t7 a17_p9 t8) [1]
+08: (      sync t8 a1_p1 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p3 t1) [1]
+01: (     sync t1 a25_p9 t2) [1]
+02: (      sync t2 a9_p6 t3) [1]
+03: (      sync t3 a8_p3 t4) [1]
+04: (      sync t4 a6_p4 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a9_p7 t7) [1]
+07: (      sync t7 a8_p6 t8) [1]
+08: (      sync t8 a5_p3 t9) [1]
+09: (    sync t9 a29_p5 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a8_p9 t2) [1]
+02: (      sync t2 a9_p9 t3) [1]
+03: (      sync t3 a6_p6 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (     sync t5 a26_p9 t6) [1]
+06: (      sync t6 a1_p6 t7) [1]
+07: (     sync t7 a25_p6 t8) [1]
+08: (      sync t8 a2_p7 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p6 t1) [1]
+01: (     sync t1 a12_p9 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (      sync t3 a7_p6 t4) [1]
+04: (     sync t4 a28_p3 t5) [1]
+05: (     sync t5 a10_p7 t6) [1]
+06: (     sync t6 a22_p9 t7) [1]
+07: (     sync t7 a28_p7 t8) [1]
+08: (     sync t8 a23_p6 t9) [1]
+09: (    sync t9 a10_p8 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (     sync t1 a17_p3 t2) [1]
+02: (     sync t2 a23_p3 t3) [1]
+03: (      sync t3 a5_p3 t4) [1]
+04: (     sync t4 a19_p6 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (     sync t6 a30_p9 t7) [1]
+07: (      sync t7 a5_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a7_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a5_p7 t2) [1]
+02: (     sync t2 a11_p6 t3) [1]
+03: (      sync t3 a5_p7 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (      sync t6 a3_p3 t7) [1]
+07: (      sync t7 a7_p7 t8) [1]
+08: (      sync t8 a6_p7 t9) [1]
+09: (     sync t9 a4_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a9_p3 t2) [1]
+02: (     sync t2 a26_p8 t3) [1]
+03: (      sync t3 a9_p9 t4) [1]
+04: (     sync t4 a10_p3 t5) [1]
+05: (      sync t5 a7_p1 t6) [1]
+06: (     sync t6 a10_p7 t7) [1]
+07: (     sync t7 a20_p6 t8) [1]
+08: (     sync t8 a20_p2 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a25_p9 t1) [1]
+01: (      sync t1 a8_p3 t2) [1]
+02: (      sync t2 a4_p3 t3) [1]
+03: (      sync t3 a1_p3 t4) [1]
+04: (     sync t4 a10_p1 t5) [1]
+05: (     sync t5 a25_p9 t6) [1]
+06: (      sync t6 a7_p3 t7) [1]
+07: (      sync t7 a9_p1 t8) [1]
+08: (     sync t8 a10_p7 t9) [1]
+09: (     sync t9 a2_p4 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a7_p9 t2) [1]
+02: (     sync t2 a16_p6 t3) [1]
+03: (      sync t3 a5_p6 t4) [1]
+04: (     sync t4 a23_p9 t5) [1]
+05: (      sync t5 a1_p6 t6) [1]
+06: (      sync t6 a4_p3 t7) [1]
+07: (      sync t7 a4_p6 t8) [1]
+08: (      sync t8 a2_p4 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (      sync t1 a4_p9 t2) [1]
+02: (     sync t2 a22_p4 t3) [1]
+03: (      sync t3 a7_p1 t4) [1]
+04: (      sync t4 a8_p6 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (      sync t6 a3_p9 t7) [1]
+07: (      sync t7 a3_p4 t8) [1]
+08: (      sync t8 a8_p3 t9) [1]
+09: (    sync t9 a23_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a3_p3 t2) [1]
+02: (     sync t2 a27_p4 t3) [1]
+03: (     sync t3 a18_p7 t4) [1]
+04: (      sync t4 a7_p6 t5) [1]
+05: (      sync t5 a4_p4 t6) [1]
+06: (     sync t6 a14_p6 t7) [1]
+07: (      sync t7 a8_p6 t8) [1]
+08: (     sync t8 a20_p4 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p6 t1) [1]
+01: (      sync t1 a5_p9 t2) [1]
+02: (     sync t2 a17_p3 t3) [1]
+03: (      sync t3 a9_p6 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a7_p9 t6) [1]
+06: (     sync t6 a22_p9 t7) [1]
+07: (      sync t7 a2_p7 t8) [1]
+08: (     sync t8 a12_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (     sync t1 a10_p9 t2) [1]
+02: (      sync t2 a7_p6 t3) [1]
+03: (      sync t3 a8_p3 t4) [1]
+04: (     sync t4 a18_p6 t5) [1]
+05: (      sync t5 a3_p3 t6) [1]
+06: (     sync t6 a27_p1 t7) [1]
+07: (     sync t7 a18_p3 t8) [1]
+08: (      sync t8 a4_p5 t9) [1]
+09: (    sync t9 a28_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a11_p9 t2) [1]
+02: (      sync t2 a1_p9 t3) [1]
+03: (      sync t3 a4_p7 t4) [1]
+04: (      sync t4 a6_p1 t5) [1]
+05: (     sync t5 a19_p3 t6) [1]
+06: (      sync t6 a7_p6 t7) [1]
+07: (      sync t7 a2_p7 t8) [1]
+08: (     sync t8 a22_p9 t9) [1]
+09: (    sync t9 a10_p8 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a27_p3 t2) [1]
+02: (      sync t2 a7_p3 t3) [1]
+03: (     sync t3 a18_p1 t4) [1]
+04: (     sync t4 a10_p7 t5) [1]
+05: (     sync t5 a28_p3 t6) [1]
+06: (     sync t6 a29_p3 t7) [1]
+07: (      sync t7 a6_p4 t8) [1]
+08: (      sync t8 a6_p7 t9) [1]
+09: (    sync t9 a10_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p9 t1) [1]
+01: (     sync t1 a23_p6 t2) [1]
+02: (     sync t2 a26_p9 t3) [1]
+03: (      sync t3 a6_p3 t4) [1]
+04: (      sync t4 a7_p3 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a8_p3 t7) [1]
+07: (     sync t7 a23_p9 t8) [1]
+08: (     sync t8 a22_p3 t9) [1]
+09: (    sync t9 a20_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a18_p9 t2) [1]
+02: (     sync t2 a30_p3 t3) [1]
+03: (     sync t3 a10_p9 t4) [1]
+04: (      sync t4 a5_p9 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (     sync t6 a30_p6 t7) [1]
+07: (      sync t7 a9_p3 t8) [1]
+08: (      sync t8 a7_p3 t9) [1]
+09: (    sync t9 a10_p6 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a8_p3 t1) [1]
+01: (     sync t1 a10_p7 t2) [1]
+02: (      sync t2 a7_p6 t3) [1]
+03: (     sync t3 a16_p9 t4) [1]
+04: (      sync t4 a3_p4 t5) [1]
+05: (      sync t5 a1_p6 t6) [1]
+06: (     sync t6 a20_p9 t7) [1]
+07: (     sync t7 a20_p9 t8) [1]
+08: (      sync t8 a2_p7 t9) [1]
+09: (     sync t9 a5_p3 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (     sync t0 a10_p9 t1) [1]
+01: (     sync t1 a26_p6 t2) [1]
+02: (      sync t2 a7_p7 t3) [1]
+03: (     sync t3 a16_p9 t4) [1]
+04: (     sync t4 a19_p3 t5) [1]
+05: (     sync t5 a10_p9 t6) [1]
+06: (      sync t6 a5_p9 t7) [1]
+07: (     sync t7 a24_p6 t8) [1]
+08: (      sync t8 a7_p3 t9) [1]
+09: (     sync t9 a4_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p6 t1) [1]
+01: (      sync t1 a8_p6 t2) [1]
+02: (     sync t2 a23_p6 t3) [1]
+03: (     sync t3 a14_p9 t4) [1]
+04: (      sync t4 a2_p4 t5) [1]
+05: (     sync t5 a10_p7 t6) [1]
+06: (      sync t6 a5_p9 t7) [1]
+07: (      sync t7 a7_p6 t8) [1]
+08: (     sync t8 a17_p9 t9) [1]
+09: (    sync t9 a23_p8 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (     sync t1 a14_p3 t2) [1]
+02: (     sync t2 a11_p6 t3) [1]
+03: (      sync t3 a3_p3 t4) [1]
+04: (      sync t4 a3_p3 t5) [1]
+05: (      sync t5 a4_p6 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (     sync t7 a23_p6 t8) [1]
+08: (     sync t8 a30_p3 t9) [1]
+09: (     sync t9 a7_p3 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a7_p6 t1) [1]
+01: (     sync t1 a15_p1 t2) [1]
+02: (      sync t2 a8_p3 t3) [1]
+03: (     sync t3 a16_p6 t4) [1]
+04: (     sync t4 a24_p7 t5) [1]
+05: (      sync t5 a7_p6 t6) [1]
+06: (      sync t6 a7_p3 t7) [1]
+07: (      sync t7 a7_p9 t8) [1]
+08: (      sync t8 a7_p4 t9) [1]
+09: (    sync t9 a10_p7 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a9_p6 t1) [1]
+01: (     sync t1 a14_p9 t2) [1]
+02: (      sync t2 a7_p3 t3) [1]
+03: (      sync t3 a8_p3 t4) [1]
+04: (     sync t4 a23_p9 t5) [1]
+05: (      sync t5 a1_p7 t6) [1]
+06: (     sync t6 a13_p9 t7) [1]
+07: (      sync t7 a4_p9 t8) [1]
+08: (      sync t8 a7_p4 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s2 s_abstract t10) [1]
+
+
+00: (      sync t0 a3_p3 t1) [1]
+01: (      sync t1 a9_p3 t2) [1]
+02: (      sync t2 a7_p7 t3) [1]
+03: (      sync t3 a4_p9 t4) [1]
+04: (     sync t4 a10_p9 t5) [1]
+05: (      sync t5 a5_p9 t6) [1]
+06: (      sync t6 a7_p7 t7) [1]
+07: (     sync t7 a14_p9 t8) [1]
+08: (      sync t8 a4_p6 t9) [1]
+09: (     sync t9 a7_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a1_p9 t1) [1]
+01: (      sync t1 a8_p6 t2) [1]
+02: (      sync t2 a5_p9 t3) [1]
+03: (     sync t3 a17_p9 t4) [1]
+04: (      sync t4 a2_p1 t5) [1]
+05: (     sync t5 a23_p3 t6) [1]
+06: (     sync t6 a10_p9 t7) [1]
+07: (     sync t7 a25_p9 t8) [1]
+08: (      sync t8 a7_p3 t9) [1]
+09: (    sync t9 a15_p7 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+00: (      sync t0 a5_p9 t1) [1]
+01: (      sync t1 a7_p9 t2) [1]
+02: (      sync t2 a1_p1 t3) [1]
+03: (      sync t3 a4_p3 t4) [1]
+04: (     sync t4 a23_p6 t5) [1]
+05: (     sync t5 a15_p3 t6) [1]
+06: (      sync t6 a9_p7 t7) [1]
+07: (     sync t7 a30_p1 t8) [1]
+08: (      sync t8 a7_p9 t9) [1]
+09: (    sync t9 a10_p9 t10) [1]
+10: (goto s0 s_abstract t10) [1]
+
+
+Total explored states: 47924; Average: 239.62
+	Command being timed: "java -Xmx64g -jar multi-perspective_aligner/target/multi-perspective_aligner-1.0-SNAPSHOT-launcher.jar /models/model8_30.decl /traces8_30/10events_8_30.xes /cost_model.txt"
+	User time (seconds): 4151.54
+	System time (seconds): 14.65
+	Percent of CPU this job got: 119%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 58:20.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 16610648
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5035324
+	Voluntary context switches: 499972
+	Involuntary context switches: 19879
+	Swaps: 0
+	File system inputs: 1088
+	File system outputs: 423912
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,25 @@
+
+Model: 6_30, length: 20
+	Command being timed: "java -jar multi-perspective_aligner/target/multi-perspective_aligner-1.0-SNAPSHOT-launcher.jar /models/model6_30.decl /traces6_30/20events_6_30.xes /cost_model.txt"
+	User time (seconds): 22.44
+	System time (seconds): 4.76
+	Percent of CPU this job got: 106%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:25.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 562248
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 804823
+	Voluntary context switches: 242043
+	Involuntary context switches: 2450
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 88456
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
