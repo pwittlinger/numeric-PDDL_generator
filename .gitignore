@@ -1,0 +1,11 @@
+**/*.sif
+**/*.jar
+
+ENHSP-Public/
+
+**/output/pddl/*
+
+.vscode/
+.idea/
+.DS_Store
+
