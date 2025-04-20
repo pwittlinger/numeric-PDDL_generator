@@ -2,6 +2,7 @@
 **/*.jar
 
 ENHSP-Public/
+GiacomoENHSP/
 
 **/output/pddl/*
 
