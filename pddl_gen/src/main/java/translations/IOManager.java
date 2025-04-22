@@ -311,17 +311,18 @@ public class IOManager {
   
   
   //Section: Reading cost model
-  public String[] readCostModel(String costsFileName) {
+  public List<String[]> readCostModel(String costsFileName) {
     File costModel = new File(inputFolder + costsFileName);
-    String[] costs = new String[] {};
+    List<String[]> costsList = new ArrayList<>();
+
     try (Scanner scanner = new Scanner(costModel)) {
-      if (scanner.hasNextLine()) {
-        costs = scanner.nextLine().split(" ");
+      while (scanner.hasNextLine()) {
+        costsList.add(scanner.nextLine().split(" "));
       }
     } catch (IOException e) {
       System.out.println("Error reading the cost model");
     }
-    return costs;
+    return costsList;
   }
   
   public void exportEquivalenceClasses(HashMap<String, ArrayList<String>> classes) {
