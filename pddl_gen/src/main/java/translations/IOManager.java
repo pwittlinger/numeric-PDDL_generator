@@ -42,6 +42,20 @@ public class IOManager {
     this.inputFolder = resourcesFolder + "input" + File.separator;
     this.outputFolder = resourcesFolder + "output" + File.separator;
     this.pddlFolder = outputFolder + "pddl" + File.separator;
+
+    // Create folders if these don't exist.
+    File inputDir = new File(inputFolder);
+    if (!inputDir.exists()) {
+      inputDir.mkdirs();
+    }
+    File outputDir = new File(outputFolder);
+    if (!outputDir.exists()) {
+      outputDir.mkdirs();
+    }
+    File pddlDir = new File(pddlFolder);
+    if (!pddlDir.exists()) {
+      pddlDir.mkdirs();
+    }
   }
 
   public void setProjectPrefix(String projectPrefix) {
