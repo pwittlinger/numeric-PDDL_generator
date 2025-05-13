@@ -5,33 +5,66 @@ import java.util.Set;
 import Automaton.VariableSubstitution;
 import translations.IOManager;
 import translations.PDDLGenerator;
+//import translations.PDDLGeneratorMixedModel;
 import log.LogFile;
+import model.DataPetriNet;
 import model.DeclareModel;
+import model.MixedModel;
 
 public class Runner {
 
   public static void main(String[] args) throws Exception {
 
-    if (args.length != 5) {
+    /*
+    args = new String[6];
+    args[0] = "models\\model2_30.decl";
+    args[1] = "test05_VT_DPN.pnml";
+
+    
+    if (args.length != 6) {
       String errString = new String(
         "Pass as args the names of the following files:\n" +
-        "1: model\n" +
-        "2: trace\n" +
-        "3: variables\n" +
-        "4: variable substitutions\n" +
-        "5: cost model"
+        "1: declare model\n" +
+        "2: petri net\n" + 
+        "3: trace\n" +
+        "4: variables\n" +
+        "5: variable substitutions\n" +
+        "6: cost model"
       );
       System.err.println(args.length);
       throw new Error(errString);
     }
-
+    */
     // args = new String[5];
 
-    findAlignments(args[0], args[1], args[2], args[3], args[4]);
+    //findAlignments(args[0], args[1], args[2], args[3], args[4]);
+    //findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+    
+    /*findAlignments("models\\model2_30.decl",
+      "test05_VT_DPN.pnml",
+      "\\traces2_30\\10events_2_30.xes",
+      "variable_values.txt",
+      "variable_substitutions.txt",
+      "cost_model.txt");
+    
+      findAlignments("models\\model2_30.decl",
+      "shortPN.pnml",
+      "loggen.xes",
+      "variable_values.txt",
+      "variable_substitutions.txt",
+      "cost_model.txt");
+      */
+      findAlignments("models\\model2_30.decl",
+      "shortPN.pnml",
+      "\\traces2_30\\10events_2_30.xes",
+      "variable_values.txt",
+      "variable_substitutions.txt",
+      "cost_model.txt");
   }
   
   public static void findAlignments(
     String modelString, 
+    String petriNetString,
     String traceString, 
     String variablesString, 
     String substitutionsString, 
@@ -53,21 +86,63 @@ public class Runner {
 
     System.out.println("Model: " + model);
 
-    LogFile log = ioManager.readLog(traceString, model); // OKAY!
+    
+
+    if ((petriNetString == "") | (petriNetString == null)) {
+      LogFile log = ioManager.readDeclareLog(traceString, model);
+      PDDLGenerator pddlGenerator = new PDDLGenerator(model);
+    String domain = pddlGenerator.defineDomain();
+    ArrayList<String> problems = log.generateProblems(pddlGenerator, variableAssignments, substitutions);
+
+        int i = 1;
+    for (String problem : problems) {
+      IOManager.getInstance().exportProblemPDDL(problem, i);
+      i++;
+    }
+    IOManager.getInstance().exportDomainPDDL(domain);
+    }
+    else {
+      DataPetriNet petriNet = ioManager.readDataPetriNet(petriNetString);
+      MixedModel myMixedModel = new MixedModel(petriNet, model);
+      System.out.println(myMixedModel.allAutomatonStrings);
+      System.out.println(myMixedModel.allAcceptingStates);
+
+      LogFile log = ioManager.readLog(traceString, myMixedModel); // OKAY!
+      
+      PDDLGeneratorMixedModel pddlGenerator = new PDDLGeneratorMixedModel(myMixedModel);
+
+          String domain = pddlGenerator.defineDomain();
+    ArrayList<String> problems = log.generateProblems(pddlGenerator, variableAssignments, substitutions);
+
+
+        int i = 1;
+    for (String problem : problems) {
+      IOManager.getInstance().exportProblemPDDL(problem, i);
+      i++;
+    }
+    IOManager.getInstance().exportDomainPDDL(domain);
+    }
+
+    
+    //System.out.println(myMixedModel.declareModel.getActivities());
+
     
     ioManager.exportModel(model);
 
     // If formula exists, define and write PDDL problems.
     // PDDLGenerator pddlGenerator = new PDDLGenerator(model, ltlFormula);
-    PDDLGenerator pddlGenerator = new PDDLGenerator(model);
-    String domain = pddlGenerator.defineDomain();
-    ArrayList<String> problems = log.generateProblems(pddlGenerator, variableAssignments, substitutions);
+    //PDDLGenerator pddlGenerator = new PDDLGenerator(model);
+    //PDDLGeneratorMixedModel pddlGenerator = new PDDLGeneratorMixedModel(myMixedModel);
+    //String domain = pddlGenerator.defineDomain();
+    //ArrayList<String> problems = log.generateProblems(pddlGenerator, variableAssignments, substitutions);
+    /*
     int i = 1;
     for (String problem : problems) {
       IOManager.getInstance().exportProblemPDDL(problem, i);
       i++;
     }
     IOManager.getInstance().exportDomainPDDL(domain);
+    */
   }
 }
 

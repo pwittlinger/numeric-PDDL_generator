@@ -4,7 +4,7 @@ import java.util.*;
 
 public class DeclareModel {
   
-  private final HashMap<String, Activity> activities;
+  public final HashMap<String, Activity> activities;
   private final ArrayList<DeclareConstraint> declareConstraints;
   private Map<CostEnum, Integer> costs;
   

@@ -2,16 +2,21 @@ package translations;
 
 import log.LogFile;
 import model.DeclareModel;
+import model.MixedModel;
+
 import org.deckfour.xes.in.XesXmlParser;
 import org.deckfour.xes.model.XLog;
+import org.processmining.datapetrinets.io.DPNIOException;
 import org.processmining.ltl2automaton.plugins.automaton.Automaton;
 import org.processmining.ltl2automaton.plugins.automaton.DOTExporter;
-
+import model.DataPetriNet;
 import Automaton.VariableSubstitution;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -266,7 +271,23 @@ public class IOManager {
   
   
   //Section: Reading log file
-  public LogFile readLog(String logFileName, DeclareModel model) {
+  public LogFile readLog(String logFileName, MixedModel myMixedModel) {
+    File logFile = new File(inputFolder + logFileName);
+    XLog xlog = null;
+    XesXmlParser parser = new XesXmlParser();
+    if (parser.canParse(logFile)) {
+      try {
+        xlog = parser.parse(logFile).get(0);
+      } catch (Exception e) {
+        System.out.println("Error reading the log file");
+      }
+    }
+    //return new LogFile(xlog, myMixedModel.declareModel);
+    return new LogFile(xlog, myMixedModel);
+  }
+
+  
+  public LogFile readDeclareLog(String logFileName, DeclareModel model) {
     File logFile = new File(inputFolder + logFileName);
     XLog xlog = null;
     XesXmlParser parser = new XesXmlParser();
@@ -331,7 +352,7 @@ public class IOManager {
       for (String classPart : eqClass.getValue()) {
         builder.append(classPart).append(" ");
       }
-      builder.append("\n");
+      builder.append("\\n");
     }
     
     try (FileWriter fileWriter = new FileWriter(outputFolder + "equivalenceClasses.txt")) {
@@ -344,4 +365,13 @@ public class IOManager {
   public void exportToDot(Automaton automaton) throws IOException {
     DOTExporter.exportToDot(automaton, "MyAutomata", new FileWriter(outputFolder + File.separator + "automaton.dot"));
   }
+
+    //Section: Reading declare model
+    public DataPetriNet readDataPetriNet(String modelFileName) throws FileNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, InvocationTargetException, DPNIOException {
+      //File dpnFile = new File(inputFolder + modelFileName);
+      String dpnFile = (inputFolder + modelFileName);
+      return new DataPetriNet(dpnFile);
+    }
+  
+
 }

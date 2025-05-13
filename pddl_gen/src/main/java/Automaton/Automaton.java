@@ -13,6 +13,7 @@ public class Automaton {
   private final Collection<String> ACTIVITY_NAMES;
   private List<State> states = new ArrayList<>();
   private List<Transition> transitions = new ArrayList<>();
+  private List<StateEC> statesEC = new ArrayList<>();
 
   public Automaton(Collection<String> activityNames, String statePrefix, DeclareConstraint constraint) {
     this.ACTIVITY_NAMES = activityNames;
@@ -143,4 +144,12 @@ public class Automaton {
   public List<Transition> getTransitions() {
     return this.transitions;
   }
+  
+  public List<StateEC> getStatesEC() {
+	  	List<StateEC> getStatesEC = new ArrayList();
+	  	for (State s : this.states) {
+	  		getStatesEC.add(new StateEC(s));
+	  	}
+	    return getStatesEC;
+	  }
 }
