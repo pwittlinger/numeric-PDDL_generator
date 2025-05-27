@@ -1,0 +1,6 @@
+activity ActivityC
+activity ActivityO
+activity ActivityG
+activity ActivityP
+Precedence[ActivityP, ActivityG] | | |
+Precedence[ActivityO, ActivityC] | | |

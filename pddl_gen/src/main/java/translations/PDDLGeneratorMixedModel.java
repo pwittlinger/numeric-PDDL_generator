@@ -167,14 +167,20 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     b.append("- activity\n");
 
     // ATTRIBUTES
+    /*
     Set<String> attributes = attributeAssignments.values()
       .stream()
       .flatMap(x -> x.keySet().stream())
       .map(x -> x.getName())
       .collect(Collectors.toSet());
+    */
+    ArrayList<String> attributes = this.mixedModel.declareModel.params;
     b.append("    ");
     attributes.forEach(x -> b.append(x + " "));
-    b.append("- parameter_name\n");
+    if (attributes.size() > 0) {
+      b.append(" - parameter_name\n"); 
+    }
+    
 
     b.append("    ");
     variables.keySet().forEach(x -> b.append(x + " "));
@@ -197,8 +203,12 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     }
     b.append("\n");
     for (VariableSubstitution sub : substitutions) {
+      if (this.mixedModel.activities.get(sub.activityName) != null) {
+        b.append("    (has_substitution_value " + sub.variableName + " " + this.mixedModel.activities.get(sub.activityName) + " " + sub.categoryName + ")\n");
+      }
       //b.append("    (has_substitution_value " + sub.variableName + " " + sub.activityName + " " + sub.categoryName + ")\n");
-      b.append("    (has_substitution_value " + sub.variableName + " " + this.mixedModel.activities.get(sub.activityName) + " " + sub.categoryName + ")\n");
+      //b.append("    (has_substitution_value " + sub.variableName + " " + this.mixedModel.activities.get(sub.activityName) + " " + sub.categoryName + ")\n");
+      //b.append("    (has_substitution_value " + sub.variableName + " " + this.mixedModel.activities.get(sub.activityName) + " " + sub.categoryName + ")\n");
     }
     b.append("\n");
 
@@ -237,6 +247,11 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
       b.append("    (trace " + cur.getName() + " " + this.mixedModel.activities.get(activity) + " " + nextName + ")\n");
       for(Map.Entry<Attribute, String> singleAssignment : assignments.get(cur).entrySet()) {
         String value = singleAssignment.getValue();
+        String attName = singleAssignment.getKey().getName();
+
+        if (!this.mixedModel.declareModel.params.contains(attName)) {
+          break;
+        }
         value = value.replaceAll("[a-zA-Z]", ""); // Remove chars, use as if numbers (in case of enum types)
 
         //b.append("    (has_parameter " + activity + " " + singleAssignment.getKey().getName() + " " + cur.getName() + " " + nextName + ")\n");
@@ -313,6 +328,15 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     for (String condition : this.mixedModel.conditionStrings) {
       b.append(condition);
       b.append("\n");
+    }
+
+    if (this.mixedModel.dpnModel != null) {
+      this.mixedModel.allPetriNetStates.forEach(x -> {
+      b.append("    (petrinet_state " + x+")\n");
+    });
+    //for (State st : this.mixedModel.dpnModel.executableAutomaton.states()) {
+		//		b.append("    (petrinet_state " + st.toString()+")\n");      	
+    //    }
     }
 
     // Close init

@@ -1,0 +1,18 @@
+activity ER Registration
+bind ER Registration: diagnosticLacticAcid
+activity Leucocytes
+activity CRP
+activity LacticAcid
+activity ER Triage
+activity ER Sepsis Triage
+activity IV Liquid
+activity IV Antibiotics
+activity Admission NC
+activity Release A
+activity Return ER
+activity Admission IC
+activity Release B
+activity Release C
+activity Release D
+activity Release E
+activity Inv1

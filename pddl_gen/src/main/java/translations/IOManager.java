@@ -1,25 +1,30 @@
 package translations;
 
-import log.LogFile;
-import model.DeclareModel;
-import model.MixedModel;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.deckfour.xes.in.XesXmlParser;
 import org.deckfour.xes.model.XLog;
 import org.processmining.datapetrinets.io.DPNIOException;
 import org.processmining.ltl2automaton.plugins.automaton.Automaton;
 import org.processmining.ltl2automaton.plugins.automaton.DOTExporter;
-import model.DataPetriNet;
-import Automaton.VariableSubstitution;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import Automaton.VariableSubstitution;
+import log.LogFile;
+import model.DataPetriNet;
+import model.DeclareModel;
+import model.MixedModel;
 
 public class IOManager {
   
@@ -138,19 +143,24 @@ public class IOManager {
   }
   
   private Pattern[] getCompiledPatterns() {
-    Pattern activityPattern = Pattern.compile("^\\s*activity\\s+([a-z]+[a-z\\d]*)\\s*$");
-    Pattern bindingPattern = Pattern.compile("^\\s*bind\\s+([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*$");
+    Pattern activityPattern = Pattern.compile("^\\s*activity\\s+([a-zA-Z]+[a-zA-Z\\d]*)\\s*$");
+    Pattern bindingPattern = Pattern.compile("^\\s*bind\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*$");
     
-    Pattern intPattern = Pattern.compile("^\\s*([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+integer\\s+between\\s+(-?\\d+)\\s+and\\s+(-?\\d+)\\s*$");
-    Pattern floatPattern = Pattern.compile("^\\s*([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+float\\s+between\\s+(-?\\d+\\.?\\d*)\\s+and\\s+(-?\\d+\\.?\\d*)\\s*$");
-    Pattern enumPattern = Pattern.compile("^\\s*([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*$");
+    Pattern intPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+integer\\s+between\\s+(-?\\d+)\\s+and\\s+(-?\\d+)\\s*$");
+    Pattern floatPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+float\\s+between\\s+(-?\\d+\\.?\\d*)\\s+and\\s+(-?\\d+\\.?\\d*)\\s*$");
+    Pattern enumPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*$");
     
-    Pattern unaryPattern = Pattern.compile("^([A-Za-z\\d]+)\\[([a-z]+[a-z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*$");
-    Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-z]+[a-z\\d]*),\\s*([a-z]+[a-z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*([Ta-z\\d!=(),.<> -]*)\\|\\s*$");
+    Pattern unaryPattern = Pattern.compile("^([A-Za-z\\d]+)\\[([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*$");
+    //Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*$");
+    Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*$");
     
-    Pattern numericConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s*$");
-    Pattern enumConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(is not|is)\\s+[a-z]+[a-z\\d]*\\s*$*");
-    Pattern listConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(not in|in)\\s+[a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*\\s*$");
+    Pattern numericConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s*$");
+    Pattern enumConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(is not|is)\\s+[a-zA-Z]+[a-zA-Z\\d]*\\s*$*");
+    Pattern listConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(not in|in)\\s+[a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*\\s*$");
+    
+    /*Pattern numericConditionPattern = Pattern.compile("^\\s{0,1}[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s{0,1}$");
+    Pattern enumConditionPattern = Pattern.compile("^\\s{0,1}[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(is not|is)\\s+[a-zA-Z]+[a-zA-Z\\d]*\\s{0,1}$*");
+    Pattern listConditionPattern = Pattern.compile("^\\s{0,1}[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(not in|in)\\s+[a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*\\s{0,1}$");*/
     return new Pattern[] {
       activityPattern, 
       bindingPattern, 
@@ -368,8 +378,10 @@ public class IOManager {
 
     //Section: Reading declare model
     public DataPetriNet readDataPetriNet(String modelFileName) throws FileNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, InvocationTargetException, DPNIOException {
-      //File dpnFile = new File(inputFolder + modelFileName);
-      String dpnFile = (inputFolder + modelFileName);
+      File dpnFilepath = new File(inputFolder + modelFileName);
+
+
+      String dpnFile = dpnFilepath.getAbsolutePath();
       return new DataPetriNet(dpnFile);
     }
   

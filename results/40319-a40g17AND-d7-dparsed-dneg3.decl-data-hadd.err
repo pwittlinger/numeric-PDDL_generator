@@ -1,0 +1,50 @@
+Loading openjdk/17.0.8.1_1
+  Loading requirement: glibc/2.35-aocc-3.2.0-wetwhfr
+    gcc-runtime/12.1.0-gcc-12.1.0-uotjsm3 glibc/2.35-aocc-3.2.0-dkzxmta
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a40g17AND-d7-dparsed-dneg3.decl/problem1.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 2871.07
+	System time (seconds): 612.11
+	Percent of CPU this job got: 76%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:15:50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 66991740
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4444856
+	Minor (reclaiming a frame) page faults: 642422855
+	Voluntary context switches: 4520931
+	Involuntary context switches: 323197
+	Swaps: 0
+	File system inputs: 191670784
+	File system outputs: 21320
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a40g17AND-d7-dparsed-dneg3.decl/problem2.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 1547.25
+	System time (seconds): 151.38
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 29:11.79
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 66992112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 217575
+	Minor (reclaiming a frame) page faults: 289352917
+	Voluntary context switches: 263506
+	Involuntary context switches: 68637
+	Swaps: 0
+	File system inputs: 6245760
+	File system outputs: 6376
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+slurmstepd-hpcfst08: error: *** JOB 40319 ON hpcfst08 CANCELLED AT 2025-05-26T09:56:06 DUE TO TIME LIMIT ***

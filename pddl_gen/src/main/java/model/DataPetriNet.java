@@ -16,7 +16,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
-
 import org.processmining.datapetrinets.DataPetriNetsWithMarkings;
 import org.processmining.datapetrinets.io.DPNIOException;
 import org.processmining.datapetrinets.io.DataPetriNetImporter;
@@ -125,9 +124,11 @@ public class DataPetriNet {
 		Marking currentMarking = currentMarkingPath.peek();
 
 		for (Transition transition : petrinetSemantics.getExecutableTransitions()) {
+			/*
 			if (transition.isInvisible()) { //TODO: Silent transitions
 				continue;
 			}
+			*/
 
 			try {
 				petrinetSemantics.setCurrentState(currentMarking);
@@ -229,7 +230,7 @@ public class DataPetriNet {
 					sb.append(" -> s");
 					sb.append(outState.getId());
 					sb.append("[label=\"");
-					sb.append(String.join("\n", outStateToLabels.get(outState)).replaceAll("\"", "\\""));
+					sb.append(String.join("\n", outStateToLabels.get(outState)).replaceAll("\"", "\\\""));
 					sb.append("\"];");
 				}
 			}

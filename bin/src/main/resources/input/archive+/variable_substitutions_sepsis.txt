@@ -1,0 +1,33 @@
+c1 ERRegistration DiagnosticLacticAcid
+c2 ERRegistration DiagnosticLacticAcid
+s1 ERRegistration SIRSCriteria2OrMore
+s2 ERRegistration SIRSCriteria2OrMore
+
+v0 LacticAcid LacticAcid
+v5 LacticAcid LacticAcid
+o1 LacticAcid occurs
+o2 LacticAcid occurs
+
+o1 Inv1 occurs
+o2 Inv1 occurs
+
+o1 Inv2 occurs
+o2 Inv2 occurs
+
+o1 Inv3 occurs
+o2 Inv3 occurs
+
+o1 Inv4 occurs
+o2 Inv4 occurs
+
+o1 Inv5 occurs
+o2 Inv5 occurs
+
+o1 ReleaseA occurs
+o2 ReleaseA occurs
+
+o1 AdmissionIC occurs
+o2 AdmissionIC occurs
+
+o1 AdmissionNC occurs
+o2 AdmissionNC occurs

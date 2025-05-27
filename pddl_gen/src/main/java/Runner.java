@@ -5,7 +5,7 @@ import java.util.Set;
 import Automaton.VariableSubstitution;
 import translations.IOManager;
 import translations.PDDLGenerator;
-//import translations.PDDLGeneratorMixedModel;
+import translations.PDDLGeneratorMixedModel;
 import log.LogFile;
 import model.DataPetriNet;
 import model.DeclareModel;
@@ -37,8 +37,7 @@ public class Runner {
     */
     // args = new String[5];
 
-    //findAlignments(args[0], args[1], args[2], args[3], args[4]);
-    //findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+    findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
     
     /*findAlignments("models\\model2_30.decl",
       "test05_VT_DPN.pnml",
@@ -53,13 +52,40 @@ public class Runner {
       "variable_values.txt",
       "variable_substitutions.txt",
       "cost_model.txt");
-      */
-      findAlignments("models\\model2_30.decl",
-      "shortPN.pnml",
-      "\\traces2_30\\10events_2_30.xes",
+      
+      
+      findAlignments("models\\model6_10_2.decl",
+      "petrinets\\pn_9t_11p.pnml",
+      "mixedModelLog\\d6_10p9_9_s2.xes",
       "variable_values.txt",
       "variable_substitutions.txt",
       "cost_model.txt");
+      */
+      
+      /*
+      findAlignments("declare\\a20g6\\a20g6_7_parsed_neg2.decl",
+      "petrinet\\a20g6.pnml",
+      "logs\\a20g6_7.xes",
+      "variable_values.txt",
+      "variable_subs\\variable_substitutions_a20g6_7.decl.txt",
+      "cost_model.txt");
+      */
+    /* 
+      findAlignments("models\\a20.decl",
+      "petrinets\\a20g6 - Kopie.pnml",
+      "mixedModelLog\\a20g6.xes",
+      "variable_values_sepsis.txt",
+      "variable_substitutions_sepsis.txt",
+      "cost_model.txt");
+
+            findAlignments("models\\a20.decl",
+      "petrinets\\a20g6 - Kopie.pnml",
+      "mixedModelLog\\a20g6.xes",
+      "variable_values_sepsis.txt",
+      "variable_substitutions_sepsis.txt",
+      "cost_model.txt");
+      */
+      
   }
   
   public static void findAlignments(

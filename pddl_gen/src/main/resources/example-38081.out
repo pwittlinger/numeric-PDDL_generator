@@ -1,0 +1,147 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 10240
+|F|:19078
+|X|:836
+|A|:3441
+|P|:0
+|E|:0
+Folding back to 1-0 heuristic. Input heuristic is not supported
+-------------Time: 10s ; Expanded Nodes: 3432 (Avg-Speed 343.0 n/s); Evaluated States: 50296
+-------------Time: 20s ; Expanded Nodes: 8220 (Avg-Speed 411.0 n/s); Evaluated States: 111256
+Problem Solved
+
+Found Plan:
+0.0: (sync-actions t0 a13 t1)
+1.0: (change_value a1 t1 t2 integer v5)
+2.0: (sync-actions t1 a1 t2)
+3.0: (sync-actions t2 a8 t3)
+4.0: (validate-payload t3 a14 t4)
+5.0: (sync-actions t3 a14 t4)
+6.0: (sync-actions t4 a3 t5)
+7.0: (sync-actions t5 a13 t6)
+8.0: (sync-actions t6 a11 t7)
+9.0: (sync-actions t7 a12 t8)
+10.0: (sync-actions t8 a11 t9)
+11.0: (validate-payload t9 a6 t10)
+12.0: (sync-actions t9 a6 t10)
+13.0: (sync-actions t10 a14 t11)
+14.0: (sync-actions t11 a12 t12)
+15.0: (sync-actions t12 a11 t13)
+16.0: (sync-actions t13 a12 t14)
+17.0: (sync-actions t14 a11 t15)
+18.0: (sync-actions t15 a4 t16)
+19.0: (change_value a13 t16 t17 categorical c1)
+20.0: (validate-payload t16 a13 t17)
+21.0: (sync-actions t16 a13 t17)
+22.0: (validate-payload t17 a9 t18)
+23.0: (sync-actions t17 a9 t18)
+24.0: (sync-actions t18 a10 t19)
+25.0: (sync-actions t19 a14 t20)
+26.0: (sync-actions t20 a12 t21)
+
+Plan-Length:27
+Metric (Search):2.0
+Planning Time (msec): 25976
+Heuristic Time (msec): 5
+Search Time (msec): 25973
+Expanded Nodes:11549
+States Evaluated:154289
+Number of Dead-Ends detected:0
+Number of Duplicates detected:48887
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 10224
+|F|:19078
+|X|:836
+|A|:3441
+|P|:0
+|E|:0
+Folding back to 1-0 heuristic. Input heuristic is not supported
+-------------Time: 10s ; Expanded Nodes: 3384 (Avg-Speed 338.0 n/s); Evaluated States: 49651
+-------------Time: 21s ; Expanded Nodes: 8244 (Avg-Speed 392.0 n/s); Evaluated States: 111515
+Problem Solved
+
+Found Plan:
+0.0: (sync-actions t0 a13 t1)
+1.0: (change_value a1 t1 t2 integer v5)
+2.0: (sync-actions t1 a1 t2)
+3.0: (sync-actions t2 a8 t3)
+4.0: (validate-payload t3 a14 t4)
+5.0: (sync-actions t3 a14 t4)
+6.0: (sync-actions t4 a3 t5)
+7.0: (sync-actions t5 a13 t6)
+8.0: (sync-actions t6 a11 t7)
+9.0: (sync-actions t7 a12 t8)
+10.0: (sync-actions t8 a11 t9)
+11.0: (validate-payload t9 a6 t10)
+12.0: (sync-actions t9 a6 t10)
+13.0: (sync-actions t10 a14 t11)
+14.0: (sync-actions t11 a12 t12)
+15.0: (sync-actions t12 a11 t13)
+16.0: (sync-actions t13 a12 t14)
+17.0: (sync-actions t14 a11 t15)
+18.0: (sync-actions t15 a4 t16)
+19.0: (change_value a13 t16 t17 categorical c1)
+20.0: (validate-payload t16 a13 t17)
+21.0: (sync-actions t16 a13 t17)
+22.0: (validate-payload t17 a9 t18)
+23.0: (sync-actions t17 a9 t18)
+24.0: (sync-actions t18 a10 t19)
+25.0: (sync-actions t19 a14 t20)
+26.0: (sync-actions t20 a12 t21)
+
+Plan-Length:27
+Metric (Search):2.0
+Planning Time (msec): 26712
+Heuristic Time (msec): 10
+Search Time (msec): 26709
+Expanded Nodes:11549
+States Evaluated:154289
+Number of Dead-Ends detected:0
+Number of Duplicates detected:48887
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 9028
+|F|:19063
+|X|:826
+|A|:3386
+|P|:0
+|E|:0
+Folding back to 1-0 heuristic. Input heuristic is not supported
+Problem Solved
+
+Found Plan:
+0.0: (sync-actions t0 a11 t1)
+1.0: (sync-actions t1 a13 t2)
+2.0: (validate-payload t2 a9 t3)
+3.0: (sync-actions t2 a9 t3)
+4.0: (sync-actions t3 a10 t4)
+5.0: (sync-actions t4 a1 t5)
+6.0: (sync-actions t5 a12 t6)
+7.0: (sync-actions t6 a8 t7)
+8.0: (sync-actions t7 a3 t8)
+9.0: (sync-actions t8 a14 t9)
+10.0: (validate-payload t9 a9 t10)
+11.0: (sync-actions t9 a9 t10)
+12.0: (change_value a6 t10 t11 integer v5)
+13.0: (validate-payload t10 a6 t11)
+14.0: (sync-actions t10 a6 t11)
+15.0: (sync-actions t11 a14 t12)
+16.0: (sync-actions t12 a11 t13)
+17.0: (sync-actions t13 a10 t14)
+18.0: (sync-actions t14 a4 t15)
+19.0: (sync-actions t15 a12 t16)
+
+Plan-Length:20
+Metric (Search):1.0
+Planning Time (msec): 1163
+Heuristic Time (msec): 0
+Search Time (msec): 1161
+Expanded Nodes:287
+States Evaluated:3312
+Number of Dead-Ends detected:0
+Number of Duplicates detected:557

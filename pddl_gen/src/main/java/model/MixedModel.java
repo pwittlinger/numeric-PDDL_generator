@@ -34,6 +34,7 @@ public class MixedModel {
 	public ArrayList<ArrayList<String>> allAutomatonStrings;
 	public ArrayList<String> allAutomatonStates;
 	public HashMap<String, Activity> activityObjects;
+	public ArrayList<String> allPetriNetStates;
 	
     
 
@@ -112,6 +113,7 @@ public class MixedModel {
         		this.allFailureStates.add(st.toString());
         	}
 			this.allAutomatonStates.add(st.toString());
+			this.allPetriNetStates.add(st.toString());
 
         	
         }

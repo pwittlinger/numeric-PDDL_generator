@@ -1,0 +1,9 @@
+activity ActivityC
+activity ActivityO
+activity ActivityG
+activity ActivityX
+activity ActivityK
+activity ActivityAC
+Precedence[ActivityX, ActivityG] | | |
+Response[ActivityK, ActivityAC] | | |
+Precedence[ActivityW, ActivityC] | | |

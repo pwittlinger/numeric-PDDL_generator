@@ -1,0 +1,648 @@
+Loading openjdk/17.0.8.1_1
+  Loading requirement: glibc/2.35-aocc-3.2.0-wetwhfr
+    gcc-runtime/12.1.0-gcc-12.1.0-uotjsm3 glibc/2.35-aocc-3.2.0-dkzxmta
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem1.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 288.91
+	System time (seconds): 12.39
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:01.49
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 25873744
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 169
+	Minor (reclaiming a frame) page faults: 19077163
+	Voluntary context switches: 13399
+	Involuntary context switches: 14628
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem2.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 284.19
+	System time (seconds): 12.72
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:57.08
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 25419704
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 168
+	Minor (reclaiming a frame) page faults: 18785460
+	Voluntary context switches: 13272
+	Involuntary context switches: 13922
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem3.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 235.61
+	System time (seconds): 9.42
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:05.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19938436
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 142
+	Minor (reclaiming a frame) page faults: 13120140
+	Voluntary context switches: 11808
+	Involuntary context switches: 12553
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1168
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem4.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 234.28
+	System time (seconds): 9.94
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:04.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 22100396
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 141
+	Minor (reclaiming a frame) page faults: 14330252
+	Voluntary context switches: 11755
+	Involuntary context switches: 12454
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1168
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem5.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 238.65
+	System time (seconds): 11.04
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:09.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 22104716
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 141
+	Minor (reclaiming a frame) page faults: 16190790
+	Voluntary context switches: 11968
+	Involuntary context switches: 12377
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem6.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 233.21
+	System time (seconds): 9.65
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:02.98
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19928148
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 138
+	Minor (reclaiming a frame) page faults: 14015360
+	Voluntary context switches: 11747
+	Involuntary context switches: 12354
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem7.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 239.95
+	System time (seconds): 11.34
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:11.43
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 23080020
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 145
+	Minor (reclaiming a frame) page faults: 16112712
+	Voluntary context switches: 11994
+	Involuntary context switches: 12492
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1200
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem8.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 238.40
+	System time (seconds): 10.62
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:09.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 23081860
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 145
+	Minor (reclaiming a frame) page faults: 14515005
+	Voluntary context switches: 11837
+	Involuntary context switches: 12491
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1208
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem9.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 206.82
+	System time (seconds): 8.35
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:35.49
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 18395796
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 127
+	Minor (reclaiming a frame) page faults: 11520099
+	Voluntary context switches: 11394
+	Involuntary context switches: 11450
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1056
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem10.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 209.00
+	System time (seconds): 8.21
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:37.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 18377304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 127
+	Minor (reclaiming a frame) page faults: 11440875
+	Voluntary context switches: 11278
+	Involuntary context switches: 11439
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem11.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 294.75
+	System time (seconds): 13.73
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:08.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 25877048
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 172
+	Minor (reclaiming a frame) page faults: 20537452
+	Voluntary context switches: 13612
+	Involuntary context switches: 14563
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1440
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem12.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 238.79
+	System time (seconds): 10.33
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:09.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 22104400
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 141
+	Minor (reclaiming a frame) page faults: 14993408
+	Voluntary context switches: 11902
+	Involuntary context switches: 12461
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1176
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem13.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 293.66
+	System time (seconds): 13.57
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:07.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 25878228
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 172
+	Minor (reclaiming a frame) page faults: 20394798
+	Voluntary context switches: 13707
+	Involuntary context switches: 14530
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1408
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem14.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 291.09
+	System time (seconds): 13.28
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:04.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 25873324
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 174
+	Minor (reclaiming a frame) page faults: 19661223
+	Voluntary context switches: 13541
+	Involuntary context switches: 14392
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1440
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem15.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 200.56
+	System time (seconds): 7.88
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:28.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 18400960
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 123
+	Minor (reclaiming a frame) page faults: 11185006
+	Voluntary context switches: 10925
+	Involuntary context switches: 11139
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1024
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem16.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 232.32
+	System time (seconds): 10.06
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:02.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 22102284
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 138
+	Minor (reclaiming a frame) page faults: 14322201
+	Voluntary context switches: 11636
+	Involuntary context switches: 12302
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem17.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 200.60
+	System time (seconds): 8.52
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:29.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 18397840
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 124
+	Minor (reclaiming a frame) page faults: 11829961
+	Voluntary context switches: 11080
+	Involuntary context switches: 11222
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1024
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem18.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 229.99
+	System time (seconds): 9.74
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:59.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 23058200
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 138
+	Minor (reclaiming a frame) page faults: 12605212
+	Voluntary context switches: 11500
+	Involuntary context switches: 11905
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem19.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 227.77
+	System time (seconds): 9.20
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:57.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19928440
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 135
+	Minor (reclaiming a frame) page faults: 12529001
+	Voluntary context switches: 11428
+	Involuntary context switches: 12211
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1112
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem20.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 200.25
+	System time (seconds): 8.39
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:28.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 18387692
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 123
+	Minor (reclaiming a frame) page faults: 11332642
+	Voluntary context switches: 10891
+	Involuntary context switches: 11066
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1024
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem21.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 230.56
+	System time (seconds): 9.73
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 23069720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 138
+	Minor (reclaiming a frame) page faults: 12817422
+	Voluntary context switches: 11653
+	Involuntary context switches: 12092
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1128
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem22.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 230.94
+	System time (seconds): 9.90
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:00.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 23058568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 138
+	Minor (reclaiming a frame) page faults: 13289875
+	Voluntary context switches: 11611
+	Involuntary context switches: 12093
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem23.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 228.64
+	System time (seconds): 9.64
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:58.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19929204
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 135
+	Minor (reclaiming a frame) page faults: 13364805
+	Voluntary context switches: 11540
+	Involuntary context switches: 12430
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1104
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem24.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 288.63
+	System time (seconds): 12.97
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:01.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 25869568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 172
+	Minor (reclaiming a frame) page faults: 19694161
+	Voluntary context switches: 13305
+	Involuntary context switches: 14737
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem25.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 233.72
+	System time (seconds): 9.55
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:03.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19936504
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 141
+	Minor (reclaiming a frame) page faults: 12985127
+	Voluntary context switches: 11613
+	Involuntary context switches: 11952
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem26.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 234.91
+	System time (seconds): 10.52
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:05.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 22109616
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 139
+	Minor (reclaiming a frame) page faults: 15254262
+	Voluntary context switches: 11758
+	Involuntary context switches: 12188
+	Swaps: 0
+	File system inputs: 8192
+	File system outputs: 1120
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem27.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 228.98
+	System time (seconds): 8.96
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:58.06
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19938444
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 135
+	Minor (reclaiming a frame) page faults: 12449567
+	Voluntary context switches: 11641
+	Involuntary context switches: 11953
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1104
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a29g9AND-d7/problem28.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 227.36
+	System time (seconds): 9.55
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:57.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19929480
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 136
+	Minor (reclaiming a frame) page faults: 13466685
+	Voluntary context switches: 11431
+	Involuntary context switches: 11533
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1104
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+slurmstepd-hpcfst08: error: *** JOB 40292 ON hpcfst08 CANCELLED AT 2025-05-25T22:07:04 DUE TO TIME LIMIT ***

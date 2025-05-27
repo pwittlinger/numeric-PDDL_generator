@@ -1,0 +1,28 @@
+activity a1
+bind a1: f, categorical
+activity a2
+bind a2: f, categorical
+activity a3
+bind a3: f, categorical
+activity a4
+bind a4: f, categorical
+activity a5
+bind a5: f, categorical
+activity a6
+bind a6: f, categorical
+activity a7
+bind a7: f, categorical
+activity a8
+bind a8: f, categorical
+activity a9
+bind a9: f, categorical
+activity a10
+bind a10: f, categorical
+f: float between 0.0 and 100.0
+categorical: c1, c2, c3
+Response[a1, a2] |A.f > 10.0 |T.f < 10.0 |
+Response[a3, a4] |A.categorical is c1 |T.categorical is c2 |
+Response[a5, a7] |A.categorical is c3 |T.f > 10.0 |
+Chain Response[a6, a7] |A.f > 10.0 |T.f > 10.0 |
+Existence[a10] |A.f > 10.0 |
+Response[a9, a10] |A.f > 10.0 |T.f > 10.0 |

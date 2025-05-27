@@ -1,0 +1,224 @@
+/usr/bin/time -v java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a40g17AND-d7-dparsed-dneg2.decl/problem1.pddl -h hadd -s WAStar -ties smaller_g
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 1684280
+UFX:true
+|F|:1080181
+|X|:13
+|A|:6545
+|P|:0
+|E|:0
+Numeric Error for Complex Condition Activated
+H1 Setup Time (msec): 276143
+h(I):0.0
+-------------Time: 41s ; Expanded Nodes: 1 (Avg-Speed 0.0 n/s); Evaluated States: 1
+-------------Time: 53s ; Expanded Nodes: 8 (Avg-Speed 0.0 n/s); Evaluated States: 235
+-------------Time: 65s ; Expanded Nodes: 16 (Avg-Speed 0.0 n/s); Evaluated States: 475
+-------------Time: 76s ; Expanded Nodes: 24 (Avg-Speed 0.0 n/s); Evaluated States: 707
+f(n) = 1.0 (Expanded Nodes: 27, Evaluated States: 770, Time: 79.98) Frontier Size: 743
+-------------Time: 88s ; Expanded Nodes: 30 (Avg-Speed 0.0 n/s); Evaluated States: 938
+-------------Time: 99s ; Expanded Nodes: 35 (Avg-Speed 0.0 n/s); Evaluated States: 1162
+-------------Time: 111s ; Expanded Nodes: 43 (Avg-Speed 0.0 n/s); Evaluated States: 1402
+-------------Time: 122s ; Expanded Nodes: 51 (Avg-Speed 0.0 n/s); Evaluated States: 1636
+-------------Time: 134s ; Expanded Nodes: 61 (Avg-Speed 0.0 n/s); Evaluated States: 1872
+-------------Time: 145s ; Expanded Nodes: 71 (Avg-Speed 0.0 n/s); Evaluated States: 2109
+-------------Time: 157s ; Expanded Nodes: 77 (Avg-Speed 0.0 n/s); Evaluated States: 2343
+-------------Time: 169s ; Expanded Nodes: 85 (Avg-Speed 0.0 n/s); Evaluated States: 2580
+-------------Time: 180s ; Expanded Nodes: 93 (Avg-Speed 0.0 n/s); Evaluated States: 2812
+-------------Time: 191s ; Expanded Nodes: 100 (Avg-Speed 0.0 n/s); Evaluated States: 2988
+-------------Time: 201s ; Expanded Nodes: 105 (Avg-Speed 0.0 n/s); Evaluated States: 3162
+-------------Time: 212s ; Expanded Nodes: 114 (Avg-Speed 0.0 n/s); Evaluated States: 3343
+-------------Time: 223s ; Expanded Nodes: 120 (Avg-Speed 0.0 n/s); Evaluated States: 3521
+-------------Time: 234s ; Expanded Nodes: 126 (Avg-Speed 0.0 n/s); Evaluated States: 3699
+-------------Time: 244s ; Expanded Nodes: 130 (Avg-Speed 0.0 n/s); Evaluated States: 3871
+-------------Time: 255s ; Expanded Nodes: 136 (Avg-Speed 0.0 n/s); Evaluated States: 4051
+-------------Time: 266s ; Expanded Nodes: 144 (Avg-Speed 0.0 n/s); Evaluated States: 4235
+-------------Time: 276s ; Expanded Nodes: 149 (Avg-Speed 0.0 n/s); Evaluated States: 4407
+Problem Solved
+
+Found Plan:
+0.0: (validate_payload t0 a24 t1)
+1.0: (sync_actions t0 a24 t1)
+2.0: (validate_payload t1 a19 t2)
+3.0: (sync_actions t1 a19 t2)
+4.0: (validate_payload t2 a21 t3)
+5.0: (sync_actions t2 a21 t3)
+6.0: (validate_payload t3 a22 t4)
+7.0: (sync_actions t3 a22 t4)
+8.0: (validate_payload t4 a23 t5)
+9.0: (sync_actions t4 a23 t5)
+10.0: (validate_payload t5 a25 t6)
+11.0: (sync_actions t5 a25 t6)
+12.0: (validate_payload t6 a4 t7)
+13.0: (sync_actions t6 a4 t7)
+14.0: (validate_payload t7 a47 t8)
+15.0: (sync_actions t7 a47 t8)
+16.0: (validate_payload t8 a16 t9)
+17.0: (sync_actions t8 a16 t9)
+18.0: (validate_payload t9 a9 t10)
+19.0: (sync_actions t9 a9 t10)
+20.0: (validate_payload t10 a36 t11)
+21.0: (sync_actions t10 a36 t11)
+22.0: (validate_payload t11 a8 t12)
+23.0: (sync_actions t11 a8 t12)
+24.0: (change_value a51 t12 t13 categorical c1)
+25.0: (validate_payload t12 a51 t13)
+26.0: (sync_actions t12 a51 t13)
+27.0: (validate_payload t13 a17 t14)
+28.0: (sync_actions t13 a17 t14)
+29.0: (validate_payload t14 a40 t15)
+30.0: (sync_actions t14 a40 t15)
+31.0: (validate_payload t15 a46 t16)
+32.0: (sync_actions t15 a46 t16)
+33.0: (validate_payload t16 a13 t17)
+34.0: (sync_actions t16 a13 t17)
+35.0: (validate_payload t17 a43 t18)
+36.0: (sync_actions t17 a43 t18)
+37.0: (validate_payload t18 a42 t19)
+38.0: (sync_actions t18 a42 t19)
+39.0: (validate_payload t19 a12 t20)
+40.0: (sync_actions t19 a12 t20)
+41.0: (validate_payload t20 a39 t21)
+42.0: (sync_actions t20 a39 t21)
+43.0: (validate_payload t21 a11 t22)
+44.0: (sync_actions t21 a11 t22)
+45.0: (validate_payload t22 a48 t23)
+46.0: (sync_actions t22 a48 t23)
+47.0: (validate_payload t23 a29 t24)
+48.0: (sync_actions t23 a29 t24)
+49.0: (validate_payload t24 a7 t25)
+50.0: (sync_actions t24 a7 t25)
+51.0: (validate_payload t25 a2 t26)
+52.0: (sync_actions t25 a2 t26)
+53.0: (validate_payload t26 a35 t27)
+54.0: (sync_actions t26 a35 t27)
+
+Plan-Length:55
+Metric (Search):1.0
+Planning Time (msec): 285430
+Heuristic Time (msec): 283781
+Search Time (msec): 285325
+Expanded Nodes:156
+States Evaluated:4582
+Number of Dead-Ends detected:4
+Number of Duplicates detected:77
+/usr/bin/time -v java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a40g17AND-d7-dparsed-dneg2.decl/problem2.pddl -h hadd -s WAStar -ties smaller_g
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 808458
+UFX:true
+|F|:727336
+|X|:13
+|A|:6519
+|P|:0
+|E|:0
+Numeric Error for Complex Condition Activated
+H1 Setup Time (msec): 12575
+h(I):0.0
+-------------Time: 23s ; Expanded Nodes: 1 (Avg-Speed 0.0 n/s); Evaluated States: 1
+-------------Time: 34s ; Expanded Nodes: 6 (Avg-Speed 0.0 n/s); Evaluated States: 185
+-------------Time: 46s ; Expanded Nodes: 14 (Avg-Speed 0.0 n/s); Evaluated States: 425
+-------------Time: 58s ; Expanded Nodes: 24 (Avg-Speed 0.0 n/s); Evaluated States: 715
+-------------Time: 69s ; Expanded Nodes: 32 (Avg-Speed 0.0 n/s); Evaluated States: 963
+Problem Solved
+
+Found Plan:
+0.0: (validate_payload t0 a24 t1)
+1.0: (sync_actions t0 a24 t1)
+2.0: (validate_payload t1 a19 t2)
+3.0: (sync_actions t1 a19 t2)
+4.0: (validate_payload t2 a21 t3)
+5.0: (sync_actions t2 a21 t3)
+6.0: (validate_payload t3 a22 t4)
+7.0: (sync_actions t3 a22 t4)
+8.0: (validate_payload t4 a23 t5)
+9.0: (sync_actions t4 a23 t5)
+10.0: (validate_payload t5 a25 t6)
+11.0: (sync_actions t5 a25 t6)
+12.0: (validate_payload t6 a4 t7)
+13.0: (sync_actions t6 a4 t7)
+14.0: (validate_payload t7 a47 t8)
+15.0: (sync_actions t7 a47 t8)
+16.0: (validate_payload t8 a16 t9)
+17.0: (sync_actions t8 a16 t9)
+18.0: (validate_payload t9 a9 t10)
+19.0: (sync_actions t9 a9 t10)
+20.0: (validate_payload t10 a36 t11)
+21.0: (sync_actions t10 a36 t11)
+22.0: (validate_payload t11 a8 t12)
+23.0: (sync_actions t11 a8 t12)
+24.0: (validate_payload t12 a5 t13)
+25.0: (sync_actions t12 a5 t13)
+26.0: (validate_payload t13 a6 t14)
+27.0: (sync_actions t13 a6 t14)
+28.0: (validate_payload t14 a29 t15)
+29.0: (sync_actions t14 a29 t15)
+30.0: (validate_payload t15 a7 t16)
+31.0: (sync_actions t15 a7 t16)
+32.0: (validate_payload t16 a2 t17)
+33.0: (sync_actions t16 a2 t17)
+34.0: (validate_payload t17 a35 t18)
+35.0: (sync_actions t17 a35 t18)
+
+Plan-Length:36
+Metric (Search):0.0
+Planning Time (msec): 73981
+Heuristic Time (msec): 73495
+Search Time (msec): 73975
+Expanded Nodes:37
+States Evaluated:1080
+Number of Dead-Ends detected:1
+Number of Duplicates detected:6
+Loading openjdk/17.0.8.1_1
+  Loading requirement: glibc/2.35-aocc-3.2.0-wetwhfr
+    gcc-runtime/12.1.0-gcc-12.1.0-uotjsm3 glibc/2.35-aocc-3.2.0-dkzxmta
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a40g17AND-d7-dparsed-dneg2.decl/problem1.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 2643.03
+	System time (seconds): 558.75
+	Percent of CPU this job got: 71%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:14.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 66975448
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3858646
+	Minor (reclaiming a frame) page faults: 584488511
+	Voluntary context switches: 3980898
+	Involuntary context switches: 354158
+	Swaps: 0
+	File system inputs: 155616728
+	File system outputs: 15408
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "java -Xmx64g -jar ./enhsp.jar -o ./domain4.pddl -f ./problems/a40g17AND-d7-dparsed-dneg2.decl/problem2.pddl -h hadd -s WAStar -ties smaller_g -dap"
+	User time (seconds): 1472.98
+	System time (seconds): 151.96
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 27:48.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 66984312
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 108209
+	Minor (reclaiming a frame) page faults: 287079241
+	Voluntary context switches: 152174
+	Involuntary context switches: 65519
+	Swaps: 0
+	File system inputs: 4248760
+	File system outputs: 6096
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+slurmstepd-hpcfst01: error: *** JOB 40316 ON hpcfst01 CANCELLED AT 2025-05-26T09:50:36 DUE TO TIME LIMIT ***
+

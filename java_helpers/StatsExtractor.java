@@ -98,7 +98,7 @@ public class StatsExtractor {
     );
     this.planLengthPatterns = List.of(
       Pattern.compile("^\\s+(\\d+):[\\s\\w]+$"),
-      Pattern.compile("(\\d+\\.\\d+):\\s\\([\\w\\s]+\\)")
+      Pattern.compile("(\\d+\\.\\d+):\\s\\([\\w\\s\\-]+\\)")
     );
     this.statesPatterns = List.of(
       Pattern.compile("\\sevaluating (\\d+) states"),
