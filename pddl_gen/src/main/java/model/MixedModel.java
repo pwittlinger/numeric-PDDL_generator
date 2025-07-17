@@ -49,6 +49,7 @@ public class MixedModel {
 		this.conditionStrings = new ArrayList<>();
 		this.activities = new HashMap<>();
 		this.allAutomatonStates = new ArrayList<>();
+		this.allPetriNetStates = new ArrayList<>();
 
 
         //this.dpnModel.dataPetriNet.getVariables();
@@ -196,7 +197,11 @@ public class MixedModel {
         if (conditions != null) {
           for (Condition c : conditions) {
 			this.conditionStrings.add(this.getConditionString(t, c).toString());
+			if (!this.conditionStrings.contains(this.getHasConstraintConditionString(t, c).toString())){
+				this.conditionStrings.add(this.getHasConstraintConditionString(t, c).toString());
+			};
           }
+
         }
       }
 
@@ -255,6 +260,18 @@ public class MixedModel {
 
     return b;
   }
+
+  private StringBuilder getHasConstraintConditionString(Transition t, Condition c) {
+    StringBuilder b = new StringBuilder();
+
+    if (c.operator == null) return b;
+
+	b.append("    (has_constraint " + this.activities.get(c.activity) + " " + c.parameterName + " " + t.getActiviationState().name + " " + t.getTargetState().name + ")\n");
+	
+	return b;
+  }
+
+
 
   public HashMap<String, Activity> mapActivityObjects(){
 	HashMap<String, Activity> activityObjectMap = new HashMap<String, Activity>() ;

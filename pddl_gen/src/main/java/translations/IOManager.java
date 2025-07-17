@@ -385,5 +385,12 @@ public class IOManager {
       return new DataPetriNet(dpnFile);
     }
   
+  public void exportActivityMapping(String activityMapping, String modelName) {
+    try (FileWriter fileWriter = new FileWriter(outputFolder + "activityMapping_" + modelName + ".txt")) {
+      fileWriter.write(activityMapping);
+    } catch (IOException e) {
+      System.out.println("Error creating the activityMapping file");
+    }
+  }
 
 }

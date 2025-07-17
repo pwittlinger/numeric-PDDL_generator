@@ -130,8 +130,8 @@ public class Automaton {
         this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
         //this.transitions.add( new Transition(s2, s3, constraint.getTarget(), constraint.getTargetConditions()) );
         s1.goal();
-        s2.goal();
-        s3.failure();
+        s3.goal();
+        s2.failure();
 
         this.states.addAll(List.of(s1, s2, s3));
         break;
@@ -140,8 +140,8 @@ public class Automaton {
         this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
         //this.transitions.add( new Transition(s2, s3, constraint.getTarget(), constraint.getTargetConditions()) );
         s1.goal();
-        s3.goal();
-        s2.failure();
+        s2.goal();
+        s3.failure();
 
         this.states.addAll(List.of(s1, s2, s3));
         break;

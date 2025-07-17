@@ -330,14 +330,11 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
       b.append("\n");
     }
 
-    if (this.mixedModel.dpnModel != null) {
-      this.mixedModel.allPetriNetStates.forEach(x -> {
-      b.append("    (petrinet_state " + x+")\n");
-    });
-    //for (State st : this.mixedModel.dpnModel.executableAutomaton.states()) {
-		//		b.append("    (petrinet_state " + st.toString()+")\n");      	
-    //    }
-    }
+    //if (this.mixedModel.dpnModel != null) {
+    //  this.mixedModel.allPetriNetStates.forEach(x -> {
+    //  b.append("    (petrinet_state " + x+")\n");
+    //});
+    //}
 
     // Close init
     b.append("  )\n");
@@ -364,6 +361,23 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
         b.append("    )\n");
       }
     }
+
+    for (String pn_state : this.mixedModel.allPetriNetStates) {
+      boolean noadd = false;
+        for ( ArrayList<String> acceptingStates : this.mixedModel.allAcceptingStates) {
+          if (acceptingStates.contains(pn_state)){
+            noadd = true;
+          }
+        }
+      if (noadd){
+        continue;
+      }
+      else{
+        b.append("      (not (cur_s_state " + pn_state +"))\n");
+      }
+    }
+    //this.mixedModel.allPetriNetStates.forEach(x -> {
+    //  b.append("    (petrinet_state " + x+")\n");
 
     b.append("    (not (failure))\n" +
             "    (not (after_change))\n" + //
@@ -760,4 +774,15 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
         ")\n" + //
         "";
   }
+
+   public String activityMapping() {
+    StringBuilder s = new StringBuilder();
+    for (String act :this.mixedModel.activities.keySet()) {
+        s.append(act + ":"+this.mixedModel.activities.get(act)+"\n");
+    }
+
+    return s.toString(); //
+   }
+
+
 }

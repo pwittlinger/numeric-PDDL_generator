@@ -4,6 +4,7 @@
 ENHSP-Public/
 
 **/output/pddl/*
+**/output/libs/*
 
 .vscode/
 .idea/

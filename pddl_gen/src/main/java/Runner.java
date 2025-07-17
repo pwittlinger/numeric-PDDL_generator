@@ -38,6 +38,14 @@ public class Runner {
     // args = new String[5];
 
     findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+    /*
+    findAlignments("declare\\a42g11XOR\\a42g11XOR_7_parsed.decl",
+      "petrinet\\a42g11XOR.pnml",
+      "logs\\a42g11XOR.xes",
+      "variable_values_multi_model.txt",
+      "variable_subs\\variable_substitutions_a42g11XOR_7.decl.txt",
+      "cost_model.txt");
+      */
     
     /*findAlignments("models\\model2_30.decl",
       "test05_VT_DPN.pnml",
@@ -63,11 +71,11 @@ public class Runner {
       */
       
       /*
-      findAlignments("declare\\a20g6\\a20g6_7_parsed_neg2.decl",
-      "petrinet\\a20g6.pnml",
-      "logs\\a20g6_7.xes",
-      "variable_values.txt",
-      "variable_subs\\variable_substitutions_a20g6_7.decl.txt",
+      findAlignments("declare\\a27g7XOR\\a27g7XOR_5_parsed.decl",
+      "petrinet\\a27g7XOR.pnml",
+      "logs\\a27g7XOR-add-3.xes",
+      "variable_values_multi_model.txt",
+      "variable_subs\\variable_substitutions_a27g7XOR_5.decl.txt",
       "cost_model.txt");
       */
     /* 
@@ -130,16 +138,22 @@ public class Runner {
     else {
       DataPetriNet petriNet = ioManager.readDataPetriNet(petriNetString);
       MixedModel myMixedModel = new MixedModel(petriNet, model);
-      System.out.println(myMixedModel.allAutomatonStrings);
-      System.out.println(myMixedModel.allAcceptingStates);
+      //System.out.println(myMixedModel.allAutomatonStrings);
+      //System.out.println(myMixedModel.allAcceptingStates);
 
       LogFile log = ioManager.readLog(traceString, myMixedModel); // OKAY!
       
       PDDLGeneratorMixedModel pddlGenerator = new PDDLGeneratorMixedModel(myMixedModel);
 
-          String domain = pddlGenerator.defineDomain();
-    ArrayList<String> problems = log.generateProblems(pddlGenerator, variableAssignments, substitutions);
+      String domain = pddlGenerator.defineDomain();
+      ArrayList<String> problems = log.generateProblems(pddlGenerator, variableAssignments, substitutions);
 
+      String pnName = petriNetString;
+      if (petriNetString.contains("\\")) {
+        String[] s_ = petriNetString.split("\\\\");
+        pnName = s_[s_.length-1];
+      }
+      ioManager.exportActivityMapping(pddlGenerator.activityMapping(), pnName);
 
         int i = 1;
     for (String problem : problems) {
@@ -154,6 +168,7 @@ public class Runner {
 
     
     ioManager.exportModel(model);
+   
 
     // If formula exists, define and write PDDL problems.
     // PDDLGenerator pddlGenerator = new PDDLGenerator(model, ltlFormula);

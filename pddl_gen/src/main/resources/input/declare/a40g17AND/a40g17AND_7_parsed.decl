@@ -20,7 +20,7 @@ bind ActivityF: categorical
 integer: integer between 0 and 100 
 categorical: c1, c2, c3
 Response[ActivityJ, ActivityP] |A.integer > 10 |T.integer < 10 |
-Precedence[ActivityF, ActivityAE] |A.categorical is c2 |T.categorical is c1 |
+Precedence[ActivityF, ActivityAE] |A.categorical is c1 |T.categorical is c2 |
 Not Response[ActivityL, ActivityL] | | |
 Absence[ActivityK] |A.integer < 20 |
 Chain Response[ActivityA, ActivityC] |A.integer < 5 |T.categorical is c1 |

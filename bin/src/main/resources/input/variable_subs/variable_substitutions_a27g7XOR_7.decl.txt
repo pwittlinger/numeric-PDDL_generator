@@ -16,10 +16,10 @@ c1 ActivityF categorical
 c2 ActivityF categorical
 c3 ActivityF categorical
 
-v0 ActivityK integer
-v5 ActivityK integer
-v15 ActivityK integer
-v30 ActivityK integer
+v0 ActivityM integer
+v5 ActivityM integer
+v15 ActivityM integer
+v30 ActivityM integer
 
 v0 ActivityA integer
 v5 ActivityA integer

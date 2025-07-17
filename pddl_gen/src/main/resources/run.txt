@@ -1,6 +1,0 @@
-/usr/bin/time -v java -Xmx64g -jar "./enhsp.jar" -o "./domain3.pddl" -f "./problem1.pddl" -h hadd -ties smaller_g
-/usr/bin/time -v java -Xmx64g -jar "./enhsp.jar" -o "./domain3.pddl" -f "./problem1.pddl" -h hmrp -ties smaller_g
-/usr/bin/time -v java -Xmx64g -jar "./enhsp.jar" -o "./domain3.pddl" -f "./problem2.pddl" -h hadd -ties smaller_g
-/usr/bin/time -v java -Xmx64g -jar "./enhsp.jar" -o "./domain3.pddl" -f "./problem2.pddl" -h hmrp -ties smaller_g
-/usr/bin/time -v java -Xmx64g -jar "./enhsp.jar" -o "./domain3.pddl" -f "./problem3.pddl" -h hadd -ties smaller_g
-/usr/bin/time -v java -Xmx64g -jar "./enhsp.jar" -o "./domain3.pddl" -f "./problem3.pddl" -h hmrp -ties smaller_g

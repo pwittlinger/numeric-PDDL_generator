@@ -53,6 +53,12 @@ public class DataPetriNet {
 		InputStream inputStream = new BufferedInputStream(new FileInputStream(inputDPN));
 		this.dataPetriNet = dataPetriNetImporter.importFromStream(inputStream).getDPN();
 		this.activities = new HashSet<String>();
+
+		for (Transition t : dataPetriNet.getTransitions()) {
+			if (!t.isInvisible() && !activities.contains(t.getLabel())) {
+				activities.add(t.getLabel());
+		}
+		}
 		
 		this.guardStrings = new HashMap<String, String>();
 		this.initializeAutomaton(this.dataPetriNet);
