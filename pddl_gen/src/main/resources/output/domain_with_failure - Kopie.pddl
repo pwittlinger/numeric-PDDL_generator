@@ -35,6 +35,7 @@
     (automaton ?s1 - automaton_state ?a - activity ?s2 - automaton_state)
     (cur_t_state ?t - trace_state)
     (cur_s_state ?s - automaton_state)
+    (goal_state ?s - automaton_state)
 
     ;; PARAMETER AND CONSTRAINT DECLARATION
     (has_parameter ?a - activity ?pn - parameter_name ?t1 - trace_state ?t2 - trace_state)
@@ -49,11 +50,12 @@
     (invalid ?s1 - automaton_state ?a - activity ?s2 - automaton_state)
     (complete_sync ?a - activity)
     (after_sync)
-    ;(after_change)
     ;(adding_value ?a - activity ?t1 - trace_state)
     ;(adding_value_model ?a - activity ?s1 - automaton_state)
     (after_add)
     (after_add_check)
+    (after_change)
+    (changed ?t1 - trace_state ?pn - parameter_name)
 
     ; Declare this to indicate that such activity-parameter-value assignment exists.
     (has_substitution_value ?vn - value_name ?a - activity ?pn - parameter_name)
@@ -99,10 +101,26 @@
       (not (failure))
       (not (complete_sync ?a))
       ;(not (after_change))
+      (not (changed ?t1 ?pn))
+
+      
+      (exists (?s1 ?s2 - automaton_state) 
+        (and
+          (cur_s_state ?s1)
+          
+          (automaton ?s1 ?a ?s2)
+          (has_constraint ?a ?pn ?s1 ?s2)
+          
+        )
+      )
+
+      
+      ;(not (after_change))
     )
     :effect (and 
       (increase (total_cost) 1)
-      ;(has_parameter ?a ?pn ?t1 ?t2)
+      (after_change)
+      (changed ?t1 ?pn)
       (assign (trace_parameter ?a ?pn ?t1 ?t2) (variable_value ?vn))
   ))
 
@@ -121,6 +139,7 @@
       (not (after_sync)) 
       (not (after_add_check))
       (not (failure))
+      (not (after_change))
     )
     :effect (and 
       (increase (total_cost) 2)
@@ -141,6 +160,19 @@
       (not (after_sync))
       (not (failure))
       (not (after_add_check))
+      (not (after_change))
+      (exists (?s1 - automaton_state ?s2 - automaton_state) 
+        (and
+        
+        (cur_s_state ?s1)
+        (not (goal_state ?s1))
+        (not (failure_state ?s1))
+        
+        (automaton ?s1 ?a ?s2)
+        ;(goal_state ?s1)
+        (not (failure_state ?s2))
+        )
+        )
       )
     :effect (and 
       (increase (total_cost) 2)
@@ -155,12 +187,36 @@
       (after_add)
       (has_substitution_value ?vn ?a ?pn)
       (cur_s_state ?s1)
-      (not (after_sync))
-      (not (failure))
+      
+      (not (goal_state ?s1))
+
+      (not (has_added_parameter_aut ?a ?pn ?s1))
+      ;(not (after_sync))
+      ;(not (failure))
+      (not (after_add_check))
+      ;(not (after_change))
+      (exists (?s2 - automaton_state) 
+      (and
+    
+        (automaton ?s1 ?a ?s2)
+        (has_constraint ?a ?pn ?s1 ?s2)
+        (not (failure_state ?s2))
+        (or
+        (> (variable_value ?vn) (majority_constraint ?a ?pn ?s1 ?s2))
+        (< (variable_value ?vn) (minority_constraint ?a ?pn ?s1 ?s2))
+
+        (= (variable_value ?vn) (equality_constraint ?a ?pn ?s1 ?s2))
+        (> (variable_value ?vn) (inequality_constraint ?a ?pn ?s1 ?s2))
+        (< (variable_value ?vn) (inequality_constraint ?a ?pn ?s1 ?s2))
+
+        )
+        
+      )
+      )
       )
 
       :effect (and 
-      ;;(adding_value_model ?a ?s1)
+
       (increase (total_cost) 1)
       (has_added_parameter_aut ?a ?pn ?s1)
       (assign (added_parameter_aut ?a ?pn ?s1) (variable_value ?vn)))
@@ -170,14 +226,18 @@
     :parameters (?a - activity)
     :precondition (and 
       (complete_sync ?a)
-      (not (failure))
-      ;(not (after_change))
-      (not (after_sync))
+      ;(not (failure))
+
+      ;(not (after_sync))
       (after_add)
       (not (after_add_check))
+      ;(not (after_change))
+      
     )
     :effect (and 
       (after_add_check)
+      (not (after_add))
+
 
       (forall (?pn - parameter_name ?s1 - automaton_state ?s2 - automaton_state)
           ;  ; If parameter is missing
@@ -185,61 +245,29 @@
 
             (and 
             ;(not (invalid ?s1 ?a ?s2))
+            
             (cur_s_state ?s1)
             (automaton ?s1 ?a ?s2)
             (has_constraint ?a ?pn ?s1 ?s2)
             
             (or
             
-            (and 
             (not (has_added_parameter_aut ?a ?pn ?s1))
-            ;(has_constraint ?a ?pn ?s1 ?s2)
-            )
-
           
             (and 
 
             (has_added_parameter_aut ?a ?pn ?s1)
-            ;(has_maj_c ?a ?pn ?s1 ?s2)
+            (or 
             (< (added_parameter_aut ?a ?pn ?s1) (majority_constraint ?a ?pn ?s1 ?s2))
-            )
-
-            (and 
-
-            (has_added_parameter_aut ?a ?pn ?s1)
-            ;(has_min_c ?a ?pn ?s1 ?s2)
             (> (added_parameter_aut ?a ?pn ?s1) (minority_constraint ?a ?pn ?s1 ?s2))
-            )
-
-            (and 
-
-            (has_added_parameter_aut ?a ?pn ?s1)
-            ;(has_interval_c ?a ?pn ?s1 ?s2)
-            (or
             (< (added_parameter_aut ?a ?pn ?s1) (interval_constraint_lower ?a ?pn ?s1 ?s2))
             (> (added_parameter_aut ?a ?pn ?s1) (interval_constraint_higher ?a ?pn ?s1 ?s2))
-            )
-            )
-
-            (and
-
-            (has_added_parameter_aut ?a ?pn ?s1)
-            ;(has_eq_c ?a ?pn ?s1 ?s2)
-            ;(not (= (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2)))
-            (or 
-              (< (added_parameter_aut ?a ?pn ?s1) (equality_constraint ?a ?pn ?s1 ?s2))
-              (> (added_parameter_aut ?a ?pn ?s1) (equality_constraint ?a ?pn ?s1 ?s2))
-            )
-            )
-
-            (and 
-
-            (has_added_parameter_aut ?a ?pn ?s1) 
-            ;(has_ineq_c ?a ?pn ?s1 ?s2)
+            (< (added_parameter_aut ?a ?pn ?s1) (equality_constraint ?a ?pn ?s1 ?s2))
+            (> (added_parameter_aut ?a ?pn ?s1) (equality_constraint ?a ?pn ?s1 ?s2))
             (= (added_parameter_aut ?a ?pn ?s1) (inequality_constraint ?a ?pn ?s1 ?s2))
             )
             )
-            )
+            ))
               (invalid ?s1 ?a ?s2))
           )
       ; Check in case parameter is missing
@@ -249,11 +277,20 @@
   (:action move_in_model_move_automata
       :parameters (?a - activity)
       :precondition (and 
-      (not (failure))
-      (not (after_sync))
+      ;(not (failure))
+      ;(not (after_sync))
       (complete_sync ?a)
-      (after_add)
+      (not (after_add))
       (after_add_check)
+      ;(not (after_change))
+      (exists (?s1 - automaton_state ?s2 - automaton_state) 
+      (and
+        (not (goal_state ?s1))
+        (not (invalid ?s1 ?a ?s2))
+        (cur_s_state ?s1)
+        (automaton ?s1 ?a ?s2)
+        (not (failure_state ?s2)))
+      )
       
       
       ; Ensure all inequality constraints for the added Action are fulfilled
@@ -294,21 +331,16 @@
             (when (has_added_parameter_aut ?a ?pn ?s1) (not (has_added_parameter_aut ?a ?pn ?s1)))
       )
 
-      ;(forall (?s1 - automaton_state)
-      ;      (when (adding_value_model ?a ?s1) (not (adding_value_model ?a ?s1)))
-      ;)
-
       (forall (?s1 - automaton_state ?s2 - automaton_state)
         (when
+          (and 
           (automaton ?s1 ?a ?s2)
-          ;(cur_s_state ?s1)
-          ;(failure_state ?s2)
-          ;)
+          (invalid ?s1 ?a ?s2)
+          )
           (not (invalid ?s1 ?a ?s2)) )
       )
 
       (not (complete_sync ?a))
-      (not (after_add))
   )
   )
 
@@ -324,12 +356,35 @@
         (not (after_add))
         (not (failure))
         (not (complete_sync ?a))
-        ;(not (after_add_check))
+        (not (after_add_check))
+        ;(exists (?s1 - automaton_state ?s2 - automaton_state ?pn - parameter_name)
+        (exists (?s1 - automaton_state ?s2 - automaton_state ) 
+        (and
+        (cur_s_state ?s1)
+        (not (failure_state ?s1))
+        (not (goal_state ?s1))
+        (automaton ?s1 ?a ?s2)
+        (not (invalid ?s1 ?a ?s2))
+        (not (failure_state ?s2))
+        ;(or
+
+            
+        ;    (< (trace_parameter ?a ?pn ?t1 ?t2) (majority_constraint ?a ?pn ?s1 ?s2))
+        ;    (> (trace_parameter ?a ?pn ?t1 ?t2) (minority_constraint ?a ?pn ?s1 ?s2))
+        ;    (< (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_lower ?a ?pn ?s1 ?s2))
+        ;    (> (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_higher ?a ?pn ?s1 ?s2))
+        ;    (< (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
+        ;    (> (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
+        ;    (= (trace_parameter ?a ?pn ?t1 ?t2) (inequality_constraint ?a ?pn ?s1 ?s2))
+        ;    )
+        )
+        )
+        
         )
       :effect (and 
         (increase (total_cost) 0)
         (after_sync)
-
+        (not (after_change))
         ;Check if case parameter is missing
         ;; The "nested" when seems to save time as we do not need to iterate 6+ times over all combinations
         (forall (?pn - parameter_name ?s1 - automaton_state ?s2 - automaton_state)
@@ -337,59 +392,25 @@
             (when 
 
             (and 
-            (not (invalid ?s1 ?a ?s2))
+            ;(not (invalid ?s1 ?a ?s2))
             (cur_s_state ?s1)
             (automaton ?s1 ?a ?s2)
             (has_constraint ?a ?pn ?s1 ?s2)
             (or
-            
-            (and 
+
             (not (has_parameter ?a ?pn ?t1 ?t2))
-            ;(has_constraint ?a ?pn ?s1 ?s2)
+            (< (trace_parameter ?a ?pn ?t1 ?t2) (majority_constraint ?a ?pn ?s1 ?s2))
+            (> (trace_parameter ?a ?pn ?t1 ?t2) (minority_constraint ?a ?pn ?s1 ?s2))
+            (< (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_lower ?a ?pn ?s1 ?s2))
+            (> (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_higher ?a ?pn ?s1 ?s2))
+            (< (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
+            (> (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
+            (= (trace_parameter ?a ?pn ?t1 ?t2) (inequality_constraint ?a ?pn ?s1 ?s2))
             )
-
-          
-            (and 
-
-            ;(has_parameter ?a ?pn ?t1 ?t2)
-            ;(has_maj_c ?a ?pn ?s1 ?s2)
-            (< (trace_parameter ?a ?pn ?t1 ?t2) (majority_constraint ?a ?pn ?s1 ?s2)))
-
-            (and 
-
-            ;(has_parameter ?a ?pn ?t1 ?t2) 
-            ;(has_min_c ?a ?pn ?s1 ?s2)
-            (> (trace_parameter ?a ?pn ?t1 ?t2) (minority_constraint ?a ?pn ?s1 ?s2)))
-
-            (and 
-
-            ;(has_parameter ?a ?pn ?t1 ?t2) 
-            ;(has_interval_c ?a ?pn ?s1 ?s2)
-            (or
-              ;(not (> (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_lower ?a ?pn ?s1 ?s2)))
-              ;(not (< (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_higher ?a ?pn ?s1 ?s2)))
-              (< (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_lower ?a ?pn ?s1 ?s2))
-              (> (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_higher ?a ?pn ?s1 ?s2))
-            ))
-
-            (and
-
-            ;(has_parameter ?a ?pn ?t1 ?t2) 
-            ;(has_eq_c ?a ?pn ?s1 ?s2)
-            ;(not (= (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2)))
-            (or 
-              (< (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
-              (> (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
+            
+            
             )
-            )
-
-            (and 
-
-            ;(has_parameter ?a ?pn ?t1 ?t2) 
-            ;(has_ineq_c ?a ?pn ?s1 ?s2)
-            (= (trace_parameter ?a ?pn ?t1 ?t2) (inequality_constraint ?a ?pn ?s1 ?s2)))
-            )
-            )
+            
               (invalid ?s1 ?a ?s2))
           )      )
     )
@@ -403,9 +424,23 @@
       (not (failure))
       (not (after_add_check))
       (not (complete_sync ?a))
+      ;(not (after_change))
       (after_sync)
+            
+      ;(after_sync)
       (cur_t_state ?t1) 
       (trace ?t1 ?a ?t2)
+      (exists (?s1 - automaton_state ?s2 - automaton_state) 
+        (and
+        (cur_s_state ?s1)
+        (not (goal_state ?s1))
+        (not (failure_state ?s1))
+        (automaton ?s1 ?a ?s2)
+        (not (invalid ?s1 ?a ?s2))
+        (not (failure_state ?s2))
+        )
+      )
+      
  )
 
     :effect (and 
@@ -423,7 +458,6 @@
         ) (and
           (not (cur_s_state ?s1))
           (cur_s_state ?s2)
-          ;(not (invalid ?s1 ?a ?s2))
         ))
       )
 
@@ -443,8 +477,9 @@
 
       (forall (?s1 - automaton_state ?s2 - automaton_state) 
         (when (and 
+          (invalid ?s1 ?a ?s2)
           (automaton ?s1 ?a ?s2)
-          (after_sync)) ; Without the when enclosing, it crashes.
+          ) ; Without the when enclosing, it crashes.
           (not (invalid ?s1 ?a ?s2))
         )
       )

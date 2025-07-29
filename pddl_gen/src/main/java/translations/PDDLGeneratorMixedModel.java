@@ -139,14 +139,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
 
 
     // AUTOMATON STATES
-    /*
-    b.append("    ");
-    this.constraintAutomatons.forEach(x -> {
-      x.getStates().forEach(y -> {
-        b.append(y.name + " ");
-      });
-    });
-    */
+
     // Adding all Automaton States into the header
     b.append("    ");
     this.mixedModel.allAutomatonStates.forEach(x -> {
@@ -156,11 +149,6 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     b.append("- automaton_state\n");
 
     // ACTIVITIES
-    /*
-    b.append("    ");
-    this.activities.keySet().forEach(x -> b.append(x + " "));
-    b.append("- activity\n");
-    */
     Set<String> activitySet = new HashSet<>(this.mixedModel.activities.values());
     b.append("    ");
     activitySet.forEach(x -> b.append(x + " "));
@@ -178,7 +166,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     b.append("    ");
     attributes.forEach(x -> b.append(x + " "));
     if (attributes.size() > 0) {
-      b.append(" - parameter_name\n"); 
+      b.append("- parameter_name\n"); 
     }
     
 
@@ -315,6 +303,19 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     for (String s : this.mixedModel.allFailureStates) {
       b.append("    (failure_state " + s + ")\n");
     }
+    
+    for ( ArrayList<String> acceptingStates : this.mixedModel.allAcceptingStates) {
+          if (acceptingStates.size() == 1) {
+            b.append("    (goal_state " + acceptingStates.get(0) + ")\n");
+          } else { // In case two or more
+
+            
+            for (String singleGoal : acceptingStates) {
+              b.append("     (goal_state " + singleGoal+ ")\n");
+            }
+           
+          }
+        }
 
     for (ArrayList<String> automatonElement : this.mixedModel.allAutomatonStrings){
       String activationState = automatonElement.get(0);
@@ -362,9 +363,11 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
       }
     }
 
+    /*
     for (String pn_state : this.mixedModel.allPetriNetStates) {
       boolean noadd = false;
         for ( ArrayList<String> acceptingStates : this.mixedModel.allAcceptingStates) {
+          
           if (acceptingStates.contains(pn_state)){
             noadd = true;
           }
@@ -376,6 +379,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
         b.append("      (not (cur_s_state " + pn_state +"))\n");
       }
     }
+    */
     //this.mixedModel.allPetriNetStates.forEach(x -> {
     //  b.append("    (petrinet_state " + x+")\n");
 

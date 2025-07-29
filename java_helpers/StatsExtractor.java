@@ -25,6 +25,7 @@ public class StatsExtractor {
   private ArrayList<Integer> statesNumbers;
   private ArrayList<Double> timesSpent;
   private ArrayList<Integer> maximumResidentSizes;
+  private ArrayList<Integer> searchTimes;
 
   private double costAvg;
   private double planLengthAvg;
@@ -32,12 +33,14 @@ public class StatsExtractor {
   private double timeAvg;
   private double mrsAvg;
   private double completionRate;
+  private double searchTimeAvg;
 
   List<Pattern> costPatterns;
   List<Pattern> planLengthPatterns;
   List<Pattern> statesPatterns;
   List<Pattern> timesSpentPatterns;
   List<Pattern> mrsPatterns;
+  List<Pattern> searchTimePatterns;
 
   /** Check this pattern to ignore partial readings: won't be considered in the calculation. */
   List<Pattern> terminatedPatterns;
@@ -89,6 +92,7 @@ public class StatsExtractor {
     this.statesNumbers = new ArrayList<>(this.numOfTraces);
     this.timesSpent = new ArrayList<>(this.numOfTraces);
     this.maximumResidentSizes = new ArrayList<>(this.numOfTraces);
+    this.searchTimes = new ArrayList<>(this.numOfTraces);
 
     // Order for all is: ff, enhsp, pddl4j
     this.costPatterns = List.of(
@@ -110,6 +114,9 @@ public class StatsExtractor {
     this.mrsPatterns = List.of(
       Pattern.compile("\\s*Maximum resident set size \\(kbytes\\):\\s(\\d+)")
     );
+    this.searchTimePatterns = List.of(
+      Pattern.compile("Search\\sTime\\s\\(msec\\):\\s(\\d*)")
+    );
   }
 
   private void parseFile(Scanner s) {
@@ -129,6 +136,7 @@ public class StatsExtractor {
       this.handleParse(line, this.statesPatterns, this.statesNumbers, Integer.class, false, false);
       this.handleParse(line, this.timesSpentPatterns, this.timesSpent, Double.class, true, false);
       this.handleParse(line, this.mrsPatterns, this.maximumResidentSizes, Integer.class, false, true);
+      this.handleParse(line, this.searchTimePatterns, this.searchTimes, Integer.class, false, true);
     }
   }
   private boolean crashed(String line) {
@@ -203,7 +211,8 @@ public class StatsExtractor {
         this.planLengths.size() + ";" + 
         this.statesNumbers.size() + ";" +
         this.timesSpent.size() + ";" + 
-        this.maximumResidentSizes.size()
+        this.maximumResidentSizes.size() + ";" +
+        this.searchTimes.size()
       );
       throw new Error("Sizes of arrays don't match! Check parsing!");
     } else {
@@ -237,6 +246,12 @@ public class StatsExtractor {
       .orElse(-1);
 
     this.completionRate = (this.costs.size() / (double) this.numOfTraces) * 100;
+
+    this.searchTimeAvg = this.searchTimes.stream()
+      .mapToInt(v -> v)
+      .average()
+      .orElse(-1);
+
   }
   private void writeToFile(String fileName) {
     
@@ -249,6 +264,7 @@ public class StatsExtractor {
       bw.write(String.valueOf(this.timeAvg) + "\n");
       bw.write(String.valueOf(this.mrsAvg) + "\n");
       bw.write(String.valueOf(this.completionRate) + "%\n");
+      bw.write(String.valueOf(this.searchTimeAvg) + "\n");
       bw.close();
 
     } catch (IOException e) {

@@ -258,18 +258,7 @@ public class IOManager {
     return numericMatcher.find() || enumMatcher.find() || listMatcher.find();
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+   
   //Section: Exporting model
   public void exportModel(DeclareModel model) {
     try (FileWriter fileWriter = new FileWriter(outputFolder + "model.txt")) {
