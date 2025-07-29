@@ -13,6 +13,7 @@ public class Automaton {
   private final Collection<String> ACTIVITY_NAMES;
   private List<State> states = new ArrayList<>();
   private List<Transition> transitions = new ArrayList<>();
+  private List<StateEC> statesEC = new ArrayList<>();
 
   public Automaton(Collection<String> activityNames, String statePrefix, DeclareConstraint constraint) {
     this.ACTIVITY_NAMES = activityNames;
@@ -124,6 +125,27 @@ public class Automaton {
         this.transitions.add( new Transition(s3, s4, constraint.getActivation(), constraint.getActivationConditions()) );
         break;
 
+      case Precedence:
+        this.transitions.add( new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions()) );
+        this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
+        //this.transitions.add( new Transition(s2, s3, constraint.getTarget(), constraint.getTargetConditions()) );
+        s1.goal();
+        s3.goal();
+        s2.failure();
+
+        this.states.addAll(List.of(s1, s2, s3));
+        break;
+      case Not_Precedence:
+        this.transitions.add( new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions()) );
+        this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
+        //this.transitions.add( new Transition(s2, s3, constraint.getTarget(), constraint.getTargetConditions()) );
+        s1.goal();
+        s2.goal();
+        s3.failure();
+
+        this.states.addAll(List.of(s1, s2, s3));
+        break;
+        
       default:
         break;
     }
@@ -143,4 +165,12 @@ public class Automaton {
   public List<Transition> getTransitions() {
     return this.transitions;
   }
+  
+  public List<StateEC> getStatesEC() {
+	  	List<StateEC> getStatesEC = new ArrayList();
+	  	for (State s : this.states) {
+	  		getStatesEC.add(new StateEC(s));
+	  	}
+	    return getStatesEC;
+	  }
 }

@@ -2,6 +2,8 @@ package log;
 
 import model.Activity;
 import model.DeclareModel;
+import model.MixedModel;
+
 import org.deckfour.xes.model.XLog;
 import org.deckfour.xes.model.XTrace;
 
@@ -18,6 +20,10 @@ public class LogFile {
   
   public LogFile(XLog xLog, DeclareModel declareModel) {
     this.traces = findTraces(xLog, declareModel.getActivities());
+  }
+
+  public LogFile(XLog xLog, MixedModel mixedModel) {
+    this.traces = findTraces(xLog, mixedModel.activityObjects);
   }
   
   /**

@@ -6,12 +6,14 @@ import Automaton.Pair;
 
 public class DeclareModel {
   
-  private final HashMap<String, Activity> activities;
+  public final HashMap<String, Activity> activities;
   private final ArrayList<DeclareConstraint> declareConstraints;
   private Map<Pair<Activity, CostEnum>, Integer> costs;
+  public ArrayList<String> params;
   
   public DeclareModel(Map<String, ArrayList<String[]>> parsedLines) {
     this.activities = addActivities(parsedLines.get("activityLines")); // ok
+    this.params = new ArrayList<>();
     Map<String, Attribute> attributes = bindAttributes(parsedLines.get("bindingLines")); 
     initializeAttributes(parsedLines.get("intAttributeLines"), parsedLines.get("floatAttributeLines"), parsedLines.get("enumAttributeLines"), attributes);
     this.declareConstraints = addConstraints(parsedLines.get("binaryConstraintLines"), parsedLines.get("unaryConstraintLines"));
@@ -44,9 +46,13 @@ public class DeclareModel {
   
   private void bindAttributesToActivity(Activity activity, String[] attributeNames, Map<String, Attribute> attributes) {
     for (String name : attributeNames) {
+      if (!this.params.contains(name)){
+          this.params.add(name);
+      }
       Attribute existentAttribute = attributes.get(name);
       if (existentAttribute != null) {
         activity.addAttribute(existentAttribute);
+
       } else {
         Attribute newAttribute = new Attribute(name);
         activity.addAttribute(newAttribute);
@@ -194,7 +200,13 @@ public class DeclareModel {
       
       if (activities.get(targetActivity) != null && activities.get(activationActivity) != null) {
         String activationCondition = constraintTokens[3].isBlank()? null : constraintTokens[3];
+
         String targetCondition = constraintTokens[4].isBlank()? null : constraintTokens[4];
+        /*
+        if (constraintTokens[4] == "") {
+          targetCondition = null;
+        }
+        */
         return new DeclareConstraint(template, activationActivity, activationCondition, targetActivity, targetCondition);
       }
     }
