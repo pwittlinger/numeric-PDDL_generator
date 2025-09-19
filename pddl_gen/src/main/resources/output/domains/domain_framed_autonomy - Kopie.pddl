@@ -2,8 +2,7 @@
 
   (:requirements :strips :typing :equality :adl :fluents :action-costs)
 
-  (:types activity automaton_state trace_state parameter_name value_name - object
-    failure_state - automaton_state)
+  (:types activity automaton_state trace_state parameter_name value_name constraint_automaton)
 
   ; ; Constants for prob
   ; (:constants
@@ -37,9 +36,8 @@
     (cur_t_state ?t - trace_state)
     (cur_s_state ?s - automaton_state)
     (goal_state ?s - automaton_state)
-    (final_t_state ?t - trace_state)
-    ;(dummy_trans ?s1 - automaton_state ?a - dummy_event ?s2 - automaton_state)
-
+    (inital_state ?s - automaton_state ?e - constraint_automaton)
+    (final_t_state ?t1 - trace_state)
 
     ;; PARAMETER AND CONSTRAINT DECLARATION
     (has_parameter ?a - activity ?pn - parameter_name ?t1 - trace_state ?t2 - trace_state)
@@ -53,13 +51,13 @@
     ; Predicates to keep track of planner progress
     (invalid ?s1 - automaton_state ?a - activity ?s2 - automaton_state)
     (complete_sync ?a - activity)
+    (prefix_synched)
     (after_sync)
-    ;(after_change)
     ;(adding_value ?a - activity ?t1 - trace_state)
     ;(adding_value_model ?a - activity ?s1 - automaton_state)
     (after_add)
     (after_add_check)
-    (goal)
+    (after_change)
 
     ; Declare this to indicate that such activity-parameter-value assignment exists.
     (has_substitution_value ?vn - value_name ?a - activity ?pn - parameter_name)
@@ -70,6 +68,7 @@
     (failure_state ?s - automaton_state)
     ; Used to indicate that the trace alignment couldn't possibly complete: prune -> less branching -> heap won't kaboom.
     (failure)
+    (violated ?e - constraint_automaton)
 
   )
 
@@ -88,72 +87,23 @@
     ;; VARIABLES SUBSTITUTION / ADDITION
     (variable_value ?var - value_name)
     (added_parameter_aut ?a - activity ?par - parameter_name ?s1 - automaton_state)
+    ;;
+    (change_cost ?a - activity)
+    (delete_cost ?a - activity)
+    (set_cost ?a - activity)
+    (add_cost ?a - activity)
   )
 
   ;; SUBSTITUTION
   ;; ----------------------------------------------------------------------------------------------------
-  (:action change_value
-    :parameters (?a - activity ?t1 - trace_state ?t2 - trace_state ?pn - parameter_name ?vn - value_name)
-    :precondition (and 
-      (trace ?t1 ?a ?t2)
-      (cur_t_state ?t1)
-      (has_substitution_value ?vn ?a ?pn)
-      (has_parameter ?a ?pn ?t1 ?t2)
-      (not (after_sync))
-      (not (after_add))
-      (not (after_add_check))
-      (not (failure))
-      (not (complete_sync ?a))
-      (not (goal))
-      (exists (?s1 ?s2 - automaton_state) 
-      (and
-        ;(not (failure_state ?s1))
-        (cur_s_state ?s1)
-        (automaton ?s1 ?a ?s2)
-        (has_constraint ?a ?pn ?s1 ?s2)
-        (or
-        (< (trace_parameter ?a ?pn ?t1 ?t2) (majority_constraint ?a ?pn ?s1 ?s2))
-            (> (trace_parameter ?a ?pn ?t1 ?t2) (minority_constraint ?a ?pn ?s1 ?s2))
-            (< (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_lower ?a ?pn ?s1 ?s2))
-            (> (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_higher ?a ?pn ?s1 ?s2))
-            (< (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
-            (> (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
-            (= (trace_parameter ?a ?pn ?t1 ?t2) (inequality_constraint ?a ?pn ?s1 ?s2))
-      )
-        
-      )
-      )
-      ;(not (after_change))
-    )
-    :effect (and 
-      (increase (total_cost) 1)
-      ;(has_parameter ?a ?pn ?t1 ?t2)
-      (assign (trace_parameter ?a ?pn ?t1 ?t2) (variable_value ?vn))
-  ))
+  
 
   ;; ADDITION
   ;; Adding a parameter to a trace
   ;; ----------------------------------------------------------------------------------------------------
   ;; DELETION
   ;; ----------------------------------------------------------------------------------------------------
-  (:action del
-    :parameters (?t1 - trace_state ?a - activity ?t2 - trace_state)
-    :precondition (and 
-      (cur_t_state ?t1) 
-      (trace ?t1 ?a ?t2)
-      (not (after_add))
-      (not (complete_sync ?a))
-      (not (after_sync)) 
-      (not (after_add_check))
-      (not (failure))
-      (not (goal))
-    )
-    :effect (and 
-      (increase (total_cost) 2)
-      (not (cur_t_state ?t1)) 
-      (cur_t_state ?t2)
-      )
-  )
+  
 
   ;; ADD ACTION / MOVE IN MODEL
   ;; add_action marks an activity A for addition
@@ -167,20 +117,25 @@
       (not (after_sync))
       (not (failure))
       (not (after_add_check))
-      (not (goal))
+      (not (after_change))
+      (prefix_synched)
+      ;(not (exists (?e - constraint_automaton) 
+      ;    (violated ?e)))
       (exists (?s1 - automaton_state ?s2 - automaton_state) 
         (and
         
         (cur_s_state ?s1)
         (not (goal_state ?s1))
+        (not (failure_state ?s1))
         
         (automaton ?s1 ?a ?s2)
+        ;(goal_state ?s1)
         (not (failure_state ?s2))
         )
-      )
+        )
       )
     :effect (and 
-      (increase (total_cost) 2)
+      (increase (total_cost) 0)
       (after_add)
       (complete_sync ?a)
   ))
@@ -192,16 +147,17 @@
       (after_add)
       (has_substitution_value ?vn ?a ?pn)
       (cur_s_state ?s1)
-      ;(automaton ?s1 ?a ?s2)
-      ;(has_constraint ?a ?pn ?s1 ?s2)
+      
+      (not (goal_state ?s1))
+
       (not (has_added_parameter_aut ?a ?pn ?s1))
-      (not (after_sync))
-      (not (failure))
+      ;(not (after_sync))
+      ;(not (failure))
       (not (after_add_check))
-      (not (goal))
+      ;(not (after_change))
       (exists (?s2 - automaton_state) 
       (and
-        ;(cur_s_state ?s1)
+    
         (automaton ?s1 ?a ?s2)
         (has_constraint ?a ?pn ?s1 ?s2)
         (not (failure_state ?s2))
@@ -220,8 +176,8 @@
       )
 
       :effect (and 
-      ;;(adding_value_model ?a ?s1)
-      (increase (total_cost) 1)
+
+      (increase (total_cost) 0)
       (has_added_parameter_aut ?a ?pn ?s1)
       (assign (added_parameter_aut ?a ?pn ?s1) (variable_value ?vn)))
   )
@@ -230,12 +186,13 @@
     :parameters (?a - activity)
     :precondition (and 
       (complete_sync ?a)
-      (not (failure))
-      ;(not (after_change))
-      (not (after_sync))
+      ;(not (failure))
+
+      ;(not (after_sync))
       (after_add)
       (not (after_add_check))
-      (not (goal))
+      ;(not (after_change))
+      
     )
     :effect (and 
       (after_add_check)
@@ -280,20 +237,20 @@
   (:action move_in_model_move_automata
       :parameters (?a - activity)
       :precondition (and 
-      (not (failure))
-      (not (after_sync))
+      ;(not (failure))
+      ;(not (after_sync))
       (complete_sync ?a)
       (not (after_add))
       (after_add_check)
-      (not (goal))
+      ;(not (after_change))
       (exists (?s1 - automaton_state ?s2 - automaton_state) 
       (and
+        (not (goal_state ?s1))
         (not (invalid ?s1 ?a ?s2))
         (cur_s_state ?s1)
         (automaton ?s1 ?a ?s2)
         (not (failure_state ?s2)))
       )
-      
       
       
       ; Ensure all inequality constraints for the added Action are fulfilled
@@ -317,8 +274,7 @@
         )
       )
 	  
-      ;(forall (?s1 - automaton_state ?s2 - automaton_state)
-      (forall (?s1 - automaton_state ?s2 - failure_state)
+      (forall (?s1 - automaton_state ?s2 - automaton_state)
         (when (and
           (not (invalid ?s1 ?a ?s2))
           (automaton ?s1 ?a ?s2)
@@ -335,23 +291,16 @@
             (when (has_added_parameter_aut ?a ?pn ?s1) (not (has_added_parameter_aut ?a ?pn ?s1)))
       )
 
-      ;(forall (?s1 - automaton_state)
-      ;      (when (adding_value_model ?a ?s1) (not (adding_value_model ?a ?s1)))
-      ;)
-
       (forall (?s1 - automaton_state ?s2 - automaton_state)
         (when
           (and 
           (automaton ?s1 ?a ?s2)
           (invalid ?s1 ?a ?s2)
-          ;(cur_s_state ?s1)
-          ;(failure_state ?s2)
           )
           (not (invalid ?s1 ?a ?s2)) )
       )
 
       (not (complete_sync ?a))
-      ;(not (after_add))
   )
   )
 
@@ -367,22 +316,35 @@
         (not (after_add))
         (not (failure))
         (not (complete_sync ?a))
-        (not (goal))
+        (not (after_add_check))
+        ;(exists (?s1 - automaton_state ?s2 - automaton_state ?pn - parameter_name)
         (exists (?s1 - automaton_state ?s2 - automaton_state ) 
         (and
         (cur_s_state ?s1)
+        ;(not (failure_state ?s1))
+        (not (goal_state ?s1))
         (automaton ?s1 ?a ?s2)
         (not (invalid ?s1 ?a ?s2))
         (not (failure_state ?s2))
+        ;(or
 
+            
+        ;    (< (trace_parameter ?a ?pn ?t1 ?t2) (majority_constraint ?a ?pn ?s1 ?s2))
+        ;    (> (trace_parameter ?a ?pn ?t1 ?t2) (minority_constraint ?a ?pn ?s1 ?s2))
+        ;    (< (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_lower ?a ?pn ?s1 ?s2))
+        ;    (> (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_higher ?a ?pn ?s1 ?s2))
+        ;    (< (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
+        ;    (> (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
+        ;    (= (trace_parameter ?a ?pn ?t1 ?t2) (inequality_constraint ?a ?pn ?s1 ?s2))
+        ;    )
         )
         )
-        ;(not (after_add_check))
+        
         )
       :effect (and 
         (increase (total_cost) 0)
         (after_sync)
-
+        (not (after_change))
         ;Check if case parameter is missing
         ;; The "nested" when seems to save time as we do not need to iterate 6+ times over all combinations
         (forall (?pn - parameter_name ?s1 - automaton_state ?s2 - automaton_state)
@@ -422,25 +384,36 @@
       (not (failure))
       (not (after_add_check))
       (not (complete_sync ?a))
+      ;(not (after_change))
       (after_sync)
+      (not (exists (?e - constraint_automaton) 
+       (violated ?e)))
+      ;(after_sync)
+      ;(exists (?t1 ?t2 - trace_state) 
       (cur_t_state ?t1) 
       (trace ?t1 ?a ?t2)
-      (not (goal))
+      ;)
+
       (exists (?s1 - automaton_state ?s2 - automaton_state) 
         (and
         (cur_s_state ?s1)
-        (not (goal_state ?s1))
+        ;(not (goal_state ?s1))
+        ;(not (failure_state ?s1))
         (automaton ?s1 ?a ?s2)
-        (not (invalid ?s1 ?a ?s2))
-        (not (failure_state ?s2))
+        ;(not (invalid ?s1 ?a ?s2))
+        ;(not (failure_state ?s2))
         )
       )
+      
  )
 
     :effect (and 
       (increase (total_cost) 0)
       (not (cur_t_state ?t1)) 
       (cur_t_state ?t2)
+      (when (final_t_state ?t2) (prefix_synched))
+      
+
       (not (after_sync))
       
       (forall (?s1 - automaton_state ?s2 - automaton_state)
@@ -456,8 +429,7 @@
       )
 
 
-      ;(forall (?s1 - automaton_state ?s2 - automaton_state)
-      (forall (?s1 - automaton_state ?s2 - failure_state)
+      (forall (?s1 - automaton_state ?s2 - automaton_state)
         (when (and
           (not (invalid ?s1 ?a ?s2))
           (automaton ?s1 ?a ?s2)
@@ -481,28 +453,52 @@
     )
   )
 
-  (:action goto-goal
-    :parameters ()
-    :precondition (and 
-                (exists (?t1 - trace_state) 
-                  (and (cur_t_state ?t1)
-                       (final_t_state ?t1)
+  (:action prefix-sync-finished
+      :parameters ()
+      :precondition (and (exists (?t1 - trace_state) 
+                (and
+                  (cur_t_state ?t1)
+                  (final_t_state ?t1)))
+                (not (exists (?e - constraint_automaton) 
+                 (violated ?e)))
                   )
-                )
-                (not (after_add))
-                (not (failure))
-                (not (after_add_check))
-                (not (after_sync))
-                (not (goal))
-                (forall (?s1 - automaton_state)
-                  (imply (cur_s_state ?s1)(goal_state ?s1))
-                )
-    )
-    :effect (and
-        (increase (total_cost) 0)
-        (goal)
-    )
+      :effect (prefix_synched)
   )
-    
   
+  (:action violate_prefix
+      :parameters (?t1 - trace_state ?a - activity ?t2 - trace_state ?e - constraint_automaton)
+      :precondition (and 
+              (cur_t_state ?t1)
+              (trace ?t1 ?a ?t2)
+              (not (violated ?e))
+              (exists (?s1 ?s2 - automaton_state)
+                (automaton ?s1 ?a ?s2) )
+              (not (exists (?e2 - constraint_automaton)
+               (violated ?e2) )
+              )
+              )
+      :effect (and 
+      (increase (total_cost) 3)
+          (not (cur_t_state ?t1))
+          (cur_t_state ?t2)
+          (violated ?e)
+          )
+  )
+
+  
+  
+
+  (:action reset
+  :parameters (?s1 ?s2 - automaton_state ?e - constraint_automaton)  
+  :precondition (and (cur_s_state ?s1) (inital_state ?s2 ?e) 
+              ;(failure)
+              
+              (violated ?e))
+  :effect (and
+  (increase (total_cost) 1)
+            (not (cur_s_state ?s1)) (cur_s_state ?s2)
+            (not (failure))
+            (not (violated ?e))
+                )
+    )
 )

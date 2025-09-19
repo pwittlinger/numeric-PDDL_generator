@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 import time
+import pm4py
 
 
 
@@ -30,6 +31,14 @@ if __name__ == "__main__":
 
     pns = dict()
     logs = []
+
+    if "cost_models" not in os.listdir(input_path):
+        os.mkdir(os.path.join(input_path, "cost_models"))    
+        for pn in pn_f:
+            pm = pm4py.read_pnml(os.path.join(pn_path, pn))
+            pnname = pn[:-5]
+            with open(os.path.join(input_path, "cost_models", f"cost_model-{pnname}.txt"), "w+") as f:
+                f.write("\n".join([t.label+" 1 2 1 2" for t in pm[0].transitions]))
 
     for p_ in pn_f:
         pname = p_[:-5]
@@ -100,6 +109,8 @@ if __name__ == "__main__":
                 else:
                     continue
 
+                cost_model = f"cost_models/cost_model-{pname}.txt"
+                
                 subprocess.call(['java', '-jar', r'C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\target\pddl_gen-1.0-SNAPSHOT-launcher.jar', decl_loc, pn_loc, l, variable_values, var_sub_loc, cost_model])
 
 

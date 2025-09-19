@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+   <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+      <name>
+         <text>PetriNetExported</text>
+      </name>
+      <page id="n0">
+         <name>
+            <text/>
+         </name>
+         <place id="n1">
+            <name>
+               <text>P1</text>
+            </name>
+            <toolspecific localNodeID="89a97f76-c38e-49da-a00d-30a60ccaa0c1" tool="ProM" version="6.4"/>
+            <graphics>
+               <position x="11.25" y="11.25"/>
+               <dimension x="12.5" y="12.5"/>
+            </graphics>
+            <initialMarking>
+               <text>1</text>
+            </initialMarking>
+            <finalMarking>
+               <text>1</text>
+            </finalMarking>
+         </place>
+         <transition id="n2">
+            <name>
+               <text>ActivityB</text>
+            </name>
+            <toolspecific activity="ActivityB" localNodeID="573f8c97-5b8a-456d-86d3-b049d1c91d81" tool="ProM"
+                          version="6.4"/>
+            <graphics>
+               <position x="17.5" y="15.0"/>
+               <dimension x="25.0" y="20.0"/>
+               <fill color="#FFFFFF"/>
+            </graphics>
+         </transition>
+         <arc id="arc3" source="n1" target="n2">
+            <name>
+               <text>1</text>
+            </name>
+            <toolspecific localNodeID="bdb18a3b-26c2-4355-80de-a10541b22566" tool="ProM" version="6.4"/>
+            <arctype>
+               <text>normal</text>
+            </arctype>
+         </arc>
+         <arc id="arc4" source="n2" target="n1">
+            <name>
+               <text>1</text>
+            </name>
+            <toolspecific localNodeID="d7a902ab-9da5-4f6f-a4a3-a8ee7fcb3ea4" tool="ProM" version="6.4"/>
+            <arctype>
+               <text>normal</text>
+            </arctype>
+         </arc>
+      </page>
+      <finalmarkings>
+         <marking>
+            <place idref="n1">
+               <text>0</text>
+            </place>
+         </marking>
+      </finalmarkings>
+      <variables/>
+   </net>
+</pnml>

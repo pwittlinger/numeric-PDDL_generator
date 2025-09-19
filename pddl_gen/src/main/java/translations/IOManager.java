@@ -345,9 +345,9 @@ public class IOManager {
   
   
   //Section: Reading cost model
-  public List<String[]> readCostModel(String costsFileName) {
+  public ArrayList<String[]> readCostModel(String costsFileName) {
     File costModel = new File(inputFolder + costsFileName);
-    List<String[]> costsList = new ArrayList<>();
+    ArrayList<String[]> costsList = new ArrayList<>();
 
     try (Scanner scanner = new Scanner(costModel)) {
       while (scanner.hasNextLine()) {
@@ -393,7 +393,7 @@ public class IOManager {
     try (FileWriter fileWriter = new FileWriter(outputFolder + "activityMapping_" + modelName + ".txt")) {
       fileWriter.write(activityMapping);
     } catch (IOException e) {
-      System.out.println("Error creating the activityMapping file");
+      System.out.println("Error creating the activityMapping file. \n" + e.toString());
     }
   }
 

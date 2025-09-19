@@ -38,7 +38,7 @@ public class PDDLGenerator {
   private ArrayList<Automaton> constraintAutomatons;
   private List<List<State>> goalAutomatonStates;
   private State finalTraceState;
-  // private final ArrayList<Transition> relevantTransitions;
+  // private final ArrayList<Transition> relevantTransitions;ss
 
   private static final String HEADER_STRING = 
     "(define (problem prob-trace)\n" + 
@@ -266,6 +266,7 @@ public class PDDLGenerator {
         if (conditions != null) {
           for (Condition c : conditions) {
             b.append(this.getConditionString(t, c));
+            b.append(this.getHasConditionString(t, c));
           }
         }
       }
@@ -306,6 +307,18 @@ public class PDDLGenerator {
 
     return b;
   }
+
+  private StringBuilder getHasConditionString(Transition t, Condition c) {
+    StringBuilder b = new StringBuilder();
+
+    if (c.operator == null) return b;
+    b.append("    (has_constraint " + c.activity + " " + c.parameterName + " " + t.getActiviationState().name + " " + t.getTargetState().name + ")\n");
+
+
+  return b;
+  }
+
+
   private StringBuilder buildGoals() {
     StringBuilder b = new StringBuilder();
 
@@ -710,4 +723,6 @@ public class PDDLGenerator {
         ")\n" + //
         "";
   }
+
+
 }

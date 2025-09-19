@@ -2,8 +2,7 @@
 
   (:requirements :strips :typing :equality :adl :fluents :action-costs)
 
-  (:types activity automaton_state trace_state parameter_name value_name - object
-    failure_state - automaton_state)
+  (:types activity automaton_state trace_state parameter_name value_name dummy_event)
 
   ; ; Constants for prob
   ; (:constants
@@ -38,7 +37,7 @@
     (cur_s_state ?s - automaton_state)
     (goal_state ?s - automaton_state)
     (final_t_state ?t - trace_state)
-    ;(dummy_trans ?s1 - automaton_state ?a - dummy_event ?s2 - automaton_state)
+    (dummy_trans ?s1 - automaton_state ?a - activity ?s2 - automaton_state)
 
 
     ;; PARAMETER AND CONSTRAINT DECLARATION
@@ -59,7 +58,6 @@
     ;(adding_value_model ?a - activity ?s1 - automaton_state)
     (after_add)
     (after_add_check)
-    (goal)
 
     ; Declare this to indicate that such activity-parameter-value assignment exists.
     (has_substitution_value ?vn - value_name ?a - activity ?pn - parameter_name)
@@ -104,25 +102,6 @@
       (not (after_add_check))
       (not (failure))
       (not (complete_sync ?a))
-      (not (goal))
-      (exists (?s1 ?s2 - automaton_state) 
-      (and
-        ;(not (failure_state ?s1))
-        (cur_s_state ?s1)
-        (automaton ?s1 ?a ?s2)
-        (has_constraint ?a ?pn ?s1 ?s2)
-        (or
-        (< (trace_parameter ?a ?pn ?t1 ?t2) (majority_constraint ?a ?pn ?s1 ?s2))
-            (> (trace_parameter ?a ?pn ?t1 ?t2) (minority_constraint ?a ?pn ?s1 ?s2))
-            (< (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_lower ?a ?pn ?s1 ?s2))
-            (> (trace_parameter ?a ?pn ?t1 ?t2) (interval_constraint_higher ?a ?pn ?s1 ?s2))
-            (< (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
-            (> (trace_parameter ?a ?pn ?t1 ?t2) (equality_constraint ?a ?pn ?s1 ?s2))
-            (= (trace_parameter ?a ?pn ?t1 ?t2) (inequality_constraint ?a ?pn ?s1 ?s2))
-      )
-        
-      )
-      )
       ;(not (after_change))
     )
     :effect (and 
@@ -146,7 +125,6 @@
       (not (after_sync)) 
       (not (after_add_check))
       (not (failure))
-      (not (goal))
     )
     :effect (and 
       (increase (total_cost) 2)
@@ -167,17 +145,6 @@
       (not (after_sync))
       (not (failure))
       (not (after_add_check))
-      (not (goal))
-      (exists (?s1 - automaton_state ?s2 - automaton_state) 
-        (and
-        
-        (cur_s_state ?s1)
-        (not (goal_state ?s1))
-        
-        (automaton ?s1 ?a ?s2)
-        (not (failure_state ?s2))
-        )
-      )
       )
     :effect (and 
       (increase (total_cost) 2)
@@ -198,24 +165,13 @@
       (not (after_sync))
       (not (failure))
       (not (after_add_check))
-      (not (goal))
       (exists (?s2 - automaton_state) 
       (and
         ;(cur_s_state ?s1)
         (automaton ?s1 ?a ?s2)
         (has_constraint ?a ?pn ?s1 ?s2)
         (not (failure_state ?s2))
-        (or
-        (> (variable_value ?vn) (majority_constraint ?a ?pn ?s1 ?s2))
-        (< (variable_value ?vn) (minority_constraint ?a ?pn ?s1 ?s2))
-
-        (= (variable_value ?vn) (equality_constraint ?a ?pn ?s1 ?s2))
-        (> (variable_value ?vn) (inequality_constraint ?a ?pn ?s1 ?s2))
-        (< (variable_value ?vn) (inequality_constraint ?a ?pn ?s1 ?s2))
-
         )
-        
-      )
       )
       )
 
@@ -235,7 +191,6 @@
       (not (after_sync))
       (after_add)
       (not (after_add_check))
-      (not (goal))
     )
     :effect (and 
       (after_add_check)
@@ -285,15 +240,6 @@
       (complete_sync ?a)
       (not (after_add))
       (after_add_check)
-      (not (goal))
-      (exists (?s1 - automaton_state ?s2 - automaton_state) 
-      (and
-        (not (invalid ?s1 ?a ?s2))
-        (cur_s_state ?s1)
-        (automaton ?s1 ?a ?s2)
-        (not (failure_state ?s2)))
-      )
-      
       
       
       ; Ensure all inequality constraints for the added Action are fulfilled
@@ -317,8 +263,7 @@
         )
       )
 	  
-      ;(forall (?s1 - automaton_state ?s2 - automaton_state)
-      (forall (?s1 - automaton_state ?s2 - failure_state)
+      (forall (?s1 - automaton_state ?s2 - automaton_state)
         (when (and
           (not (invalid ?s1 ?a ?s2))
           (automaton ?s1 ?a ?s2)
@@ -367,16 +312,6 @@
         (not (after_add))
         (not (failure))
         (not (complete_sync ?a))
-        (not (goal))
-        (exists (?s1 - automaton_state ?s2 - automaton_state ) 
-        (and
-        (cur_s_state ?s1)
-        (automaton ?s1 ?a ?s2)
-        (not (invalid ?s1 ?a ?s2))
-        (not (failure_state ?s2))
-
-        )
-        )
         ;(not (after_add_check))
         )
       :effect (and 
@@ -425,16 +360,6 @@
       (after_sync)
       (cur_t_state ?t1) 
       (trace ?t1 ?a ?t2)
-      (not (goal))
-      (exists (?s1 - automaton_state ?s2 - automaton_state) 
-        (and
-        (cur_s_state ?s1)
-        (not (goal_state ?s1))
-        (automaton ?s1 ?a ?s2)
-        (not (invalid ?s1 ?a ?s2))
-        (not (failure_state ?s2))
-        )
-      )
  )
 
     :effect (and 
@@ -456,8 +381,7 @@
       )
 
 
-      ;(forall (?s1 - automaton_state ?s2 - automaton_state)
-      (forall (?s1 - automaton_state ?s2 - failure_state)
+      (forall (?s1 - automaton_state ?s2 - automaton_state)
         (when (and
           (not (invalid ?s1 ?a ?s2))
           (automaton ?s1 ?a ?s2)
@@ -482,27 +406,17 @@
   )
 
   (:action goto-goal
-    :parameters ()
-    :precondition (and 
-                (exists (?t1 - trace_state) 
-                  (and (cur_t_state ?t1)
-                       (final_t_state ?t1)
-                  )
-                )
-                (not (after_add))
-                (not (failure))
-                (not (after_add_check))
-                (not (after_sync))
-                (not (goal))
-                (forall (?s1 - automaton_state)
-                  (imply (cur_s_state ?s1)(goal_state ?s1))
-                )
-    )
+    :parameters (?t1 - trace_state ?de - dummy_event)
+    :precondition (and (cur_t_state ?t1) (final_t_state ?t1))
     :effect (and
         (increase (total_cost) 0)
-        (goal)
+        (forall (?s1 ?s2 - automaton_state)
+        (when (and (cur_s_state ?s1) (dummy_trans ?s1 ?de ?
+        s2))
+        (and (not (cur_s_state ?s1)) (cur_s_state ?s2)))
+        )
     )
-  )
+)
     
   
 )

@@ -1,0 +1,1 @@
+﻿<pnml><net id="d3981b72-a4f7-4641-80f5-bb9ff1e88b44" type="http://www.pnml.org/version-2009/grammar/ptnet"><name><text>PetriNetExported</text></name><page id="e593ac09-5ca0-49a3-9d8d-c3e7bfc0dd94"><transition id="ffb8b4af-d929-46d1-b481-bb450945b2c1"><name><text>T1</text></name><graphics><position x="290" y="160"/></graphics></transition></page></net></pnml>
