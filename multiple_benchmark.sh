@@ -31,12 +31,12 @@ for length in "${lengths[@]}"; do
     echo "model=${model}"
 
     # Numeric PDDL files
-    # java -jar ${gen_path}/target/${gen_path}-1.0-SNAPSHOT-launcher.jar \
-    # 	/models/model${model}.decl \
-    # 	/traces${model}/${length}events_${model}.xes \
-    # 	/variable_values.txt \
-    # 	/variable_substitutions.txt \
-    # 	/cost_model.txt
+     java -jar ${gen_path}/target/${gen_path}-1.0-SNAPSHOT-launcher.jar \
+     	../input/models/model${model}.decl \
+     	../input/traces${model}/${length}events_${model}.xes \
+     	../input/variable_values.txt \
+     	../input/variable_substitutions.txt \
+     	../input/cost_model.txt
 
     # Propositionalized PDDL files
     # echo "Model: ${model}, length: ${length}" >> $results_file
@@ -50,7 +50,7 @@ for length in "${lengths[@]}"; do
     echo "" > $results_file
 
     for val in $(seq 1 $num_of_traces); do
-      (/usr/bin/time -v java -Xmx64g -jar GiacomoENHSP/rep/enhsp.jar -o ${gen_path}/src/main/resources/output/pddl/domain.pddl -f ${gen_path}/src/main/resources/output/pddl/problem${val}.pddl -planner opt-blind) 2>&1 | tee -a $results_file
+      (wsl -e time -v java -Xmx64g -jar "//home/pwittlinger/WinDownloads/enhsp-20.jar" -o ${gen_path}/src/main/resources/output/pddl/domain.pddl -f ${gen_path}/src/main/resources/output/pddl/problem${val}.pddl -planner opt-blind) 2>&1 | tee -a $results_file
 
       # timeout 45 bash -c "/usr/bin/time -v ./ff -o ${gen_path}/src/main/resources/output/pddl/domain.pddl -f ${gen_path}/src/main/resources/output/pddl/problem${val}.pddl -s 3+H" 2>&1 | tee -a $results_file
 

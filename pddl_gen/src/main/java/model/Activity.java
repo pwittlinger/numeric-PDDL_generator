@@ -32,7 +32,7 @@ public class Activity {
   
   public Attribute getAttribute(String name) {
     for (Attribute attribute : attributes) {
-      if (attribute.getName().equals(name)) {
+      if (attribute.getName().toLowerCase().equals(name)) {
         return attribute;
       }
     }

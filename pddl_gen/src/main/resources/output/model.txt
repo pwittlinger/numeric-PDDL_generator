@@ -1,215 +1,49 @@
-This model contains 30 activities:
+This model contains 9 activities:
 
-a11=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
+ActivityC=> My attributes are: 
 categorical of type enum with values: [c1, c2, c3]
 
 
 
-a10=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
+ActivityF=> My attributes are: 
 categorical of type enum with values: [c1, c2, c3]
 
 
 
-a13=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
+ActivityO=> My attributes are: 
 categorical of type enum with values: [c1, c2, c3]
 
 
 
-a12=> My attributes are: 
+ActivityP=> My attributes are: 
 integer of type integer with bounds: [0.0, 100.0]
 
+
+
+ActivityA=> My attributes are: 
+integer of type integer with bounds: [0.0, 100.0]
+
+
+
+ActivityB=> My attributes are: 
 categorical of type enum with values: [c1, c2, c3]
 
 
 
-a15=> My attributes are: 
+ActivityL=> My attributes are: 
+
+
+ActivityN=> My attributes are: 
 integer of type integer with bounds: [0.0, 100.0]
 
-categorical of type enum with values: [c1, c2, c3]
 
 
-
-a14=> My attributes are: 
+ActivityG=> My attributes are: 
 integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a17=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a16=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a19=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a18=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a20=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a22=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a21=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a24=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a23=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a26=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a25=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a28=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a27=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a29=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a1=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a2=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a3=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a4=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a5=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a6=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a7=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a8=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a9=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
-
-
-
-a30=> My attributes are: 
-integer of type integer with bounds: [0.0, 100.0]
-
-categorical of type enum with values: [c1, c2, c3]
 
 
 
 This model contains following constraints:
-[template=Response, activationActivity=a1, activationCondition=A.integer > 10 , targetActivity=a2, targetCondition=T.integer < 10 ]
-[template=Response, activationActivity=a3, activationCondition=A.categorical is c1 , targetActivity=a4, targetCondition=T.categorical is c2 ]
+[template=Response, activationActivity=ActivityG, activationCondition=A.integer > 10 , targetActivity=ActivityP, targetCondition=T.integer < 10 ]
+[template=Precedence, activationActivity=ActivityO, activationCondition=A.categorical is c1 , targetActivity=ActivityF, targetCondition=T.categorical is c2 ]
+[template=Not_Response, activationActivity=ActivityL, activationCondition=null, targetActivity=ActivityL, targetCondition=null]

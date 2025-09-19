@@ -5,8 +5,10 @@ ENHSP-Public/
 GiacomoENHSP/
 
 **/output/pddl/*
+**/output/libs/*
 
 .vscode/
 .idea/
 .DS_Store
 
+*.class

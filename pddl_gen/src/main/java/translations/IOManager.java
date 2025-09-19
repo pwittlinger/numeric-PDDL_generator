@@ -1,20 +1,30 @@
 package translations;
 
-import log.LogFile;
-import model.DeclareModel;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.deckfour.xes.in.XesXmlParser;
 import org.deckfour.xes.model.XLog;
+import org.processmining.datapetrinets.io.DPNIOException;
 import org.processmining.ltl2automaton.plugins.automaton.Automaton;
 import org.processmining.ltl2automaton.plugins.automaton.DOTExporter;
 
 import Automaton.VariableSubstitution;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import log.LogFile;
+import model.DataPetriNet;
+import model.DeclareModel;
+import model.MixedModel;
 
 public class IOManager {
   
@@ -42,6 +52,20 @@ public class IOManager {
     this.inputFolder = resourcesFolder + "input" + File.separator;
     this.outputFolder = resourcesFolder + "output" + File.separator;
     this.pddlFolder = outputFolder + "pddl" + File.separator;
+
+    // Create folders if these don't exist.
+    File inputDir = new File(inputFolder);
+    if (!inputDir.exists()) {
+      inputDir.mkdirs();
+    }
+    File outputDir = new File(outputFolder);
+    if (!outputDir.exists()) {
+      outputDir.mkdirs();
+    }
+    File pddlDir = new File(pddlFolder);
+    if (!pddlDir.exists()) {
+      pddlDir.mkdirs();
+    }
   }
 
   public void setProjectPrefix(String projectPrefix) {
@@ -133,19 +157,24 @@ public class IOManager {
   }
   
   private Pattern[] getCompiledPatterns() {
-    Pattern activityPattern = Pattern.compile("^\\s*activity\\s+([a-z]+[a-z\\d]*)\\s*$");
-    Pattern bindingPattern = Pattern.compile("^\\s*bind\\s+([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*$");
+    Pattern activityPattern = Pattern.compile("^\\s*activity\\s+([a-zA-Z]+[a-zA-Z\\d]*)\\s*$");
+    Pattern bindingPattern = Pattern.compile("^\\s*bind\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*$");
     
-    Pattern intPattern = Pattern.compile("^\\s*([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+integer\\s+between\\s+(-?\\d+)\\s+and\\s+(-?\\d+)\\s*$");
-    Pattern floatPattern = Pattern.compile("^\\s*([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+float\\s+between\\s+(-?\\d+\\.?\\d*)\\s+and\\s+(-?\\d+\\.?\\d*)\\s*$");
-    Pattern enumPattern = Pattern.compile("^\\s*([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*$");
+    Pattern intPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+integer\\s+between\\s+(-?\\d+)\\s+and\\s+(-?\\d+)\\s*$");
+    Pattern floatPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+float\\s+between\\s+(-?\\d+\\.?\\d*)\\s+and\\s+(-?\\d+\\.?\\d*)\\s*$");
+    Pattern enumPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*$");
     
-    Pattern unaryPattern = Pattern.compile("^([A-Za-z\\d]+)\\[([a-z]+[a-z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*$");
-    Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-z]+[a-z\\d]*),\\s*([a-z]+[a-z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*([Ta-z\\d!=(),.<> -]*)\\|\\s*$");
+    Pattern unaryPattern = Pattern.compile("^([A-Za-z\\d]+)\\[([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*$");
+    //Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*$");
+    Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*$");
     
-    Pattern numericConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s*$");
-    Pattern enumConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(is not|is)\\s+[a-z]+[a-z\\d]*\\s*$*");
-    Pattern listConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(not in|in)\\s+[a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*\\s*$");
+    Pattern numericConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s*$");
+    Pattern enumConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(is not|is)\\s+[a-zA-Z]+[a-zA-Z\\d]*\\s*$*");
+    Pattern listConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(not in|in)\\s+[a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*\\s*$");
+    
+    /*Pattern numericConditionPattern = Pattern.compile("^\\s{0,1}[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s{0,1}$");
+    Pattern enumConditionPattern = Pattern.compile("^\\s{0,1}[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(is not|is)\\s+[a-zA-Z]+[a-zA-Z\\d]*\\s{0,1}$*");
+    Pattern listConditionPattern = Pattern.compile("^\\s{0,1}[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(not in|in)\\s+[a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*\\s{0,1}$");*/
     return new Pattern[] {
       activityPattern, 
       bindingPattern, 
@@ -243,18 +272,7 @@ public class IOManager {
     return numericMatcher.find() || enumMatcher.find() || listMatcher.find();
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+   
   //Section: Exporting model
   public void exportModel(DeclareModel model) {
     try (FileWriter fileWriter = new FileWriter(outputFolder + "model.txt")) {
@@ -266,7 +284,23 @@ public class IOManager {
   
   
   //Section: Reading log file
-  public LogFile readLog(String logFileName, DeclareModel model) {
+  public LogFile readLog(String logFileName, MixedModel myMixedModel) {
+    File logFile = new File(inputFolder + logFileName);
+    XLog xlog = null;
+    XesXmlParser parser = new XesXmlParser();
+    if (parser.canParse(logFile)) {
+      try {
+        xlog = parser.parse(logFile).get(0);
+      } catch (Exception e) {
+        System.out.println("Error reading the log file");
+      }
+    }
+    //return new LogFile(xlog, myMixedModel.declareModel);
+    return new LogFile(xlog, myMixedModel);
+  }
+
+  
+  public LogFile readDeclareLog(String logFileName, DeclareModel model) {
     File logFile = new File(inputFolder + logFileName);
     XLog xlog = null;
     XesXmlParser parser = new XesXmlParser();
@@ -311,17 +345,18 @@ public class IOManager {
   
   
   //Section: Reading cost model
-  public String[] readCostModel(String costsFileName) {
+  public ArrayList<String[]> readCostModel(String costsFileName) {
     File costModel = new File(inputFolder + costsFileName);
-    String[] costs = new String[] {};
+    ArrayList<String[]> costsList = new ArrayList<>();
+
     try (Scanner scanner = new Scanner(costModel)) {
-      if (scanner.hasNextLine()) {
-        costs = scanner.nextLine().split(" ");
+      while (scanner.hasNextLine()) {
+        costsList.add(scanner.nextLine().split(" "));
       }
     } catch (IOException e) {
       System.out.println("Error reading the cost model");
     }
-    return costs;
+    return costsList;
   }
   
   public void exportEquivalenceClasses(HashMap<String, ArrayList<String>> classes) {
@@ -331,7 +366,7 @@ public class IOManager {
       for (String classPart : eqClass.getValue()) {
         builder.append(classPart).append(" ");
       }
-      builder.append("\n");
+      builder.append("\\n");
     }
     
     try (FileWriter fileWriter = new FileWriter(outputFolder + "equivalenceClasses.txt")) {
@@ -344,4 +379,22 @@ public class IOManager {
   public void exportToDot(Automaton automaton) throws IOException {
     DOTExporter.exportToDot(automaton, "MyAutomata", new FileWriter(outputFolder + File.separator + "automaton.dot"));
   }
+
+    //Section: Reading declare model
+    public DataPetriNet readDataPetriNet(String modelFileName) throws FileNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, InvocationTargetException, DPNIOException {
+      File dpnFilepath = new File(inputFolder + modelFileName);
+
+
+      String dpnFile = dpnFilepath.getAbsolutePath();
+      return new DataPetriNet(dpnFile);
+    }
+  
+  public void exportActivityMapping(String activityMapping, String modelName) {
+    try (FileWriter fileWriter = new FileWriter(outputFolder + "activityMapping_" + modelName + ".txt")) {
+      fileWriter.write(activityMapping);
+    } catch (IOException e) {
+      System.out.println("Error creating the activityMapping file. \n" + e.toString());
+    }
+  }
+
 }
