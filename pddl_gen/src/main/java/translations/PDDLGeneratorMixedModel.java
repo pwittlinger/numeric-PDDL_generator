@@ -12,6 +12,7 @@ import model.MixedModel;
 import org.deckfour.xes.extension.std.XConceptExtension;
 import Automaton.Automaton;
 import Automaton.State;
+import Automaton.StateEC;
 import Automaton.Transition;
 import Automaton.VariableSubstitution;
 import Automaton.Pair;
@@ -103,8 +104,9 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     s.append(this.buildSubstitutionValues(assignments, substitutions));
     s.append(this.buildActionCosts());
     s.append(this.buildTraceDeclaration(listOfEvents, attributes));
+     s.append(this.buildTimeStamps(timeStamps));
     s.append(this.buildAutomatons(finalAutomatonStates));
-    s.append(this.buildTimeStamps(timeStamps));
+   
 
     s.append(this.buildGoals());
     s.append(PDDLGeneratorMixedModel.FOOTER_STRING);
@@ -210,6 +212,10 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     StringBuilder b = new StringBuilder();
     b.append("    ; Action costs\n");
 
+    this.constraints.forEach(x -> b.append("    (= (violation_cost " + x.getConstraintName() + ") 0)\n"));
+    b.append("    (= (violation_cost pn) 0)\n");
+
+    /*
     for (Map.Entry<Pair<Activity, CostEnum>, Integer> cost : this.costs.entrySet()) {
       switch (cost.getKey().getValue()) {
         case CHANGE:
@@ -226,6 +232,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
           break;
       }
     }
+    */
     b.append("\n");
 
     return b;
@@ -235,6 +242,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     b.append("    ;; TRACE DECLARATION\n");
 
     b.append("    (cur_t_state " + events.get(0).getName() + ")\n");
+    b.append("    (final_t_state " +  this.finalTraceState.name + ")\n");
     Iterator<Event> it1 = events.iterator();
     Event cur;
 
@@ -245,6 +253,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     }
     String activity;
 
+   
 
     while (it1.hasNext()) {
       cur = it1.next();
@@ -326,11 +335,17 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
 
     for (String s : this.mixedModel.allInitialStates) {
       b.append("    (cur_s_state " + s + ")\n");
+      b.append("    (initial_state " + s + ")\n");
+      b.append("\n");
     }
+
+    b.append("\n");
 
     for (String s : this.mixedModel.allFailureStates) {
       b.append("    (failure_state " + s + ")\n");
     }
+
+    b.append("\n");
     
     for ( ArrayList<String> acceptingStates : this.mixedModel.allAcceptingStates) {
           if (acceptingStates.size() == 1) {
@@ -339,11 +354,14 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
 
             
             for (String singleGoal : acceptingStates) {
-              b.append("     (goal_state " + singleGoal+ ")\n");
+              b.append("    (goal_state " + singleGoal+ ")\n");
+
             }
            
           }
         }
+
+    b.append("\n");
 
     for (ArrayList<String> automatonElement : this.mixedModel.allAutomatonStrings){
       String activationState = automatonElement.get(0);
@@ -354,16 +372,31 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
 
     }
 
+
+  
+     for (Automaton aut : this.mixedModel.constraintAutomatons) {
+          // Set the "associated" relation between states and constraints
+           b.append("\n");
+  	      List<StateEC> allStates = aut.getStatesEC();
+	
+          String aName = aut.getConstraint().getConstraintName();
+  	      
+  	      for (StateEC g : allStates) {
+  	    	  b.append("    (associated " + g.name + " " + aName + ")\n");
+        }
+      }
+
+    b.append("\n");
+    for (String pnState: this.mixedModel.allPetriNetStates) {
+      // Setting the petri net states separately
+      b.append("    (associated " + pnState+" pn)\n");
+    }
+    b.append("\n");
+
     for (String condition : this.mixedModel.conditionStrings) {
       b.append(condition);
       b.append("\n");
     }
-
-    //if (this.mixedModel.dpnModel != null) {
-    //  this.mixedModel.allPetriNetStates.forEach(x -> {
-    //  b.append("    (petrinet_state " + x+")\n");
-    //});
-    //}
 
     // Close init
     b.append("  )\n");
@@ -391,30 +424,11 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
       }
     }
 
-    /*
-    for (String pn_state : this.mixedModel.allPetriNetStates) {
-      boolean noadd = false;
-        for ( ArrayList<String> acceptingStates : this.mixedModel.allAcceptingStates) {
-          
-          if (acceptingStates.contains(pn_state)){
-            noadd = true;
-          }
-        }
-      if (noadd){
-        continue;
-      }
-      else{
-        b.append("      (not (cur_s_state " + pn_state +"))\n");
-      }
-    }
-    */
-    //this.mixedModel.allPetriNetStates.forEach(x -> {
-    //  b.append("    (petrinet_state " + x+")\n");
-
+  
     b.append("    (not (failure))\n" +
-            "    (not (after_change))\n" + //
-            "    (not (after_add))\n" + //
-            "    (not (after_sync))\n" + //
+            //"    (not (after_change))\n" + //
+            //"    (not (after_add))\n" + //
+            //"    (not (after_sync))\n" + //
             "  ))\n\n"
     );
     return b;

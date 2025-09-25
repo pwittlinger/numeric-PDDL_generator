@@ -150,7 +150,7 @@ public class DeclareConstraint {
   }
 
   public String getConstraintName() {
-    return template.getTemplateName() + "_" + activationActivity + (targetActivity != null ? ("_" + targetActivity) : "");
+    return (template.getTemplateName() + "_" + activationActivity + (targetActivity != null ? ("_" + targetActivity) : "")).replaceAll("\s", "_");
   }
   
   public DeclareTemplate getTemplate() {

@@ -14,10 +14,12 @@ public class Automaton {
   private List<State> states = new ArrayList<>();
   private List<Transition> transitions = new ArrayList<>();
   private List<StateEC> statesEC = new ArrayList<>();
+  private DeclareConstraint constraint;
 
   public Automaton(Collection<String> activityNames, String statePrefix, DeclareConstraint constraint) {
     this.ACTIVITY_NAMES = activityNames;
     this.STATE_PREFIX = statePrefix;
+    this.constraint = constraint;
     
     State s1 = new State(this.STATE_PREFIX + 1)
       .initial();
@@ -173,4 +175,8 @@ public class Automaton {
 	  	}
 	    return getStatesEC;
 	  }
+
+  public DeclareConstraint getConstraint() {
+    return this.constraint;
+  }
 }
