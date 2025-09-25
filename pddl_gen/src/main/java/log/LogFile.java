@@ -45,7 +45,7 @@ public class LogFile {
   public ArrayList<String> generateProblems(PDDLGenerator pddlGenerator, Map<String, Integer> assignments, Set<VariableSubstitution> substitutions) {
     ArrayList<String> problems = new ArrayList<>();
     for (Trace trace : traces) {
-      problems.add(pddlGenerator.defineProblem(trace.getTrace(), assignments, substitutions));
+      problems.add(pddlGenerator.defineProblem(trace.getTrace(), assignments, substitutions, trace.getTimeStamps()));
     }
     return problems;
   }

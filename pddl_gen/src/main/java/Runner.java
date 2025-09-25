@@ -37,7 +37,16 @@ public class Runner {
     */
     // args = new String[5];
 
-    findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+    //findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+
+    findAlignments(
+      "declare/a20g6/a20g6_7_parsed.decl",
+       "petrinet/a20g6.pnml",
+       "logs/a20g6.xes",
+       "variable_values_multi_model.txt", 
+       "variable_subs/variable_substitutions_a20g6_7.decl.txt", 
+       "cost_models/cost_model-a20g6.txt");
+
       
   }
   

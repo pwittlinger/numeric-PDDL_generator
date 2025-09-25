@@ -81,7 +81,7 @@ public class PDDLGenerator {
     }
   }
 
-  public String defineProblem(ArrayList<Event> listOfEvents, Map<String, Integer> assignments, Set<VariableSubstitution> substitutions) {
+  public String defineProblem(ArrayList<Event> listOfEvents, Map<String, Integer> assignments, Set<VariableSubstitution> substitutions, ArrayList<Double> timeStamps) {
 
     Map<Event, Map<Attribute, String>> attributes = this.parseEvents(listOfEvents);
     List<State> finalAutomatonStates = new ArrayList<>();
@@ -153,6 +153,10 @@ public class PDDLGenerator {
     b.append("    ");
     variables.keySet().forEach(x -> b.append(x + " "));
     b.append("- value_name\n");
+
+    b.append("    ");
+    this.constraints.forEach(x -> b.append(x.getConstraintName() + " "));
+    b.append("- constraint\n");
 
     b.append("  )\n");
     return b;

@@ -91,7 +91,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     }
   }
 
-  public String defineProblem(ArrayList<Event> listOfEvents, Map<String, Integer> assignments, Set<VariableSubstitution> substitutions) {
+  public String defineProblem(ArrayList<Event> listOfEvents, Map<String, Integer> assignments, Set<VariableSubstitution> substitutions, ArrayList<Double> timeStamps) {
 
     Map<Event, Map<Attribute, String>> attributes = this.parseEvents(listOfEvents);
     List<State> finalAutomatonStates = new ArrayList<>();
@@ -104,6 +104,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     s.append(this.buildActionCosts());
     s.append(this.buildTraceDeclaration(listOfEvents, attributes));
     s.append(this.buildAutomatons(finalAutomatonStates));
+    s.append(this.buildTimeStamps(timeStamps));
 
     s.append(this.buildGoals());
     s.append(PDDLGeneratorMixedModel.FOOTER_STRING);
@@ -171,6 +172,11 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     b.append("    ");
     variables.keySet().forEach(x -> b.append(x + " "));
     b.append("- value_name\n");
+
+    b.append("    ");
+    this.constraints.forEach(x -> b.append(x.getConstraintName() + " "));
+    b.append("pn ");
+    b.append("- constraint\n");
 
     b.append("  )\n");
     return b;
@@ -810,5 +816,17 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     return s.toString(); //
    }
 
+   public StringBuilder buildTimeStamps(ArrayList<Double> timeStamps) {
+    // Assuming that the length of timeStamps is equal to the number of trace states-1
+    int l = timeStamps.size();
+    StringBuilder b = new StringBuilder();
+    b.append("    ;; TIMESTAMPS\n");
+    for (int i = 0; i < l; i++) {
+      int next = i + 1;
+      b.append("    (= (timestamp t" + i + " t" + next + ") " + timeStamps.get(i) + ")\n");
+    }
+
+    return b;
+  }
 
 }

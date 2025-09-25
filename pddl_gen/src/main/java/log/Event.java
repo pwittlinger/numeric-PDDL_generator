@@ -36,8 +36,15 @@ public class Event {
     while (it.hasNext()) {
       cur = it.next();
       String attKey = cur.getKey();
-      if (attKey.equals(XConceptExtension.KEY_NAME) || attKey.equals(XLifecycleExtension.KEY_TRANSITION) || attKey.equals(XTimeExtension.KEY_TIMESTAMP))
+      //if (attKey.equals(XConceptExtension.KEY_NAME) || attKey.equals(XLifecycleExtension.KEY_TRANSITION) || attKey.equals(XTimeExtension.KEY_TIMESTAMP))
+      //  continue;
+
+      if (attKey.equals(XConceptExtension.KEY_NAME) || attKey.equals(XLifecycleExtension.KEY_TRANSITION))
         continue;
+
+      //if (attKey.equals(XTimeExtension.KEY_TIMESTAMP)){
+      //  map.put(new Attribute("timestamp"),XTimeExtension.instance().);
+      //}
 
       map.put(new Attribute(cur.getKey()), cur.getValue().toString());
     }

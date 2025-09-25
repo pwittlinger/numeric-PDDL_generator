@@ -148,6 +148,10 @@ public class DeclareConstraint {
     return "[template=" + template + ", activationActivity=" + activationActivity + ", activationCondition=" + activationConditionString
     + ", targetActivity=" + targetActivity + ", targetCondition=" + targetConditionString + "]";
   }
+
+  public String getConstraintName() {
+    return template.getTemplateName() + "_" + activationActivity + (targetActivity != null ? ("_" + targetActivity) : "");
+  }
   
   public DeclareTemplate getTemplate() {
     return template;
