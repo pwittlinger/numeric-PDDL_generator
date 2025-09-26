@@ -149,7 +149,7 @@ public class IOManager {
   
   private HashMap<String, ArrayList<String[]>> initializeSortingMap() {
     HashMap<String, ArrayList<String[]>> lines = new HashMap<>();
-    String[] lineDefinitions = {"activityLines", "bindingLines", "intAttributeLines", "floatAttributeLines", "enumAttributeLines", "unaryConstraintLines", "binaryConstraintLines"};
+    String[] lineDefinitions = {"activityLines", "bindingLines", "intAttributeLines", "floatAttributeLines", "enumAttributeLines", "unaryConstraintLines", "binaryConstraintLines", "unaryTimeConstraintLines", "binaryTimeConstraintLines"};
     for (String container : lineDefinitions) {
       lines.put(container, new ArrayList<>());
     }
@@ -165,9 +165,11 @@ public class IOManager {
     Pattern enumPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*$");
     
     Pattern unaryPattern = Pattern.compile("^([A-Za-z\\d]+)\\[([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*$");
+    Pattern unaryTimePattern = Pattern.compile("^([A-Za-z\\d]+)\\[([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*([a-zA-Z]+[a-zA-Z\\d]*,\\d+,\\d+,h)$");
     //Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*$");
     Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*$");
-    
+    Pattern binaryTimePattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*([a-zA-Z]+[a-zA-Z\\d]*,\\d+,\\d+,h\\/[a-zA-Z]+[a-zA-Z\\d]*,\\d+,\\d+,h)$");
+
     Pattern numericConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s*$");
     Pattern enumConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(is not|is)\\s+[a-zA-Z]+[a-zA-Z\\d]*\\s*$*");
     Pattern listConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(not in|in)\\s+[a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*\\s*$");
@@ -185,7 +187,9 @@ public class IOManager {
       binaryPattern,
       numericConditionPattern, 
       enumConditionPattern, 
-      listConditionPattern
+      listConditionPattern,
+      unaryTimePattern,
+      binaryTimePattern
     };
   }
     
@@ -199,6 +203,9 @@ public class IOManager {
     Matcher enumMatcher = patterns[4].matcher(line);
     Matcher unaryMatcher = patterns[5].matcher(line);
     Matcher binaryMatcher = patterns[6].matcher(line);
+
+    Matcher unaryTimeMatcher = patterns[10].matcher(line);
+    Matcher binaryTimeMatcher = patterns[11].matcher(line);
     
     if (activityMatcher.find()) {
       lines.get("activityLines").add(new String[] {activityMatcher.group(1)});
@@ -221,6 +228,18 @@ public class IOManager {
         lines.get("unaryConstraintLines").add(tokenizeUnaryConstraint(unaryMatcher));
       } else {
         System.out.println("Error parsing condition: " + unaryMatcher.group(3));
+      }
+    } else if (unaryTimeMatcher.find()) {
+      if (isConditionValid(unaryTimeMatcher.group(3), patterns)) {
+        lines.get("unaryTimeConstraintLines").add(tokenizeUnaryTimeConstraint(unaryTimeMatcher));
+      } else {
+        System.out.println("Error parsing condition: " + unaryTimeMatcher.group(3));
+      }
+    } else if (binaryTimeMatcher.find()) {
+      if (isConditionValid(binaryTimeMatcher.group(4), patterns) && isConditionValid(binaryTimeMatcher.group(5), patterns)) {
+        lines.get("binaryTimeConstraintLines").add(tokenizeBinaryTimeConstraint(binaryTimeMatcher));
+      } else {
+        System.out.println("Error parsing condition: " + binaryTimeMatcher.group(4) + " or " + binaryTimeMatcher.group(5));
       }
     } else {
       System.out.println("Error parsing line: " + line);
@@ -247,6 +266,14 @@ public class IOManager {
   
   private String[] tokenizeBinaryConstraint(Matcher matcher) {
     return new String[] {matcher.group(1), matcher.group(2), matcher.group(3), matcher.group(4), matcher.group(5)};
+  }
+
+  private String[] tokenizeUnaryTimeConstraint(Matcher matcher) {
+    return new String[] {matcher.group(1), matcher.group(2), matcher.group(3), matcher.group(4)};
+  }
+
+  private String[] tokenizeBinaryTimeConstraint(Matcher matcher) {
+    return new String[] {matcher.group(1), matcher.group(2), matcher.group(3), matcher.group(4), matcher.group(5), matcher.group(6)};
   }
   
   

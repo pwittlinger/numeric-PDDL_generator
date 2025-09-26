@@ -12,6 +12,8 @@ public class Transition {
   private String activity;
   private List<Condition> originalConditions;
   private List<Condition> reformedConditions;
+  private Double minTimeCondition = -1.0; // -1 means no condition
+  private Double maxTimeCondition = -1.0;
 
   public Transition(State state1, State state2, String activity, List<Condition> conditions) {
     this.activationState = state1;
@@ -62,4 +64,21 @@ public class Transition {
   public List<Condition> getReformedConditions() {
     return reformedConditions;
   }
+
+  public void setMinTimeCondition(Double minTime) {
+    this.minTimeCondition = minTime;
+  }
+
+  public void setMaxTimeCondition(Double maxTime) {
+    this.maxTimeCondition = maxTime;
+  }
+
+  public double getMinTimeCondition() {
+    return this.minTimeCondition;
+  }
+
+  public double getMaxTimeCondition() {
+    return this.maxTimeCondition;
+  }
+
 }

@@ -212,7 +212,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     StringBuilder b = new StringBuilder();
     b.append("    ; Action costs\n");
 
-    this.constraints.forEach(x -> b.append("    (= (violation_cost " + x.getConstraintName() + ") 0)\n"));
+    this.constraints.forEach(x -> b.append("    (= (violation_cost " + x.getConstraintName() + ") 1)\n"));
     b.append("    (= (violation_cost pn) 0)\n");
 
     /*
@@ -275,7 +275,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
         String attName = singleAssignment.getKey().getName();
 
         if (!this.mixedModel.declareModel.params.contains(attName)) {
-          break;
+          continue;
         }
         value = value.replaceAll("[a-zA-Z]", ""); // Remove chars, use as if numbers (in case of enum types)
 
@@ -378,12 +378,31 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
           // Set the "associated" relation between states and constraints
            b.append("\n");
   	      List<StateEC> allStates = aut.getStatesEC();
+
 	
           String aName = aut.getConstraint().getConstraintName();
   	      
   	      for (StateEC g : allStates) {
   	    	  b.append("    (associated " + g.name + " " + aName + ")\n");
         }
+
+        boolean setClock = false;
+
+        for (Transition transition : aut.getTransitions()) {
+          if ((transition.getMinTimeCondition() > 0.0) && (transition.getMaxTimeCondition() > 0.0)) {
+            setClock = true;
+            b.append("    (= (min_t_condition " + transition.getActiviationState().name + " " + this.mixedModel.activities.get(transition.getActivity()) + " " + transition.getTargetState().name + ") " + transition.getMinTimeCondition() + ")\n");
+            b.append("    (= (max_t_condition " + transition.getActiviationState().name + " " + this.mixedModel.activities.get(transition.getActivity()) + " " + transition.getTargetState().name + ") " + transition.getMaxTimeCondition() + ")\n");
+          }
+        
+        }
+
+        if (setClock == true) {
+          b.append("    (= (start_clock " + aName + ") 0)\n");
+        }
+          //if (aut.getConstraint().getActivationTimeConditions() != null) {
+           // b.append("    (has_time_conditions " + aName + " activation " + aut.getConstraint().getActivationTimeConditions()[0] + " " + aut.getConstraint().getActivationTimeConditions()[1] + ")\n");
+          //}
       }
 
     b.append("\n");

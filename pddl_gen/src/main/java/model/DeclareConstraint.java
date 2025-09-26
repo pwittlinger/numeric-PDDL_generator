@@ -8,6 +8,7 @@ public class DeclareConstraint {
   private final String activationActivity, targetActivity;
   private String activationConditionString, targetConditionString;
   private ArrayList<Condition> activationConditionsList, targetConditionsList;
+  private double activation_min_t_condidition, activation_max_t_condition, target_min_t_condidition, target_max_t_condition;
   
   public DeclareConstraint(DeclareTemplate template, String activationActivity, String activationCondition, String targetActivity, String targetCondition) {
     this.template = template;
@@ -19,6 +20,7 @@ public class DeclareConstraint {
     this.activationConditionsList = this.parseConditionList(activationActivity, activationCondition);
     this.targetConditionsList = this.parseConditionList(targetActivity, targetCondition);
   }
+
   private ArrayList<Condition> parseConditionList(String activityName, String conditionsString) {
     if (activityName == null || conditionsString == null) return null; // For unary constraints
 
@@ -155,5 +157,29 @@ public class DeclareConstraint {
   
   public DeclareTemplate getTemplate() {
     return template;
+  }
+
+  public void setActivationTimeConditions(double min, double max) {
+    this.activation_min_t_condidition = min;
+    this.activation_max_t_condition = max;
+  }
+
+  public void setTargetTimeConditions(double min, double max) {
+    this.target_min_t_condidition = min;
+    this.target_max_t_condition = max;
+  }
+
+  public double[] getActivationTimeConditions() {
+    if (this.activation_min_t_condidition == 0 && this.activation_max_t_condition == 0) {
+      return null;
+    }
+    return new double[] {this.activation_min_t_condidition, this.activation_max_t_condition};
+  }
+
+  public double[] getTargetTimeConditions() {
+    if (this.target_min_t_condidition == 0 && this.target_max_t_condition == 0) {
+      return null;
+    }
+    return new double[] {this.target_min_t_condidition, this.target_max_t_condition};
   }
 }

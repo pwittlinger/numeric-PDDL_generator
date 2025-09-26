@@ -39,8 +39,10 @@ public class Event {
       //if (attKey.equals(XConceptExtension.KEY_NAME) || attKey.equals(XLifecycleExtension.KEY_TRANSITION) || attKey.equals(XTimeExtension.KEY_TIMESTAMP))
       //  continue;
 
-      if (attKey.equals(XConceptExtension.KEY_NAME) || attKey.equals(XLifecycleExtension.KEY_TRANSITION))
+      if (attKey.equals(XConceptExtension.KEY_NAME) || attKey.equals(XLifecycleExtension.KEY_TRANSITION)) {
+        //System.out.println(attKey +"\t" + XConceptExtension.KEY_NAME+"\t" + XLifecycleExtension.KEY_TRANSITION);
         continue;
+     }
 
       //if (attKey.equals(XTimeExtension.KEY_TIMESTAMP)){
       //  map.put(new Attribute("timestamp"),XTimeExtension.instance().);

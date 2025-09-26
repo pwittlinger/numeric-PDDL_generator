@@ -16,7 +16,7 @@ public class DeclareModel {
     this.params = new ArrayList<>();
     Map<String, Attribute> attributes = bindAttributes(parsedLines.get("bindingLines")); 
     initializeAttributes(parsedLines.get("intAttributeLines"), parsedLines.get("floatAttributeLines"), parsedLines.get("enumAttributeLines"), attributes);
-    this.declareConstraints = addConstraints(parsedLines.get("binaryConstraintLines"), parsedLines.get("unaryConstraintLines"));
+    this.declareConstraints = addConstraints(parsedLines.get("binaryConstraintLines"), parsedLines.get("unaryConstraintLines"), parsedLines.get("binaryTimeConstraintLines"), parsedLines.get("unaryTimeConstraintLines"));
   }
   
   
@@ -150,10 +150,15 @@ public class DeclareModel {
   
   
   //Section: Evaluation of each Constraint
-  private ArrayList<DeclareConstraint> addConstraints(ArrayList<String[]> binaryConstraints, ArrayList<String[]> unaryConstraints) {
+  private ArrayList<DeclareConstraint> addConstraints(ArrayList<String[]> binaryConstraints,
+                                                     ArrayList<String[]> unaryConstraints,
+                                                      ArrayList<String[]> binaryTimeConstraints,
+                                                      ArrayList<String[]> unaryTimeConstraints) {
     ArrayList<DeclareConstraint> newConstraints = new ArrayList<>();
     addUnaryConstraints(newConstraints, unaryConstraints);
     addBinaryConstraints(newConstraints, binaryConstraints);
+    addUnaryTimeConstraints(newConstraints, unaryTimeConstraints);
+    addBinaryTimeConstraints(newConstraints, binaryTimeConstraints);
     return newConstraints;
   }
   
@@ -208,6 +213,91 @@ public class DeclareModel {
         }
         */
         return new DeclareConstraint(template, activationActivity, activationCondition, targetActivity, targetCondition);
+      }
+    }
+    return null;
+  }
+
+  /*
+   * NEW PART
+   * ADDING TIME CONDITIONS TO THE CONSTRAINTS
+   */
+
+   private void addUnaryTimeConstraints(ArrayList<DeclareConstraint> constraints, ArrayList<String[]> unaryConstraints) {
+    for (String[] line : unaryConstraints) {
+      DeclareConstraint constraint = constructUnaryTimeConstraint(line);
+      if (constraint != null && constraint.assignConditionsToAttributes(activities)) {
+        constraints.add(constraint);
+      }
+    }
+  }
+
+  private DeclareConstraint constructUnaryTimeConstraint(String[] constraintTokens) {
+    DeclareTemplate template = DeclareTemplate.getByTemplateName(constraintTokens[0]);
+    String activity = constraintTokens[1];
+    if (template != null && activities.get(activity) != null) {
+      String activationCondition = constraintTokens[2] == null? null : constraintTokens[2];
+      DeclareConstraint dc = new DeclareConstraint(template, activity, activationCondition, null,null);
+      
+      String[] timeCond = constraintTokens[3].split(",");
+      dc.setActivationTimeConditions(Double.parseDouble(timeCond[1]), Double.parseDouble(timeCond[2]));
+      
+      //return new DeclareConstraint(template, activity, activationCondition, null,null);
+      return dc;
+    }
+    return null;
+  }
+  
+  private void addBinaryTimeConstraints(ArrayList<DeclareConstraint> constraints, ArrayList<String[]> binaryConstraints) {
+    for (String[] line : binaryConstraints) {
+      DeclareConstraint constraint = constructBinaryTimeConstraint(line);
+      if (constraint != null && constraint.assignConditionsToAttributes(activities)) {
+        constraints.add(constraint);
+      }
+    }
+  }
+
+  private DeclareConstraint constructBinaryTimeConstraint(String[] constraintTokens) {
+    DeclareTemplate template = DeclareTemplate.getByTemplateName(constraintTokens[0]);
+    String activationActivity, targetActivity;
+    
+    if (template != null) {
+      if (template.getReverseActivationTarget()) {
+        targetActivity = constraintTokens[1];
+        activationActivity = constraintTokens[2];
+      } else {
+        activationActivity = constraintTokens[1];
+        targetActivity = constraintTokens[2];
+      }
+      
+      if (activities.get(targetActivity) != null && activities.get(activationActivity) != null) {
+        String activationCondition = constraintTokens[3].isBlank()? null : constraintTokens[3];
+
+        String targetCondition = constraintTokens[4].isBlank()? null : constraintTokens[4];
+
+        String[] timeConds = constraintTokens[5].split("/");
+
+        String[] at = timeConds[0].split(",");
+        String[] tt = timeConds[1].split(",");
+
+
+        DeclareConstraint dc = new DeclareConstraint(template, activationActivity, activationCondition, targetActivity, targetCondition);
+
+        if (activationActivity.contentEquals(at[0])){
+          dc.setActivationTimeConditions(Double.parseDouble(at[1]), Double.parseDouble(at[2]));
+          dc.setTargetTimeConditions(Double.parseDouble(tt[1]), Double.parseDouble(tt[2]));
+        }
+        else if (activationActivity.contentEquals(tt[0])){
+          dc.setActivationTimeConditions(Double.parseDouble(tt[1]), Double.parseDouble(tt[2]));
+          dc.setTargetTimeConditions(Double.parseDouble(at[1]), Double.parseDouble(at[2]));
+        }
+        /*
+        if (constraintTokens[4] == "") {
+          targetCondition = null;
+        }
+        */
+        //return new DeclareConstraint(template, activationActivity, activationCondition, targetActivity, targetCondition);
+        return dc;
       }
     }
     return null;
