@@ -260,7 +260,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
         String attName = singleAssignment.getKey().getName();
 
         if (!this.mixedModel.declareModel.params.contains(attName)) {
-          break;
+          continue;
         }
         value = value.replaceAll("[a-zA-Z]", ""); // Remove chars, use as if numbers (in case of enum types)
 
