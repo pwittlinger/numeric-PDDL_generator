@@ -87,7 +87,7 @@ public class Trace {
   private static double getDateDiff(Date date1, Date date2, TimeUnit timeUnit) {
       long diffInMillies = date2.getTime() - date1.getTime();
       //double r = timeUnit.convert(diffInMillies,TimeUnit.MILLISECONDS);
-      return (double)Math.round(diffInMillies*100d / (1000.0*60.0*60.0))/100d; // convert to hours
+      return (double)Math.round(diffInMillies*10d / (1000.0*60.0*60.0))/10d; // convert to hours
   }
 
 

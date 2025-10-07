@@ -190,6 +190,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     b.append("  (:init\n\n");
     b.append("    ; Initialize plan cost. Some planners might need this explicitly\n");
     b.append("    (= (total_cost) 0)\n\n");
+    b.append("    (= (current_timestamp) 0)\n\n");
     b.append("    ;; SUBSTITUTION VARIABLES\n");
 
     for (Map.Entry<String, Integer> entry : variables.entrySet()) {
@@ -213,7 +214,7 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
     b.append("    ; Action costs\n");
 
     this.constraints.forEach(x -> b.append("    (= (violation_cost " + x.getConstraintName() + ") 1)\n"));
-    b.append("    (= (violation_cost pn) 0)\n");
+    b.append("    (= (violation_cost pn) 1)\n");
 
     /*
     for (Map.Entry<Pair<Activity, CostEnum>, Integer> cost : this.costs.entrySet()) {
@@ -381,9 +382,16 @@ public class PDDLGeneratorMixedModel extends PDDLGenerator{
 
 	
           String aName = aut.getConstraint().getConstraintName();
+          ArrayList<String> clocks =  aut.getConstraint().getClockConditions();
   	      
   	      for (StateEC g : allStates) {
   	    	  b.append("    (associated " + g.name + " " + aName + ")\n");
+            }
+
+        for(String cString : clocks) {
+          if (cString.contains("sDEC")) {
+            b.append(cString);
+          }
         }
 
         boolean setClock = false;

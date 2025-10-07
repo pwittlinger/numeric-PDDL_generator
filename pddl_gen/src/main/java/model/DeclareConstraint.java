@@ -9,6 +9,7 @@ public class DeclareConstraint {
   private String activationConditionString, targetConditionString;
   private ArrayList<Condition> activationConditionsList, targetConditionsList;
   private double activation_min_t_condidition, activation_max_t_condition, target_min_t_condidition, target_max_t_condition;
+  private ArrayList<String> clockConditions;
   
   public DeclareConstraint(DeclareTemplate template, String activationActivity, String activationCondition, String targetActivity, String targetCondition) {
     this.template = template;
@@ -19,6 +20,7 @@ public class DeclareConstraint {
 
     this.activationConditionsList = this.parseConditionList(activationActivity, activationCondition);
     this.targetConditionsList = this.parseConditionList(targetActivity, targetCondition);
+    this.clockConditions = new ArrayList<String>();
   }
 
   private ArrayList<Condition> parseConditionList(String activityName, String conditionsString) {
@@ -181,5 +183,17 @@ public class DeclareConstraint {
       return null;
     }
     return new double[] {this.target_min_t_condidition, this.target_max_t_condition};
+  }
+
+  public void addClockCondition(String cCond1, String cCond2) {
+    this.clockConditions.add(formatClockCond(cCond1, cCond2));
+  }
+
+  public ArrayList<String> getClockConditions() {
+    return this.clockConditions;
+  }
+
+  private String formatClockCond(String s1, String s2) {
+    return "    (clock " + s1 + " " + s2 + ")\n";
   }
 }

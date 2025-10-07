@@ -40,6 +40,7 @@ public class Automaton {
         if (at != null) {
           t1.setMinTimeCondition(at[0]);
           t1.setMaxTimeCondition(at[1]);
+          constraint.addClockCondition(s1.name, s2.name);
         }
 
         this.transitions.add(t1);
@@ -55,6 +56,7 @@ public class Automaton {
         if (at != null) {
           t1.setMinTimeCondition(at[0]);
           t1.setMaxTimeCondition(at[1]);
+          constraint.addClockCondition(s1.name, s2.name);
         }
         this.transitions.add(t1);
         s2.goal();
@@ -80,12 +82,14 @@ public class Automaton {
         if (at != null) {
           t2.setMinTimeCondition(at[0]);
           t2.setMaxTimeCondition(at[1]);
+          constraint.addClockCondition(s1.name, s2.name);
         }
         if (tt != null) {
           t1.setMinTimeCondition(tt[0]);
           t1.setMaxTimeCondition(tt[1]);
           t3.setMinTimeCondition(tt[0]);
           t3.setMaxTimeCondition(tt[1]);
+          constraint.addClockCondition(s1.name, s3.name);
         }
 
 
@@ -112,6 +116,7 @@ public class Automaton {
         if (tt != null) {
           t2.setMinTimeCondition(tt[0]);
           t2.setMaxTimeCondition(tt[1]);
+          constraint.addClockCondition(s1.name, s2.name);
         }
         this.transitions.add(t1);
         this.transitions.add(t2);
@@ -132,6 +137,7 @@ public class Automaton {
         if (tt != null) {
           t2.setMinTimeCondition(tt[0]);
           t2.setMaxTimeCondition(tt[1]);
+          constraint.addClockCondition(s1.name, s2.name);
         }
 
         this.transitions.add(t1);
@@ -162,6 +168,7 @@ public class Automaton {
         if (tt != null) {
           t2.setMinTimeCondition(tt[0]);
           t2.setMaxTimeCondition(tt[1]);
+          constraint.addClockCondition(s1.name, s2.name);
         }
 
         this.transitions.add(t1);
@@ -195,26 +202,87 @@ public class Automaton {
         this.states.add(s3);
         this.states.add(s4);
 
-        this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
-        this.transitions.add( new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions()) );
-        this.transitions.add( new Transition(s2, s4, constraint.getTarget(), constraint.getTargetConditions()) );
-        this.transitions.add( new Transition(s3, s4, constraint.getActivation(), constraint.getActivationConditions()) );
+        t1 =  new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions());
+        t2 = new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions());
+        t3 = new Transition(s2, s4, constraint.getTarget(), constraint.getTargetConditions());
+        Transition t4 = new Transition(s3, s4, constraint.getActivation(), constraint.getActivationConditions());
+
+        if (at != null) {
+          t1.setMinTimeCondition(at[0]);
+          t1.setMaxTimeCondition(at[1]);
+
+          t4.setMinTimeCondition(at[0]);
+          t4.setMaxTimeCondition(at[1]);
+          
+        }
+        if (tt != null) {
+          t2.setMinTimeCondition(tt[0]);
+          t2.setMaxTimeCondition(tt[1]);
+
+          t3.setMinTimeCondition(tt[0]);
+          t3.setMaxTimeCondition(tt[1]);
+          constraint.addClockCondition(s1.name, s2.name);
+          constraint.addClockCondition(s1.name, s4.name);
+        }
+        
+
+        //this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
+        //this.transitions.add( new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions()) );
+        //this.transitions.add( new Transition(s2, s4, constraint.getTarget(), constraint.getTargetConditions()) );
+        //this.transitions.add( new Transition(s3, s4, constraint.getActivation(), constraint.getActivationConditions()) );
         break;
 
       case Precedence:
-        this.transitions.add( new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions()) );
-        this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
+        //this.transitions.add( new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions()) );
+        //this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
+
+        t1 = new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions());
+        t2 = new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions());
+
+        if (at != null) {
+          t2.setMinTimeCondition(at[0]);
+          t2.setMaxTimeCondition(at[1]);
+        }
+        if (tt != null) {
+          t1.setMinTimeCondition(tt[0]);
+          t1.setMaxTimeCondition(tt[1]);
+          constraint.addClockCondition(s1.name, s3.name);
+        }
+
+        this.transitions.add(t1);
+        this.transitions.add(t2);
         //this.transitions.add( new Transition(s2, s3, constraint.getTarget(), constraint.getTargetConditions()) );
         s1.goal();
         s3.goal();
         s2.failure();
 
+
+        
+
         this.states.addAll(List.of(s1, s2, s3));
         break;
       case Not_Precedence:
-        this.transitions.add( new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions()) );
-        this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
+        //this.transitions.add( new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions()) );
+        //this.transitions.add( new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions()) );
         //this.transitions.add( new Transition(s2, s3, constraint.getTarget(), constraint.getTargetConditions()) );
+
+        t1 = new Transition(s1, s3, constraint.getTarget(), constraint.getTargetConditions());
+        t2 = new Transition(s1, s2, constraint.getActivation(), constraint.getActivationConditions());
+
+        if (at != null) {
+          t2.setMinTimeCondition(at[0]);
+          t2.setMaxTimeCondition(at[1]);
+        }
+        if (tt != null) {
+          t1.setMinTimeCondition(tt[0]);
+          t1.setMaxTimeCondition(tt[1]);
+          constraint.addClockCondition(s1.name, s3.name);
+        }
+
+        this.transitions.add(t1);
+        this.transitions.add(t2);
+
+
         s1.goal();
         s2.goal();
         s3.failure();
