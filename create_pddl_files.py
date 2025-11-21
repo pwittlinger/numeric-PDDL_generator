@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
             noise_ = [0.1, 0.2, 0.3]
             all_logs = [
-                log_loc,
+                #log_loc,
                 #f"logs/{pname}-0.1.xesstripped.xes",
                 #f"logs/{pname}-0.2.xesstripped.xes",
                 #f"logs/{pname}-0.3.xesstripped.xes",
