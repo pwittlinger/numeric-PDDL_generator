@@ -57,7 +57,8 @@
     (after_add_check)
     (after_change)
     (changed ?t1 - trace_state ?pn - parameter_name)
-
+    (last_add ?a - activity)
+    
     ; Declare this to indicate that such activity-parameter-value assignment exists.
     (has_substitution_value ?vn - value_name ?a - activity ?pn - parameter_name)
     ; Indicates that the new activity has a new (defined) parameter.
@@ -155,7 +156,7 @@
     )
     )
     
-
+      (not (last_add ?a))
       (not (after_add))
       (not (complete_sync ?a))
       (not (after_sync)) 
@@ -170,8 +171,11 @@
       (and       (not (cur_t_state ?t1)) 
       (cur_t_state ?t2))) )
 
-      (forall (?a2 - activity) 
-        (not (just_deleted ?a2))
+      (forall (?a2 - activity)
+        (and 
+        (when (last_add ?a2) (not (last_add ?a2)))
+        (when (just_deleted ?a2) (not (just_deleted ?a2)))
+        )
       )
       (just_deleted ?a)
       (increase (total_cost) 2)
@@ -375,6 +379,15 @@
       )
 
       (not (complete_sync ?a))
+      
+
+      (forall (?a2 - activity)
+        (and 
+        (when (last_add ?a2) (not (last_add ?a2)))
+        (when (just_deleted ?a2) (not (just_deleted ?a2)))
+        )
+      )
+      (last_add ?a)
   )
   )
 
@@ -492,11 +505,13 @@
       )
       )
 
-      (forall (?a2 - activity) 
-        (not (just_deleted ?a2))
+      (forall (?a2 - activity)
+        (and 
+        (when (last_add ?a2) (not (last_add ?a2)))
+        (when (just_deleted ?a2) (not (just_deleted ?a2)))
+        )
       )
       
-      ;(not (just_deleted ?a))
 
       (not (after_sync))
       
@@ -525,6 +540,7 @@
           (failure)
         ))
       )
+
 
       (forall (?s1 - automaton_state ?s2 - automaton_state) 
         (when (and 
