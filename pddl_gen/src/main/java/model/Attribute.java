@@ -4,8 +4,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.TreeSet;
 
-import edu.uci.ics.jung.graph.Tree;
-
 public class Attribute {
   
   private final String name;
@@ -78,6 +76,9 @@ public class Attribute {
     this.criticalValues = ts;
   }
 
+  /**
+  * 
+  */
   public void setVariableValueMap() {
     if (!(this.variableValueMap.isEmpty())) {
       return;

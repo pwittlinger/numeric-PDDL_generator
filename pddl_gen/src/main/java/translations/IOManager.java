@@ -377,6 +377,27 @@ public class IOManager {
     }
   }
   
+  public boolean costModelExists(String costsFileName) {
+    File costModel = new File(inputFolder + costsFileName);
+
+    return costModel.exists();
+  }
+
+  public void exportCostModel(String fileName, Set<String> actKeys) {
+    //File variablesFile = new File(this.inputFolder + fileName);
+    StringBuilder sb = new StringBuilder();
+
+    for (String aK : actKeys) {
+      sb.append(aK + " 1 1 1 1\n");
+    }
+
+    try (FileWriter fileWriter = new FileWriter(this.inputFolder + fileName)) {
+      fileWriter.write(sb.toString());
+    } catch (IOException e) {
+      System.out.println("Error exporting variable substitution file");
+    }
+
+  }
   
   //Section: Reading cost model
   public ArrayList<String[]> readCostModel(String costsFileName) {

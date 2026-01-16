@@ -1,9 +1,6 @@
 package model;
-
 import java.util.*;
-
-import org.w3c.dom.Attr;
-
+//import org.w3c.dom.Attr;
 import Automaton.Pair;
 
 public class DeclareModel {

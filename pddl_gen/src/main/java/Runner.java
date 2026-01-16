@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -7,10 +8,10 @@ import translations.IOManager;
 import translations.PDDLGenerator;
 import translations.PDDLGeneratorMixedModel;
 import log.LogFile;
+import model.Activity;
 import model.DataPetriNet;
 import model.DeclareModel;
 import model.MixedModel;
-import java.io.File;
 
 public class Runner {
 
@@ -18,7 +19,7 @@ public class Runner {
 
     /*
     args = new String[6];
-    args[0] = "models\\model2_30.decl";
+    args[0] = "models\model2_30.decl";
     args[1] = "test05_VT_DPN.pnml";
 
     
@@ -40,7 +41,7 @@ public class Runner {
 
     //findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
 
-    findAlignments("declare\\BasePN-2And\\BasePN-2And_7_parsed.decl", "petrinet\\BasePN-2And.pnml", "logs\\BasePN-2And.xes", "variable_values_old.txt", "variable_subs\\variable_substitutions_BasePN-2And_7.decl_old.txt", "cost_models\\cost_model-BasePN-2And.txt");
+    findAlignments("declare\\BasePN-2And\\BasePN-2And_7_parsed.decl", "petrinet\\BasePN-2And.pnml", "logs\\BasePN-2And-add-3.xes", "variable_values.txt", "variable_subs\\variable_substitutions_BasePN-2And_7.decl.txt", "cost_models\\cost_model-BasePN-2And.txt");
 
       
   }
@@ -73,40 +74,47 @@ public class Runner {
       */
       String varAssignmentString = model.generateVariableValues();
       ioManager.exportVariableAssignments(variablesString, varAssignmentString);
-      //variableAssignments = ioManager.readVariableAssignments(variablesString);
     }
 
     if (!ioManager.variableSubstitutionExists(substitutionsString)) {
       String varSubstitutionString = model.generateVariableSubstitutions();
       ioManager.exportVariableSubstitution(substitutionsString, varSubstitutionString);
-      //substitutions = ioManager.readVariablesSubstitutions(substitutionsString);
     }
 
     variableAssignments = ioManager.readVariableAssignments(variablesString);
     substitutions = ioManager.readVariablesSubstitutions(substitutionsString);
 
-    System.out.println("Model: " + model);
-
-    
+    System.out.println("Model: " + model);    
 
     if ((petriNetString == "") | (petriNetString == null) | !(petriNetString.endsWith(".pnml"))) {
+
+      /*Check if cost model exists and otherwise use standard cost model*/
+      if (!ioManager.costModelExists(costsString)) {
+        ioManager.exportCostModel(costsString, model.activities.keySet());
+      }      
+
       model.assignCosts(ioManager.readCostModel(costsString)); // OKAY!
       LogFile log = ioManager.readDeclareLog(traceString, model);
       PDDLGenerator pddlGenerator = new PDDLGenerator(model);
-    String domain = pddlGenerator.defineDomain();
-    ArrayList<String> problems = log.generateProblems(pddlGenerator, variableAssignments, substitutions);
+      String domain = pddlGenerator.defineDomain();
+      ArrayList<String> problems = log.generateProblems(pddlGenerator, variableAssignments, substitutions);
 
-        int i = 1;
-    for (String problem : problems) {
+      int i = 1;
+      for (String problem : problems) {
       IOManager.getInstance().exportProblemPDDL(problem, i);
       i++;
-    }
-    IOManager.getInstance().exportDomainPDDL(domain);
-    }
+      }
+      IOManager.getInstance().exportDomainPDDL(domain);
+      }
     else {
 
       DataPetriNet petriNet = ioManager.readDataPetriNet(petriNetString);
       MixedModel myMixedModel = new MixedModel(petriNet, model);
+
+      if (!ioManager.costModelExists(costsString)) {
+        ioManager.exportCostModel(costsString, myMixedModel.activities.keySet());
+      }
+
       myMixedModel.assignCosts(ioManager.readCostModel(costsString)); // OKAY!
 
       LogFile log = ioManager.readLog(traceString, myMixedModel); // OKAY!
@@ -131,10 +139,7 @@ public class Runner {
     IOManager.getInstance().exportDomainPDDL(domain);
     }
 
-    
-    //System.out.println(myMixedModel.declareModel.getActivities());
-
-    
+        
     ioManager.exportModel(model);
    
 
