@@ -95,6 +95,23 @@ public class IOManager {
     return lines;
   }
 
+  public boolean variableAssignmentsExist(String fileName) {
+    File variablesFile = new File(this.inputFolder + fileName);
+
+    return variablesFile.exists();
+  }
+
+  public void exportVariableAssignments(String fileName, String content) {
+    //File variablesFile = new File(this.inputFolder + fileName);
+
+    try (FileWriter fileWriter = new FileWriter(this.inputFolder + fileName)) {
+      fileWriter.write(content);
+    } catch (IOException e) {
+      System.out.println("Error exporting variable assignment file");
+    }
+
+  }
+
   public Map<String, Integer> readVariableAssignments(String fileName) {
     HashMap<String, Integer> map = new HashMap<>();
     File variablesFile = new File(this.inputFolder + fileName);
@@ -145,6 +162,23 @@ public class IOManager {
     }
     
     return set;
+  }
+
+  public boolean variableSubstitutionExists(String fileName) {
+    File assignmentFile = new File(this.inputFolder + fileName);
+
+    return assignmentFile.exists();
+  }
+
+  public void exportVariableSubstitution(String fileName, String content) {
+    //File variablesFile = new File(this.inputFolder + fileName);
+
+    try (FileWriter fileWriter = new FileWriter(this.inputFolder + fileName)) {
+      fileWriter.write(content);
+    } catch (IOException e) {
+      System.out.println("Error exporting variable substitution file");
+    }
+
   }
   
   private HashMap<String, ArrayList<String[]>> initializeSortingMap() {

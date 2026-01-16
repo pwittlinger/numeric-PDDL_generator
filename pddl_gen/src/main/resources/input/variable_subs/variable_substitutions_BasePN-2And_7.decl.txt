@@ -1,54 +1,84 @@
-v0 ActivityG integer
-v5 ActivityG integer
-v15 ActivityG integer
-v30 ActivityG integer
-
-v0 ActivityP integer
-v5 ActivityP integer
-v15 ActivityP integer
-v30 ActivityP integer
-
-c1 ActivityD categorical
-c2 ActivityD categorical
-c3 ActivityD categorical
-
-c1 ActivityF categorical
-c2 ActivityF categorical
-c3 ActivityF categorical
-
-c1 ActivityM categorical
-c2 ActivityM categorical
-c3 ActivityM categorical
-
-c1 ActivityO categorical
-c2 ActivityO categorical
-c3 ActivityO categorical
-
-v0 ActivityN integer
-v5 ActivityN integer
-v15 ActivityN integer
-v30 ActivityN integer
-
-v0 ActivityA integer
-v5 ActivityA integer
-v15 ActivityA integer
-v30 ActivityA integer
-
+c3 ActivityC categorical
 c1 ActivityC categorical
 c2 ActivityC categorical
-c3 ActivityC categorical
 
+c3 ActivityD categorical
+c1 ActivityD categorical
+c2 ActivityD categorical
+
+c3 ActivityF categorical
+c1 ActivityF categorical
+c2 ActivityF categorical
+
+c3 ActivityO categorical
+c1 ActivityO categorical
+c2 ActivityO categorical
+
+integer1000 ActivityP integer
+integer50 ActivityP integer
+integer600 ActivityP integer
+integer00 ActivityP integer
+integer150 ActivityP integer
+integer20 ActivityP integer
+integer100 ActivityP integer
+integer70 ActivityP integer
+integer200 ActivityP integer
+
+integer1000 ActivityQ integer
+integer50 ActivityQ integer
+integer600 ActivityQ integer
+integer00 ActivityQ integer
+integer150 ActivityQ integer
+integer20 ActivityQ integer
+integer100 ActivityQ integer
+integer70 ActivityQ integer
+integer200 ActivityQ integer
+
+integer1000 ActivityA integer
+integer50 ActivityA integer
+integer600 ActivityA integer
+integer00 ActivityA integer
+integer150 ActivityA integer
+integer20 ActivityA integer
+integer100 ActivityA integer
+integer70 ActivityA integer
+integer200 ActivityA integer
+
+c3 ActivityM categorical
+c1 ActivityM categorical
+c2 ActivityM categorical
+
+integer1000 ActivityN integer
+integer50 ActivityN integer
+integer600 ActivityN integer
+integer00 ActivityN integer
+integer150 ActivityN integer
+integer20 ActivityN integer
+integer100 ActivityN integer
+integer70 ActivityN integer
+integer200 ActivityN integer
+
+integer1000 ActivityG integer
+integer50 ActivityG integer
+integer600 ActivityG integer
+integer00 ActivityG integer
+integer150 ActivityG integer
+integer20 ActivityG integer
+integer100 ActivityG integer
+integer70 ActivityG integer
+integer200 ActivityG integer
+
+integer1000 ActivityH integer
+integer50 ActivityH integer
+integer600 ActivityH integer
+integer00 ActivityH integer
+integer150 ActivityH integer
+integer20 ActivityH integer
+integer100 ActivityH integer
+integer70 ActivityH integer
+integer200 ActivityH integer
+
+c3 ActivityJ categorical
 c1 ActivityJ categorical
 c2 ActivityJ categorical
-c3 ActivityJ categorical
-
-v0 ActivityH integer
-v5 ActivityH integer
-v15 ActivityH integer
-v30 ActivityH integer
-
-v0 ActivityQ integer
-v5 ActivityQ integer
-v15 ActivityQ integer
-v30 ActivityQ integer
 

@@ -2,6 +2,8 @@ package model;
 
 import java.util.*;
 
+import org.w3c.dom.Attr;
+
 import Automaton.Pair;
 
 public class DeclareModel {
@@ -10,6 +12,7 @@ public class DeclareModel {
   private final ArrayList<DeclareConstraint> declareConstraints;
   private Map<Pair<Activity, CostEnum>, Integer> costs;
   public ArrayList<String> params;
+  private Map<String, Attribute> attr;
   
   public DeclareModel(Map<String, ArrayList<String[]>> parsedLines) {
     this.activities = addActivities(parsedLines.get("activityLines")); // ok
@@ -17,6 +20,8 @@ public class DeclareModel {
     Map<String, Attribute> attributes = bindAttributes(parsedLines.get("bindingLines")); 
     initializeAttributes(parsedLines.get("intAttributeLines"), parsedLines.get("floatAttributeLines"), parsedLines.get("enumAttributeLines"), attributes);
     this.declareConstraints = addConstraints(parsedLines.get("binaryConstraintLines"), parsedLines.get("unaryConstraintLines"));
+    initializeNumericAttributeVariableValues(attributes);
+    this.attr = attributes;
   }
   
   
@@ -240,4 +245,117 @@ public class DeclareModel {
   public Map<Pair<Activity, CostEnum>, Integer> getCosts() {
     return this.costs;
   }
+
+  private void initializeNumericAttributeVariableValues(Map<String, Attribute> attributesMap) {
+    /* 
+    FIRST ADD THE VALUE RANGE DEFINED IN THE DECLARE FILE
+    INTEGER / FLOAT ONLY
+     */
+    for (Attribute a : attributesMap.values()) {
+      if (a.getType().equals("enum")) {
+        continue;
+      }
+      a.getCriticalValues().add(a.getMinValue());
+      a.getCriticalValues().add(a.getMaxValue());
+    }
+
+    /*
+    THEN ADD ALL VALUES MENTIONED IN A CONSTRAINT
+    E.G. x < 10 or x > 20
+    */
+    // first find all possible values mentioned in the declare model
+    // assuming the min and max value is already given
+    for (DeclareConstraint dc : this.declareConstraints) {
+      List<Condition> conditionsList = dc.getActivationConditions();
+      // If the constraint has an AND relation there can be multiple parameters and values
+      for (Condition cond : conditionsList) {
+          String localAttrib = cond.parameterName;
+          Attribute globalAttribute = attributesMap.get(localAttrib);
+          String localType = globalAttribute.getType();
+          if (localType.equals("enum")) {
+            continue;
+          }
+          globalAttribute.getCriticalValues().add((double) cond.value);
+
+      }
+
+    }
+
+    /*
+    At this point, all numeric variables have been processed for the first time.
+    The next stage is to add the median values between the critical points to the set of critical points,
+    which is relevant if there are any inequality constraints or lt/gt
+    */
+
+    for (Attribute a : attributesMap.values()) {
+      if (a.getType().equals("enum")) {
+        continue;
+      }
+      
+      TreeSet<Double> initCritVal = a.getCriticalValues();
+
+      List<Double> hp = new ArrayList<>();
+
+      Iterator<Double> it = initCritVal.iterator();
+
+      if (it.hasNext()) {
+        Double prev = it.next();
+        while (it.hasNext()) {
+          Double curr = it.next();
+          hp.add((prev+curr)/2.0);
+          prev = curr;
+        }
+      }
+
+      if (a.getType().equals("integer")) {
+        hp = hp.stream()
+          .map(d -> Math.floor(d))
+          .toList(); 
+      }
+      a.getCriticalValues().addAll(hp);
+      a.setVariableValueMap();
+    
+    }
+
+  }  
+
+  public String generateVariableSubstitutions(){
+    StringBuilder sb = new StringBuilder();
+
+    for (Activity act : this.activities.values()) {
+      // Default case if the activity has no attributes
+      if (act.getAttributes().isEmpty()) {
+        continue;
+      }
+
+      for (Attribute attr : act.getAttributes()) {
+        Set<String> attributeValues = attr.variableValueMap.keySet();
+
+        for (String attrValName : attributeValues) {
+          sb.append(attrValName + " "+ act.getName() + " " + attr.getName()+"\n");
+        }
+      }
+
+      sb.append("\n");
+
+    }
+
+    return sb.toString();
+  }
+
+  public String generateVariableValues() {
+    StringBuilder sb = new StringBuilder();
+
+    for (Attribute att : this.attr.values()) {
+        for (String sAtt : att.variableValueMap.keySet()) {
+          Integer sAttNumVal = (int) Math.round(att.variableValueMap.get(sAtt));
+          //sb.append(sAtt + " " + att.variableValueMap.get(sAtt).toString() + "\n");
+          sb.append(sAtt + " " + sAttNumVal.toString() + "\n");
+        }
+    }
+
+    return sb.toString();
+
+  }
+  
 }

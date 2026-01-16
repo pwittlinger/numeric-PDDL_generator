@@ -10,6 +10,7 @@ import log.LogFile;
 import model.DataPetriNet;
 import model.DeclareModel;
 import model.MixedModel;
+import java.io.File;
 
 public class Runner {
 
@@ -37,7 +38,10 @@ public class Runner {
     */
     // args = new String[5];
 
-    findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+    //findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+
+    findAlignments("declare\\BasePN-2And\\BasePN-2And_7_parsed.decl", "petrinet\\BasePN-2And.pnml", "logs\\BasePN-2And.xes", "variable_values_old.txt", "variable_subs\\variable_substitutions_BasePN-2And_7.decl_old.txt", "cost_models\\cost_model-BasePN-2And.txt");
+
       
   }
   
@@ -59,9 +63,27 @@ public class Runner {
     
     DeclareModel model = ioManager.readDeclareModel(modelString); // OKAY!
     //model.assignCosts(ioManager.readCostModel(costsString)); // OKAY!
+    Map<String, Integer> variableAssignments;
+    Set<VariableSubstitution> substitutions;
 
-    Map<String, Integer> variableAssignments = ioManager.readVariableAssignments(variablesString);
-    Set<VariableSubstitution> substitutions = ioManager.readVariablesSubstitutions(substitutionsString);
+    if (!ioManager.variableAssignmentsExist(variablesString)) {
+      /*2026-01-15 On the current version, only INTEGERS are supported.
+        In the DeclareModel.generateVariableValues() method all function calls are cast to int.
+        The readVariableAssignments method cannot deal with floats in the form "2.0"
+      */
+      String varAssignmentString = model.generateVariableValues();
+      ioManager.exportVariableAssignments(variablesString, varAssignmentString);
+      //variableAssignments = ioManager.readVariableAssignments(variablesString);
+    }
+
+    if (!ioManager.variableSubstitutionExists(substitutionsString)) {
+      String varSubstitutionString = model.generateVariableSubstitutions();
+      ioManager.exportVariableSubstitution(substitutionsString, varSubstitutionString);
+      //substitutions = ioManager.readVariablesSubstitutions(substitutionsString);
+    }
+
+    variableAssignments = ioManager.readVariableAssignments(variablesString);
+    substitutions = ioManager.readVariablesSubstitutions(substitutionsString);
 
     System.out.println("Model: " + model);
 
