@@ -34,6 +34,7 @@ public class IOManager {
   private String inputFolder;
   private String outputFolder;
   private String pddlFolder;
+  private String currentPath;
   //private String alignmentFolder = outputFolder + "alignments" + File.separator;
   
   private IOManager() {
@@ -48,16 +49,26 @@ public class IOManager {
   }
 
   private void setPaths() {
+    this.currentPath = System.getProperty("user.dir") + File.separator;
+    this.outputFolder = currentPath + "output" + File.separator;
+    this.pddlFolder = outputFolder + "pddl" + File.separator;
+
+    /*
+    
     this.resourcesFolder = this.projectPrefix + "src" + File.separator + "main" + File.separator + "resources" + File.separator;
     this.inputFolder = resourcesFolder + "input" + File.separator;
     this.outputFolder = resourcesFolder + "output" + File.separator;
     this.pddlFolder = outputFolder + "pddl" + File.separator;
 
+    */
+
     // Create folders if these don't exist.
+    /* 
     File inputDir = new File(inputFolder);
     if (!inputDir.exists()) {
       inputDir.mkdirs();
     }
+    */
     File outputDir = new File(outputFolder);
     if (!outputDir.exists()) {
       outputDir.mkdirs();
@@ -75,7 +86,12 @@ public class IOManager {
   
   //Section: Reading declare model
   public DeclareModel readDeclareModel(String modelFileName) {
-    File declareFile = new File(inputFolder + modelFileName);
+
+    File declareFile = new File(modelFileName);
+    if (!declareFile.isFile()) {
+      declareFile = new File(currentPath + modelFileName);
+    }
+
     HashMap<String, ArrayList<String[]>> parsedLines = readFile(declareFile);
     return new DeclareModel(parsedLines);
   }
@@ -96,7 +112,12 @@ public class IOManager {
   }
 
   public boolean variableAssignmentsExist(String fileName) {
-    File variablesFile = new File(this.inputFolder + fileName);
+
+    File variablesFile = new File(fileName);
+
+    if (!variablesFile.isFile()) {
+      variablesFile = new File(this.currentPath + fileName);
+    }
 
     return variablesFile.exists();
   }
@@ -104,7 +125,7 @@ public class IOManager {
   public void exportVariableAssignments(String fileName, String content) {
     //File variablesFile = new File(this.inputFolder + fileName);
 
-    try (FileWriter fileWriter = new FileWriter(this.inputFolder + fileName)) {
+    try (FileWriter fileWriter = new FileWriter(this.currentPath + fileName)) {
       fileWriter.write(content);
     } catch (IOException e) {
       System.out.println("Error exporting variable assignment file");
@@ -114,7 +135,11 @@ public class IOManager {
 
   public Map<String, Integer> readVariableAssignments(String fileName) {
     HashMap<String, Integer> map = new HashMap<>();
-    File variablesFile = new File(this.inputFolder + fileName);
+    File variablesFile = new File(fileName);
+
+    if (!variablesFile.isFile()) {
+      variablesFile = new File(this.currentPath + fileName);
+    }
 
     try (Scanner scanner = new Scanner(variablesFile)) {
       while (scanner.hasNextLine()) {
@@ -138,7 +163,12 @@ public class IOManager {
   public Set<VariableSubstitution> readVariablesSubstitutions(String fileName) {
     HashSet<VariableSubstitution> set = new HashSet<>();
 
-    File assignmentFile = new File(this.inputFolder + fileName);
+    File assignmentFile = new File(fileName);
+
+    if (!assignmentFile.isFile()) {
+      assignmentFile = new File(this.currentPath + fileName);
+    }
+
     try (Scanner scanner = new Scanner(assignmentFile)) {
       while (scanner.hasNextLine()) {
 
@@ -165,7 +195,11 @@ public class IOManager {
   }
 
   public boolean variableSubstitutionExists(String fileName) {
-    File assignmentFile = new File(this.inputFolder + fileName);
+    File assignmentFile = new File(fileName);
+    
+    if (!assignmentFile.isFile()) {
+      assignmentFile = new File(this.currentPath + fileName);
+    }
 
     return assignmentFile.exists();
   }
@@ -173,7 +207,7 @@ public class IOManager {
   public void exportVariableSubstitution(String fileName, String content) {
     //File variablesFile = new File(this.inputFolder + fileName);
 
-    try (FileWriter fileWriter = new FileWriter(this.inputFolder + fileName)) {
+    try (FileWriter fileWriter = new FileWriter(this.currentPath + fileName)) {
       fileWriter.write(content);
     } catch (IOException e) {
       System.out.println("Error exporting variable substitution file");
@@ -319,7 +353,11 @@ public class IOManager {
   
   //Section: Reading log file
   public LogFile readLog(String logFileName, MixedModel myMixedModel) {
-    File logFile = new File(inputFolder + logFileName);
+    File logFile = new File(logFileName);
+
+    if (!logFile.isFile()) {
+      logFile = new File(this.currentPath + logFileName);
+    }
     XLog xlog = null;
     XesXmlParser parser = new XesXmlParser();
     if (parser.canParse(logFile)) {
@@ -335,7 +373,11 @@ public class IOManager {
 
   
   public LogFile readDeclareLog(String logFileName, DeclareModel model) {
-    File logFile = new File(inputFolder + logFileName);
+    File logFile = new File(logFileName);
+    
+    if (!logFile.isFile()) {
+      logFile = new File(this.currentPath + logFileName);
+    }
     XLog xlog = null;
     XesXmlParser parser = new XesXmlParser();
     if (parser.canParse(logFile)) {
@@ -378,7 +420,11 @@ public class IOManager {
   }
   
   public boolean costModelExists(String costsFileName) {
-    File costModel = new File(inputFolder + costsFileName);
+    File costModel = new File(costsFileName);
+  
+    if (!costModel.isFile()) {
+      costModel = new File(this.currentPath + costsFileName);
+    }
 
     return costModel.exists();
   }
@@ -391,7 +437,7 @@ public class IOManager {
       sb.append(aK + " 1 1 1 1\n");
     }
 
-    try (FileWriter fileWriter = new FileWriter(this.inputFolder + fileName)) {
+    try (FileWriter fileWriter = new FileWriter(this.currentPath + fileName)) {
       fileWriter.write(sb.toString());
     } catch (IOException e) {
       System.out.println("Error exporting variable substitution file");
@@ -401,7 +447,12 @@ public class IOManager {
   
   //Section: Reading cost model
   public ArrayList<String[]> readCostModel(String costsFileName) {
-    File costModel = new File(inputFolder + costsFileName);
+    File costModel = new File(costsFileName);
+
+    if (!costModel.isFile()) {
+      costModel = new File(currentPath + costsFileName);
+    }
+
     ArrayList<String[]> costsList = new ArrayList<>();
 
     try (Scanner scanner = new Scanner(costModel)) {
@@ -437,8 +488,11 @@ public class IOManager {
 
     //Section: Reading declare model
     public DataPetriNet readDataPetriNet(String modelFileName) throws FileNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, InvocationTargetException, DPNIOException {
-      File dpnFilepath = new File(inputFolder + modelFileName);
+      File dpnFilepath = new File(modelFileName);
 
+    if (!dpnFilepath.isFile()) {
+      dpnFilepath = new File(currentPath + modelFileName);
+    }
 
       String dpnFile = dpnFilepath.getAbsolutePath();
       return new DataPetriNet(dpnFile);

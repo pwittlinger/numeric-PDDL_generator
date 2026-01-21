@@ -264,6 +264,9 @@ public class DeclareModel {
     // assuming the min and max value is already given
     for (DeclareConstraint dc : this.declareConstraints) {
       List<Condition> conditionsList = dc.getActivationConditions();
+      if (conditionsList == null) {
+          continue;
+      }
       // If the constraint has an AND relation there can be multiple parameters and values
       for (Condition cond : conditionsList) {
           String localAttrib = cond.parameterName;

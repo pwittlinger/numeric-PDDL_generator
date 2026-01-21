@@ -39,9 +39,9 @@ public class Runner {
     */
     // args = new String[5];
 
-    //findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+    findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
 
-    findAlignments("declare\\BasePN-2And\\BasePN-2And_7_parsed.decl", "petrinet\\BasePN-2And.pnml", "logs\\BasePN-2And-add-3.xes", "variable_values.txt", "variable_subs\\variable_substitutions_BasePN-2And_7.decl.txt", "cost_models\\cost_model-BasePN-2And.txt");
+    //findAlignments("input\\declare\\BasePN-2And\\BasePN-2And_7_parsed.decl", "input\\petrinet\\BasePN-2And.pnml", "input\\logs\\BasePN-2And-add-3.xes", "variable_values.txt", "variable_substitutions_BasePN-2And_7.decl.txt", "cost_model-BasePN-2And.txt");
 
       
   }
