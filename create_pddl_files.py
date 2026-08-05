@@ -10,8 +10,10 @@ import pm4py
 
 input_path = r"C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\src\main\resources\input"
 output_path = r"C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\src\main\resources\output\pddl"
+#output_path = r"C:\Users\paulw\Desktop\numeric-PDDL_generator\output\pddl"
 cost_model = "cost_model.txt"
 variable_values = "variable_values.txt"
+#variable_values = r"C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\src\main\resources\input\variable_values.txt"
 
 
 #cmd = r'java -jar '
@@ -63,10 +65,18 @@ if __name__ == "__main__":
             var_sub_file = f"variable_substitutions_{var_sub_file}"
 
 
+            r'''
             decl_loc = f"declare\\{pname}\\{f}"
             pn_loc = f"petrinet\\{p_}"
+
+            #"C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\src\main\resources\input\petrinet\BasePN-0And.pnml"
             log_loc = f"logs\\{pname}.xes"
             var_sub_loc = f"variable_subs/{var_sub_file}"
+
+            decl_loc = f"pddl_gen\\src\\main\\resources\\input\\declare\\{pname}\\{f}"
+            pn_loc = f"pddl_gen\\src\\main\\resources\\input\\petrinet\\{p_}"
+            log_loc = f"pddl_gen\\src\\main\\resources\\input\\logs\\{pname}.xes"
+            var_sub_loc = f"pddl_gen\\src\\main\\resources\\input\\variable_subs\\{var_sub_file}"
 
 
             noise_ = [0.1, 0.2, 0.3]
@@ -75,6 +85,28 @@ if __name__ == "__main__":
                 #f"logs/{pname}-0.1.xesstripped.xes",
                 #f"logs/{pname}-0.2.xesstripped.xes",
                 #f"logs/{pname}-0.3.xesstripped.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-add-1.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-add-2.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-add-3.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-add-5.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-del-1.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-del-2.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-del-3.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-del-5.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-change-1.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-change-2.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-change-3.xes",
+                f"pddl_gen\\src\\main\\resources\\input\\logs/{pname}-change-5.xes",
+
+            ]
+            '''
+
+            decl_loc = f"declare\\{pname}\\{f}"
+            pn_loc = f"petrinet\\{p_}"
+            log_loc = f"logs\\{pname}.xes"
+            var_sub_loc = f"variable_subs\\{var_sub_file}"
+
+            all_logs = [
                 f"logs/{pname}-add-1.xes",
                 f"logs/{pname}-add-2.xes",
                 f"logs/{pname}-add-3.xes",
@@ -93,6 +125,8 @@ if __name__ == "__main__":
 
             for l in all_logs:
                 #new_folder_name = f.replace("_parsed.decl", "").replace("_", "-d")
+                #l = l.replace("logs/", f"pddl_gen\\src\\main\\resources\\input\\logs\\")
+                
                 
                 if (len(l.split("/"))>1):
                     new_folder_name = l.split("/")[1]
@@ -110,11 +144,13 @@ if __name__ == "__main__":
                     continue
 
                 cost_model = f"cost_models/cost_model-{pname}.txt"
-                
+                #cost_model = os.path.join(input_path, cost_model)
+                print(['java', '-jar', r'C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\target\pddl_gen-1.0-SNAPSHOT-launcher.jar', decl_loc, pn_loc, l, variable_values, var_sub_loc, cost_model])
                 subprocess.call(['java', '-jar', r'C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\target\pddl_gen-1.0-SNAPSHOT-launcher.jar', decl_loc, pn_loc, l, variable_values, var_sub_loc, cost_model])
 
 
-                output_path = r"C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\src\main\resources\output\pddl"
+                #output_path = r"C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\src\main\resources\output\pddl"
+                #output_path = r"C:\Users\paulw\Desktop\numeric-PDDL_generator\output\pddl"
 
                 pddl_files = os.listdir(output_path)
 
@@ -143,28 +179,6 @@ if __name__ == "__main__":
             #pddl_files = [pf for pf in pddl_files if pf[-4:] == "pddl" and "problem" in pf]
 
             #[os.rename(os.path.join(output_path, pf), os.path.join(new_folder_path, pf)) for pf in pddl_files]
-
-            #time.sleep(5)
-
-            for noise_level in noise_:
-                continue
-                if not (os.path.join(input_path, f"logs/{pname}-{noise_level}.xesstripped.xes")):
-                    continue
-                if not (os.path.exists(os.path.join(new_folder_path, f"{noise_level}"))):
-                    os.mkdir(os.path.join(output_path, f"{new_folder_name}-{noise_level}"))
-                    print(f"logs/{pname}-{noise_level}.xesstripped.xes")
-                    subprocess.call(['java', '-jar', r'C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\target\pddl_gen-1.0-SNAPSHOT-launcher.jar', decl_loc, pn_loc, f"logs/{pname}-{noise_level}.xesstripped.xes", variable_values, var_sub_loc, cost_model])
-#
-#
-                    output_path = r"C:\Users\paulw\Desktop\numeric-PDDL_generator\pddl_gen\src\main\resources\output\pddl"
-#
-                    pddl_files = os.listdir(output_path)
-
-                    pddl_files = [pf for pf in pddl_files if pf[-4:] == "pddl" and "problem" in pf]
-
-                    [os.rename(os.path.join(output_path, pf), os.path.join(os.path.join(output_path, f"{new_folder_name}-{noise_level}"), pf)) for pf in pddl_files]
-
-                    time.sleep(5)
 
 
             
